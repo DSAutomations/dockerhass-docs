@@ -103,8 +103,8 @@ Almost done, let's install docker-compose:
 sudo pip install docker-compose
 ```
 # Volumes
-Let's briefly touch on some theory. Docker containers are ephemeral. In short, we can start up a container and do work with it, but when it's shut down any data contained withi
+Let's briefly touch on some theory. Docker containers are ephemeral. In short, we can start up a container and do work with it, but when it's shut down any data contained within will be lost. We can gain persistence between sessions by
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2OTE0ODQ5OCwzMTY0NzcwMCwtMTU0OT
-cxNjc3NF19
+eyJoaXN0b3J5IjpbLTIwMTc0MjY3NjEsMzE2NDc3MDAsLTE1ND
+k3MTY3NzRdfQ==
 -->
