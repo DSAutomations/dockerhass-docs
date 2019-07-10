@@ -102,9 +102,9 @@ Almost done, let's install docker-compose:
 ```
 sudo pip install docker-compose
 ```
-# Setup Volumes
-
+# Volumes
+Let's touch on a bit of theory
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODY2Mzk0OTMsMzE2NDc3MDAsLTE1ND
+eyJoaXN0b3J5IjpbLTEyMzg5OTA0OTMsMzE2NDc3MDAsLTE1ND
 k3MTY3NzRdfQ==
 -->
