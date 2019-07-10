@@ -92,7 +92,7 @@ With all of this done, we should have everything we need to install docker. This
 curl -fsSL get.docker.com -o get-docker.sh
 sh get-docker.sh
 ```
-Now that Docker is installed we'll make things a bit easier by putting 
+Now that Docker is installed we'll make things a bit easier by putting the pi user in the 
 ```
 sudo usermod -aG docker pi
 
@@ -103,6 +103,6 @@ systemctl start docker.service
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNDcwMjkwNSwzMTY0NzcwMCwtMTU0OT
+eyJoaXN0b3J5IjpbLTEzMDA0NTkyMCwzMTY0NzcwMCwtMTU0OT
 cxNjc3NF19
 -->
