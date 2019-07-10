@@ -96,7 +96,7 @@ Now that Docker is installed we'll make things a bit easier by putting the pi us
 ```
 sudo usermod -aG docker pi
 ```
-After doing this, you **
+After doing this, you must **log out and back in** for the group permissions to be applied to your
 ```
 # ~~ re-log now ~~
 
@@ -105,6 +105,6 @@ systemctl start docker.service
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0MjUzNTkyNSwzMTY0NzcwMCwtMTU0OT
+eyJoaXN0b3J5IjpbMTYwNzEzMjY5MywzMTY0NzcwMCwtMTU0OT
 cxNjc3NF19
 -->
