@@ -103,8 +103,8 @@ Almost done, let's install docker-compose:
 sudo pip install docker-compose
 ```
 # Volumes
-Let's touch on a bit of theory
+Let's briefly touch on some theory. Docker containers are ephemoral. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzg5OTA0OTMsMzE2NDc3MDAsLTE1ND
-k3MTY3NzRdfQ==
+eyJoaXN0b3J5IjpbMTUwMTA1MzQsMzE2NDc3MDAsLTE1NDk3MT
+Y3NzRdfQ==
 -->
