@@ -117,7 +117,87 @@ Docker containers are ephemeral. In short, we can start up a container and do wo
      - /srv/docker/nginx/config/nginx.conf:/etc/nginx/nginx.conf
      - /srv/docker/nginx/ssl:/etc/nginx/ssl
      - /srv/docker/letsencrypt:/letsencrypt
+
+```
+version: '3'
+services:
+  homeassistant:
+    container_name: home-assistant
+    restart: unless-stopped
+    image: homeassistant/raspberrypi3-homeassistant
+    volumes:
+      - /srv/docker/HomeAssistantConfig:/config
+      - /etc/localtime:/etc/localtime:ro
+      - /srv/docker/letsencrypt/live:/letsencrypt
+    ports:
+      - 8123:8123
+    privileged: true
+    depends_on:
+     - mariadb
+     - influxdb
+  mariadb:
+    image: jsurf/rpi-mariadb:latest
+    ports:
+      - 3306:3306/tcp
+    volumes:
+      - /srv/docker/mariadb/config:/etc/mysql/conf.d
+      - /srv/docker/mariadb/data:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=super_database_password
+      - MYSQL_DATABASE=homeassistantdb
+      - MYSQL_USER=homeassistant
+      - MYSQL_PASSWORD=a_database_password
+    restart: always
+  nodered:
+    image: nodered/node-red-docker:rpi-v8
+    ports:
+     - 1880:1880
+    volumes:
+     - /srv/docker/nodered:/data
+    user: "1000"
+    restart: always
+    environment:
+      TZ: "America/New_York"
+    depends_on:
+     - homeassistant
+  influxdb:
+    image: influxdb:latest
+    restart: always
+    ports:
+     - 8086:8086
+     - 8083:8083
+     - 2003:2003
+    volumes:
+     - /srv/docker/influxdb/data:/var/lib/influxdb
+  grafana:
+    image: fg2it/grafana-armhf:v5.0.4
+    ports:
+     - 3000:3000
+    volumes:
+     - /srv/docker/grafana/data:/var/lib/grafana
+    restart: always
+    depends_on:
+     - influxdb
+  portainer:
+    image: portainer/portainer
+    restart: always
+    volumes:
+     - /var/run/docker.sock:/var/run/docker.sock
+     - /srv/docker/portainer/data:/data
+    ports:
+     - 9000:9000
+  nginx:
+    image: nginx
+    restart: always
+    volumes:
+     - /srv/docker/nginx/config/nginx.conf:/etc/nginx/nginx.conf
+     - /srv/docker/nginx/ssl:/etc/nginx/ssl
+     - /srv/docker/letsencrypt:/letsencrypt
+    ports:
+     - 8080:80
+     - 443:443
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3Njk0NTE0MiwtMTMzNDQ2MzA4NSwzMT
-Y0NzcwMCwtMTU0OTcxNjc3NF19
+eyJoaXN0b3J5IjpbLTE2Mzc5MjI2NTIsMTU3Njk0NTE0MiwtMT
+MzNDQ2MzA4NSwzMTY0NzcwMCwtMTU0OTcxNjc3NF19
 -->
