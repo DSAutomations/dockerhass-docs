@@ -97,12 +97,13 @@ Now that Docker is installed we'll make things a bit easier by putting the pi us
 sudo usermod -aG docker pi
 ```
 After doing this, you must **log out and back in** for the group permissions to be applied.
+
+Almost done, let's install docker-compose:
 ```
 sudo pip install docker-compose
-systemctl start docker.service
 ```
-
+Great! with 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxNjMxNDE4LDMxNjQ3NzAwLC0xNTQ5Nz
-E2Nzc0XX0=
+eyJoaXN0b3J5IjpbLTEyMzU4ODM3NDQsMzE2NDc3MDAsLTE1ND
+k3MTY3NzRdfQ==
 -->
