@@ -87,12 +87,12 @@ Next let's add a repository for us to pull the latest docker packages from, and 
 echo "deb https://download.docker.com/linux/raspbian/ stretch stable" | sudo tee -a /etc/apt/sources.list
 curl -fsSL https://yum.dockerproject.org/gpg | sudo apt-key add -
 ```
-With all of this done, we should have everything we need to install docker. Let's go:
+With all of this done, we should have everything we need to install docker. This might take a little while, let's go:
 ```
 curl -fsSL get.docker.com -o get-docker.sh
 sh get-docker.sh
 ```
-
+Now that Docker is
 ```
 sudo usermod -aG docker pi
 
@@ -103,5 +103,6 @@ systemctl start docker.service
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDk3MTY3NzRdfQ==
+eyJoaXN0b3J5IjpbLTEyODQzMjEwMTEsLTE1NDk3MTY3NzRdfQ
+==
 -->
