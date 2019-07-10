@@ -104,7 +104,20 @@ sudo pip install docker-compose
 ```
 # Volumes
 Docker containers are ephemeral. In short, we can start up a container and do work with it, but when it's shut down any data contained within will be lost. We can gain persistence between sessions by mounting volumes which will link directories outside the docker containers to directories within.
+
+
+     - /srv/docker/HomeAssistantConfig:/config
+     - /srv/docker/letsencrypt/live:/letsencrypt
+     - /srv/docker/mariadb/config:/etc/mysql/conf.d
+     - /srv/docker/mariadb/data:/var/lib/mysql
+     - /srv/docker/nodered:/data
+     - /srv/docker/influxdb/data:/var/lib/influxdb
+     - /srv/docker/grafana/data:/var/lib/grafana
+     - /srv/docker/portainer/data:/data
+     - /srv/docker/nginx/config/nginx.conf:/etc/nginx/nginx.conf
+     - /srv/docker/nginx/ssl:/etc/nginx/ssl
+     - /srv/docker/letsencrypt:/letsencrypt
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzQ0NjMwODUsMzE2NDc3MDAsLTE1ND
-k3MTY3NzRdfQ==
+eyJoaXN0b3J5IjpbMTU3Njk0NTE0MiwtMTMzNDQ2MzA4NSwzMT
+Y0NzcwMCwtMTU0OTcxNjc3NF19
 -->
