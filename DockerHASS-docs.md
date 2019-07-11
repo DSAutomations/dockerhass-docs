@@ -123,6 +123,8 @@ mkdir /srv/docker/portainer
 mkdir /srv/docker/nginx/config
 mkdir /srv/docker/nginx/ssl
 ```
+If you're like me and you keep your Homeassistant config on GitHub, now would be the time to clone your repository
+
 
      - /srv/docker/HomeAssistantConfig:/config
      - /srv/docker/letsencrypt/live:/letsencrypt
@@ -216,7 +218,7 @@ services:
      - 443:443
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4MTM4MzU5NCwxNDU2NzE4MDcxLC0xNj
-M3OTIyNjUyLDE1NzY5NDUxNDIsLTEzMzQ0NjMwODUsMzE2NDc3
-MDAsLTE1NDk3MTY3NzRdfQ==
+eyJoaXN0b3J5IjpbODMxODAzMjkzLDE0NTY3MTgwNzEsLTE2Mz
+c5MjI2NTIsMTU3Njk0NTE0MiwtMTMzNDQ2MzA4NSwzMTY0Nzcw
+MCwtMTU0OTcxNjc3NF19
 -->
