@@ -193,8 +193,8 @@ services:
       - 'GROUPID=996'
       - 'TZ=America/New_York'
 ```
-Things that you may want to tweak include this line:
-```-u "smbuser;badpass" ```
+ ```-u "smbuser;badpass" ``` 
+to set your username and password
 
 
 
@@ -330,11 +330,11 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU4NjAxNTc2LC0xNTI3NDUxMzE5LDExND
-I4MzczOTIsMjEwNTg0NjM5MCwtOTA0MjA5MDY5LDU1Mzc5NDk3
-NywyMDY1NDY1NDA2LDIwNjAwNzEwNjcsMTUzMzcxMjM2MywtNz
-QxNjM3NTQ5LC00MjY2NDMxMjAsLTU1NjE3NjU4MywtMzk5OTQz
-ODY2LDQ3NTU0MjIyNiwxMzQ3MzMxNzMzLDY5MzA2MDk5OSwtMT
-I3OTQ5OTM1MSwtMTM2ODg1Njg2NCw1MDM4MTUxODAsMTY5Mzgx
-OTI5NF19
+eyJoaXN0b3J5IjpbLTIxMzI3NTMyMDUsLTE1Mjc0NTEzMTksMT
+E0MjgzNzM5MiwyMTA1ODQ2MzkwLC05MDQyMDkwNjksNTUzNzk0
+OTc3LDIwNjU0NjU0MDYsMjA2MDA3MTA2NywxNTMzNzEyMzYzLC
+03NDE2Mzc1NDksLTQyNjY0MzEyMCwtNTU2MTc2NTgzLC0zOTk5
+NDM4NjYsNDc1NTQyMjI2LDEzNDczMzE3MzMsNjkzMDYwOTk5LC
+0xMjc5NDk5MzUxLC0xMzY4ODU2ODY0LDUwMzgxNTE4MCwxNjkz
+ODE5Mjk0XX0=
 -->
