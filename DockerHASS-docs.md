@@ -105,6 +105,7 @@ sudo pip install docker-compose
 # Volumes
 Docker containers are ephemeral. In short, we can start up a container and do work with it, but when it's shut down any data contained within will be lost. We can gain persistence between sessions by mounting volumes which will link directories outside the docker containers to directories within.
 
+Let's get this setup. 
 
      - /srv/docker/HomeAssistantConfig:/config
      - /srv/docker/letsencrypt/live:/letsencrypt
@@ -198,6 +199,7 @@ services:
      - 443:443
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2Mzc5MjI2NTIsMTU3Njk0NTE0MiwtMT
-MzNDQ2MzA4NSwzMTY0NzcwMCwtMTU0OTcxNjc3NF19
+eyJoaXN0b3J5IjpbLTEwNjQ3MzkxNCwtMTYzNzkyMjY1MiwxNT
+c2OTQ1MTQyLC0xMzM0NDYzMDg1LDMxNjQ3NzAwLC0xNTQ5NzE2
+Nzc0XX0=
 -->
