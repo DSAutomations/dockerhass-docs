@@ -198,7 +198,8 @@ services:
 now you should be able to connect to 
 
 ```-u "smbuser;badpass" ``` 
-to set your username and password
+to set your username and passwordThings that you may want to tweak include this line:
+```-u "smbuser;badpass" ```
 
 
 
@@ -334,11 +335,11 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2NjE3NTIzMiwtMTUyNzQ1MTMxOSwxMT
-QyODM3MzkyLDIxMDU4NDYzOTAsLTkwNDIwOTA2OSw1NTM3OTQ5
-NzcsMjA2NTQ2NTQwNiwyMDYwMDcxMDY3LDE1MzM3MTIzNjMsLT
-c0MTYzNzU0OSwtNDI2NjQzMTIwLC01NTYxNzY1ODMsLTM5OTk0
-Mzg2Niw0NzU1NDIyMjYsMTM0NzMzMTczMyw2OTMwNjA5OTksLT
-EyNzk0OTkzNTEsLTEzNjg4NTY4NjQsNTAzODE1MTgwLDE2OTM4
-MTkyOTRdfQ==
+eyJoaXN0b3J5IjpbMTIxODc4NzkzMSwxMjY2MTc1MjMyLC0xNT
+I3NDUxMzE5LDExNDI4MzczOTIsMjEwNTg0NjM5MCwtOTA0MjA5
+MDY5LDU1Mzc5NDk3NywyMDY1NDY1NDA2LDIwNjAwNzEwNjcsMT
+UzMzcxMjM2MywtNzQxNjM3NTQ5LC00MjY2NDMxMjAsLTU1NjE3
+NjU4MywtMzk5OTQzODY2LDQ3NTU0MjIyNiwxMzQ3MzMxNzMzLD
+Y5MzA2MDk5OSwtMTI3OTQ5OTM1MSwtMTM2ODg1Njg2NCw1MDM4
+MTUxODBdfQ==
 -->
