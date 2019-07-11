@@ -185,7 +185,7 @@ services:
       - /srv/docker:/srv/docker
       - /home/pi:/home/pi
     command: > 
-      -u "dylan;dylan" 
+      -u "" 
       -s "docker;/srv/docker;yes;no;no;dylan" 
       -s "docker-home;/home/pi/;yes;no;no;dylan"
     environment:
@@ -330,11 +330,11 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTUzNzk0OTc3LDIwNjAwNzEwNjcsLTc0MT
-YzNzU0OSwtNDI2NjQzMTIwLC0zOTk5NDM4NjYsLTEyNzk0OTkz
-NTEsLTEzNjg4NTY4NjQsNDU5MDk4MDQxLC0xODYxMzAyNzYyLC
-0xODA1NDY4OTU3LDUzNTMzNDc0NCwtMzcwODM0MjQ1LC0xMDQ4
-MTc5Mjc2LDE4NTAyNjA2NzMsLTQ5MzE1NjM5MCw2NTgxMDI0Nz
-AsLTEyNDgyMzQ2NzQsMTQ1NjcxODA3MSwtMTYzNzkyMjY1Miwx
-NTc2OTQ1MTQyXX0=
+eyJoaXN0b3J5IjpbNDg3NjY2Mzc4LDU1Mzc5NDk3NywyMDYwMD
+cxMDY3LC03NDE2Mzc1NDksLTQyNjY0MzEyMCwtMzk5OTQzODY2
+LC0xMjc5NDk5MzUxLC0xMzY4ODU2ODY0LDQ1OTA5ODA0MSwtMT
+g2MTMwMjc2MiwtMTgwNTQ2ODk1Nyw1MzUzMzQ3NDQsLTM3MDgz
+NDI0NSwtMTA0ODE3OTI3NiwxODUwMjYwNjczLC00OTMxNTYzOT
+AsNjU4MTAyNDcwLC0xMjQ4MjM0Njc0LDE0NTY3MTgwNzEsLTE2
+Mzc5MjI2NTJdfQ==
 -->
