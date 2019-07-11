@@ -8,7 +8,9 @@ When I first deployed my setup, Hass.io was only in its infancy, however the has
 
 Ultimately, I've built some awesome features and automatons that my family and myseld enjoys, but the Raspberry Ppi has become a veritable house of cards. Along with homeassistant, I've installed all sorts of goodies for development, and integration. Nginx, pihole, mosquitto, apcupsd, certbot, awscli, samba, git, and the list goes on.
 
-Like many others, I saw the popup in HA about python 3.5 depreciation recently, and through sweat and tears, managed to rebuild a new venv and get Homeassistant running in it without the warning. However, this came at the cost of a dramatic performance hit in the recorder component. I'm a big fan of graphs on my front end, and now they're all taking twice as long to load. Not sure where I went wrong, but one thing that I am sure about is that there is a better way, let's go...
+Like many others, I saw the popup in HA about python 3.5 depreciation recently, and through sweat and tears, managed to rebuild a new venv and get Homeassistant running in it without the warning. However, this came at the cost of a dramatic performance hit in the recorder component. I'm a big fan of graphs on my front end, and now they're all taking twice as long to load. Not sure where I went wrong, but one thing that I am sure about is that there is a better way, install hass.io. 
+
+No, just kidding, but on a serious not
 
 I aim to give you a comprehensive guide for getting the *pictured* environment up and running from scratch, this environment includes the following:
 * **Homeassistant**
@@ -276,10 +278,11 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzk0OTkzNTEsLTEzNjg4NTY4NjQsND
-U5MDk4MDQxLC0xODYxMzAyNzYyLC0xODA1NDY4OTU3LDUzNTMz
-NDc0NCwtMzcwODM0MjQ1LC0xMDQ4MTc5Mjc2LDE4NTAyNjA2Nz
-MsLTQ5MzE1NjM5MCw2NTgxMDI0NzAsLTEyNDgyMzQ2NzQsMTQ1
-NjcxODA3MSwtMTYzNzkyMjY1MiwxNTc2OTQ1MTQyLC0xMzM0ND
-YzMDg1LDMxNjQ3NzAwLC0xNTQ5NzE2Nzc0XX0=
+eyJoaXN0b3J5IjpbLTIwNTE1MjM5NzMsLTEyNzk0OTkzNTEsLT
+EzNjg4NTY4NjQsNDU5MDk4MDQxLC0xODYxMzAyNzYyLC0xODA1
+NDY4OTU3LDUzNTMzNDc0NCwtMzcwODM0MjQ1LC0xMDQ4MTc5Mj
+c2LDE4NTAyNjA2NzMsLTQ5MzE1NjM5MCw2NTgxMDI0NzAsLTEy
+NDgyMzQ2NzQsMTQ1NjcxODA3MSwtMTYzNzkyMjY1MiwxNTc2OT
+Q1MTQyLC0xMzM0NDYzMDg1LDMxNjQ3NzAwLC0xNTQ5NzE2Nzc0
+XX0=
 -->
