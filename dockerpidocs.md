@@ -108,7 +108,7 @@ Images are at the core of docker, we're going to use a set of them to create our
 
 The first time we launch our stack, the images will be downloaded and cached on our system. Subsequent runs will utilize these downloaded images.
 
-One important note is that not all images available on Docker Hub will be compatible with the Raspberry Pi. An image needs to be created for the specific CPU architecture which you're using, 
+One important note is that not all images available on Docker Hub will be compatible with the Raspberry Pi. An image needs to be created with a compatible CPU architecture, you can usually find either 
 
 
 * [homeassistant/raspberrypi3-homeassistant](https://hub.docker.com/r/homeassistant/raspberrypi3-homeassistant)
@@ -267,8 +267,8 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzMzU2MTc2MiwtMTg2MTMwMjc2MiwtMT
-gwNTQ2ODk1Nyw1MzUzMzQ3NDQsLTM3MDgzNDI0NSwtMTA2NTc2
-Njc5NCwtMTA0ODE3OTI3Niw5MDMwNTI2MTgsMTg1MDI2MDY3My
-wtMTI3NTk5NjcyMiwtMTM5MzI1MjQ0MV19
+eyJoaXN0b3J5IjpbNDU5MDk4MDQxLC0xODYxMzAyNzYyLC0xOD
+A1NDY4OTU3LDUzNTMzNDc0NCwtMzcwODM0MjQ1LC0xMDY1NzY2
+Nzk0LC0xMDQ4MTc5Mjc2LDkwMzA1MjYxOCwxODUwMjYwNjczLC
+0xMjc1OTk2NzIyLC0xMzkzMjUyNDQxXX0=
 -->
