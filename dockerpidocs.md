@@ -203,7 +203,8 @@ docker-compose up -d
 
 
 
-now you should be able to connect to your instance using the standard Ssmb convention
+now you should be able to connect to your instance using the standard SMB convention:
+For win
 
 ```-u "smbuser;badpass" ``` 
 to set your username and password Things that you may want to tweak include this line:
@@ -343,11 +344,11 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0MzAzODczMyw0OTI2MDc5NjMsLTMwNj
-cxNzM0NiwyODE4NjM5MjAsNTE1NDI4NzU5LDEyMTg3ODc5MzEs
-LTE1Mjc0NTEzMTksMTE0MjgzNzM5MiwyMTA1ODQ2MzkwLC05MD
-QyMDkwNjksNTUzNzk0OTc3LDIwNjU0NjU0MDYsMjA2MDA3MTA2
-NywxNTMzNzEyMzYzLC03NDE2Mzc1NDksLTQyNjY0MzEyMCwtNT
-U2MTc2NTgzLC0zOTk5NDM4NjYsNDc1NTQyMjI2LDEzNDczMzE3
-MzNdfQ==
+eyJoaXN0b3J5IjpbLTgzOTg0MzEzNywyMTQzMDM4NzMzLDQ5Mj
+YwNzk2MywtMzA2NzE3MzQ2LDI4MTg2MzkyMCw1MTU0Mjg3NTks
+MTIxODc4NzkzMSwtMTUyNzQ1MTMxOSwxMTQyODM3MzkyLDIxMD
+U4NDYzOTAsLTkwNDIwOTA2OSw1NTM3OTQ5NzcsMjA2NTQ2NTQw
+NiwyMDYwMDcxMDY3LDE1MzM3MTIzNjMsLTc0MTYzNzU0OSwtND
+I2NjQzMTIwLC01NTYxNzY1ODMsLTM5OTk0Mzg2Niw0NzU1NDIy
+MjZdfQ==
 -->
