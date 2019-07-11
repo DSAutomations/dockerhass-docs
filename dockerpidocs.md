@@ -114,10 +114,10 @@ One important note is that not all images available on Docker Hub will be compat
 * [homeassistant/raspberrypi3-homeassistant](https://hub.docker.com/r/homeassistant/raspberrypi3-homeassistant)
 * [jsurf/rpi-mariadb](https://hub.docker.com/r/jsurf/rpi-mariadb)
 * [nodered/node-red-docker](https://hub.docker.com/r/nodered/node-red-docker)
-* [influxdb](https://hub.docker.com/r/influxdb)
+* [influxdb](https://hub.docker.com/_/influxdb)
 * [fg2it/grafana-armhf](https://hub.docker.com/r/fg2it/grafana-armhf)
 * [portainer/portainer](https://hub.docker.com/r/portainer/portainer)
-* [nginx](https://hub.docker.com/r/nginx)
+* [nginx](https://hub.docker.com/_/nginx)
 
 
 # Volumes
@@ -267,8 +267,9 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU5MDk4MDQxLC0xODYxMzAyNzYyLC0xOD
-A1NDY4OTU3LDUzNTMzNDc0NCwtMzcwODM0MjQ1LC0xMDY1NzY2
-Nzk0LC0xMDQ4MTc5Mjc2LDkwMzA1MjYxOCwxODUwMjYwNjczLC
-0xMjc1OTk2NzIyLC0xMzkzMjUyNDQxXX0=
+eyJoaXN0b3J5IjpbMTQxMzc5NzUzNSw0NTkwOTgwNDEsLTE4Nj
+EzMDI3NjIsLTE4MDU0Njg5NTcsNTM1MzM0NzQ0LC0zNzA4MzQy
+NDUsLTEwNjU3NjY3OTQsLTEwNDgxNzkyNzYsOTAzMDUyNjE4LD
+E4NTAyNjA2NzMsLTEyNzU5OTY3MjIsLTEzOTMyNTI0NDFdfQ==
+
 -->
