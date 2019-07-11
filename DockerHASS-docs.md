@@ -12,7 +12,7 @@ Like many others, I saw the popup in HA about python 3.5 depreciation recently, 
 
 No, just kidding, but seriously, Hass.io is essentially this what we're doing here, but with a lot of the hard work already done for you. If you have trouble following this guide, then hass.io is probably the way to go.
 
-However, with that shortcut, you're locking yourself in a box where you'll only be able to use the [hass.io addons](https://www.home-assistant.io/addons/). Manually setting up an 
+However, if you take that shortcut, you're locking yourself in a box where you'll only be able to use the [hass.io addons](https://www.home-assistant.io/addons/). Manually setting up a Docker stack gives us a far greater degree of control and tweakability. 
 
 
 I aim to give you a comprehensive guide for getting the *pictured* environment up and running from scratch, this environment includes the following:
@@ -281,11 +281,11 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTczMDU3NTg0LC0xMjc5NDk5MzUxLC0xMz
-Y4ODU2ODY0LDQ1OTA5ODA0MSwtMTg2MTMwMjc2MiwtMTgwNTQ2
-ODk1Nyw1MzUzMzQ3NDQsLTM3MDgzNDI0NSwtMTA0ODE3OTI3Ni
-wxODUwMjYwNjczLC00OTMxNTYzOTAsNjU4MTAyNDcwLC0xMjQ4
-MjM0Njc0LDE0NTY3MTgwNzEsLTE2Mzc5MjI2NTIsMTU3Njk0NT
-E0MiwtMTMzNDQ2MzA4NSwzMTY0NzcwMCwtMTU0OTcxNjc3NF19
-
+eyJoaXN0b3J5IjpbLTE0MTEwNjU0NjIsLTEyNzk0OTkzNTEsLT
+EzNjg4NTY4NjQsNDU5MDk4MDQxLC0xODYxMzAyNzYyLC0xODA1
+NDY4OTU3LDUzNTMzNDc0NCwtMzcwODM0MjQ1LC0xMDQ4MTc5Mj
+c2LDE4NTAyNjA2NzMsLTQ5MzE1NjM5MCw2NTgxMDI0NzAsLTEy
+NDgyMzQ2NzQsMTQ1NjcxODA3MSwtMTYzNzkyMjY1MiwxNTc2OT
+Q1MTQyLC0xMzM0NDYzMDg1LDMxNjQ3NzAwLC0xNTQ5NzE2Nzc0
+XX0=
 -->
