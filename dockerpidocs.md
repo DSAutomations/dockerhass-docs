@@ -116,8 +116,9 @@ One important note is that not all images available on Docker Hub will be compat
 * [portainer/portainer](https://hub.docker.com/r/portainer/portainer)
 * [nginx](https://hub.docker.com//nginx)
 ### Tags
-To get the desired version of a container, you may need to append a tag to it. The standard syntax is *`imagename:tag`*
-tags
+To get the desired version of a container, you may need to append a tag to it. The standard syntax is *`i<ImagenName:t>:<Tag>`*
+tags .
+
 
 # Volumes
 Docker containers are ephemeral. In short, we can start up a container and do work with it, but when it's shut down any data contained within will be lost. We can gain persistence between sessions by mounting volumes which will link directories outside the docker containers to directories within.
@@ -266,7 +267,7 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5MzgxOTI5NCwxOTIyMjY0NTA4LDQ1OT
+eyJoaXN0b3J5IjpbMTYxMjgwNjgzMywxNjkzODE5Mjk0LDQ1OT
 A5ODA0MSwtMTg2MTMwMjc2MiwtMTgwNTQ2ODk1Nyw1MzUzMzQ3
 NDQsLTM3MDgzNDI0NSwtMTA2NTc2Njc5NCwtMTA0ODE3OTI3Ni
 w5MDMwNTI2MTgsMTg1MDI2MDY3MywtMTI3NTk5NjcyMiwtMTM5
