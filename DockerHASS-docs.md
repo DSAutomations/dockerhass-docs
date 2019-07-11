@@ -155,7 +155,7 @@ mkdir /srv/docker/portainer
 mkdir /srv/docker/nginx/config
 mkdir /srv/docker/nginx/ssl
 ```
-
+## Optional: Setup Samba
 
 
 
@@ -285,7 +285,7 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0MTkzMTI3MiwtNDI2NjQzMTIwLC0zOT
+eyJoaXN0b3J5IjpbLTc0MTYzNzU0OSwtNDI2NjQzMTIwLC0zOT
 k5NDM4NjYsLTEyNzk0OTkzNTEsLTEzNjg4NTY4NjQsNDU5MDk4
 MDQxLC0xODYxMzAyNzYyLC0xODA1NDY4OTU3LDUzNTMzNDc0NC
 wtMzcwODM0MjQ1LC0xMDQ4MTc5Mjc2LDE4NTAyNjA2NzMsLTQ5
