@@ -116,8 +116,7 @@ One important note is that not all images available on Docker Hub will be compat
 * [portainer/portainer](https://hub.docker.com/r/portainer/portainer)
 * [nginx](https://hub.docker.com//nginx)
 ### Tags
-To get the desired version of a container, you may need to append a tag to it. The standard syntax is *`i<ImagenName:t>:<Tag>`*
-tags .
+To get the desired version of a container, you may need to append a tag to it. The standard syntax is *`<ImageName>:<Tag>`*. Here is the list of both images and*
 
 
 # Volumes
@@ -267,9 +266,9 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxMjgwNjgzMywxNjkzODE5Mjk0LDQ1OT
-A5ODA0MSwtMTg2MTMwMjc2MiwtMTgwNTQ2ODk1Nyw1MzUzMzQ3
-NDQsLTM3MDgzNDI0NSwtMTA2NTc2Njc5NCwtMTA0ODE3OTI3Ni
-w5MDMwNTI2MTgsMTg1MDI2MDY3MywtMTI3NTk5NjcyMiwtMTM5
-MzI1MjQ0MV19
+eyJoaXN0b3J5IjpbNTU2NTc1NjUxLDE2OTM4MTkyOTQsNDU5MD
+k4MDQxLC0xODYxMzAyNzYyLC0xODA1NDY4OTU3LDUzNTMzNDc0
+NCwtMzcwODM0MjQ1LC0xMDY1NzY2Nzk0LC0xMDQ4MTc5Mjc2LD
+kwMzA1MjYxOCwxODUwMjYwNjczLC0xMjc1OTk2NzIyLC0xMzkz
+MjUyNDQxXX0=
 -->
