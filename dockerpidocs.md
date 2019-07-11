@@ -192,7 +192,7 @@ services:
       - 'GROUPID=996'
       - 'TZ=America/New_York'
 ```
-Change `badpass
+Change `badpass` to something else
 
 Save the file by pressing  `Ctrl-o` then exit with `Ctrl-x`.
 Make sure that you're in the `samba-server` directory and bring up the container:
@@ -345,7 +345,7 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyODE4NDI3OSwxNzA3MDgxMzEwLC0xOD
+eyJoaXN0b3J5IjpbLTQ5MDYxMzYxNSwxNzA3MDgxMzEwLC0xOD
 E4MzU2OTQ3LDIxNDMwMzg3MzMsNDkyNjA3OTYzLC0zMDY3MTcz
 NDYsMjgxODYzOTIwLDUxNTQyODc1OSwxMjE4Nzg3OTMxLC0xNT
 I3NDUxMzE5LDExNDI4MzczOTIsMjEwNTg0NjM5MCwtOTA0MjA5
