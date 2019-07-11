@@ -8,7 +8,7 @@ When I first deployed my setup, Hass.io was only in its infancy, however the has
 
 Ultimately, I've built some awesome features and automatons that my family and myseld enjoys, but the Raspberry Ppi has become a veritable house of cards. Along with homeassistant, I've installed all sorts of goodies for development, and integration. Nginx, pihole, mosquitto, apcupsd, certbot, awscli, samba, git, and the list goes on.
 
-Like many others, I saw the popup in HA about python 3.5 depreciation recently, and through sweat and tears, managed to rebuild a new venv and get Homeassistant running in it without the warning. However, this came at the cost of a dramatic performance hit in the recorder component. I'm a big fan of graphs on my front end, and now they're all taking twice as long to load. Not sure where I went wrong, but one thing that I am sure about is that there is a better way, install hass.io...
+Like many others, I saw the popup in HA about python 3.5 depreciation recently, and through sweat and tears, managed to rebuild a new venv and get Homeassistant running in it without the warning. However, this came at the cost of a dramatic performance hit in the recorder component. I'm a big fan of graphs on my front end, and now they're all taking twice as long to load. Not sure where I went wrong, but one thing that I am sure about is that there is a better way, install hass.io... 
 
 No, just kidding, but seriously, Hass.io is essentially this what we're doing here, but with a lot of the hard work already done for you. However, with that shortcut, you're locking yourself in a box where you'll olny be able to use the [hass.io addons](https://www.home-assistant.io/addons/)
 
@@ -278,10 +278,10 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4MDgzMjE1OSwtMTI3OTQ5OTM1MSwtMT
-M2ODg1Njg2NCw1MDM4MTUxODAsMTY5MzgxOTI5NCw0NTkwOTgw
-NDEsLTE4NjEzMDI3NjIsLTE4MDU0Njg5NTcsNTM1MzM0NzQ0LC
-0zNzA4MzQyNDUsLTEwNjU3NjY3OTQsLTEwNDgxNzkyNzYsOTAz
-MDUyNjE4LDE4NTAyNjA2NzMsLTEyNzU5OTY3MjIsLTEzOTMyNT
-I0NDFdfQ==
+eyJoaXN0b3J5IjpbNjkzMDYwOTk5LDE3ODA4MzIxNTksLTEyNz
+k0OTkzNTEsLTEzNjg4NTY4NjQsNTAzODE1MTgwLDE2OTM4MTky
+OTQsNDU5MDk4MDQxLC0xODYxMzAyNzYyLC0xODA1NDY4OTU3LD
+UzNTMzNDc0NCwtMzcwODM0MjQ1LC0xMDY1NzY2Nzk0LC0xMDQ4
+MTc5Mjc2LDkwMzA1MjYxOCwxODUwMjYwNjczLC0xMjc1OTk2Nz
+IyLC0xMzkzMjUyNDQxXX0=
 -->
