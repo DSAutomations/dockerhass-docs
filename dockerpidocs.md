@@ -108,7 +108,7 @@ Images are at the core of docker, we're going to use a set of them to create our
 
 The first time we launch our stack, the images will be downloaded and cached on our system. Subsequent runs will utilize these downloaded images.
 
-One important note is that not all images available on Docker Hub will be compatible with the Raspberry Pi. An image needs to be created with a compatible CPU architecture. Here are the images we will be using that are compatible with my Raspberry Pi 3b:
+One important note is that not all images available on Docker Hub will be compatible with the Raspberry Pi. An image needs to be created with a compatible CPU architecture. Here are the images we will be using. I've found these to be reasonably popular  compatible with my Raspberry Pi 3b:
 
 * [homeassistant/raspberrypi3-homeassistant](https://hub.docker.com/r/homeassistant/raspberrypi3-homeassistant)
 * [jsurf/rpi-mariadb](https://hub.docker.com/r/jsurf/rpi-mariadb)
@@ -120,8 +120,14 @@ One important note is that not all images available on Docker Hub will be compat
 
 ### Tags
 To get the desired version of a container, you may need to append a tag to it. The standard syntax is *`<ImageName>:<Tag>`.* 
-Here is the list of both images ** 
-
+Here is the list of both images *and* tags that we will deploy: 
+* homeassistant/raspberrypi3-homeassistant
+* jsurf/rpi-mariadb:latest
+* nodered/node-red-docker:rpi-v8
+* influxdb:latest
+* fg2it/grafana-armhf:v5.0.4
+* portainer/portainer
+* nginx
 # Volumes
 Docker containers are ephemeral. In short, we can start up a container and do work with it, but when it's shut down any data contained within will be lost. We can gain persistence between sessions by mounting volumes which will link directories outside the docker containers to directories within.
 
@@ -269,7 +275,7 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzExMDgxMDUsMTY5MzgxOTI5NCw0NTkwOT
+eyJoaXN0b3J5IjpbNTUwODMyMTcsMTY5MzgxOTI5NCw0NTkwOT
 gwNDEsLTE4NjEzMDI3NjIsLTE4MDU0Njg5NTcsNTM1MzM0NzQ0
 LC0zNzA4MzQyNDUsLTEwNjU3NjY3OTQsLTEwNDgxNzkyNzYsOT
 AzMDUyNjE4LDE4NTAyNjA2NzMsLTEyNzU5OTY3MjIsLTEzOTMy
