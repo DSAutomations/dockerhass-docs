@@ -161,12 +161,22 @@ mkdir /srv/docker/nginx/ssl
 You can do all of your config file creation and editing at the command line if you want, however this can be a bit cumbersome. It would help to be able to directly access your config files from your local PC, let's get Samba up and running to provide this service to us.
 
 
-To make things a bit easier, let's get Samba up and running Create a new folder in your home directory and create a file inside called `docker-compose.yml` 
+Create a new folder in your home directory and create a file inside called `docker-compose.yml` 
 
 ```
 mkdir ~/samba-server
 nano ~/samba-server/docker-compose.yml
 ```
+Put the following into the 
+
+
+
+
+
+
+
+
+
 
 If you're like me and you keep your Homeassistant config on GitHub, now would be the time to clone your repository:
 ```
@@ -294,7 +304,7 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5MjQwMjYyNiwxNTMzNzEyMzYzLC03ND
+eyJoaXN0b3J5IjpbMjA2MDA3MTA2NywxNTMzNzEyMzYzLC03ND
 E2Mzc1NDksLTQyNjY0MzEyMCwtNTU2MTc2NTgzLC0zOTk5NDM4
 NjYsNDc1NTQyMjI2LDEzNDczMzE3MzMsNjkzMDYwOTk5LC0xMj
 c5NDk5MzUxLC0xMzY4ODU2ODY0LDUwMzgxNTE4MCwxNjkzODE5
