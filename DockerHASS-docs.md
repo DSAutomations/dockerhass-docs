@@ -14,7 +14,7 @@ No, just kidding, but seriously, Hass.io is essentially this what we're doing he
 
 However, if you take or understan
 
-over with that shortcut, you're locking yourself in a box where you'll only be able to use the [hass.io addons](https://www.home-assistant.io/addons/). Manually setting up a Docker stack gives us a far greater degree of control and tweakability. For example, if you wish to setup your homeassistant front end alongside other https services
+over with that shortcut, you're locking yourself in a box where you'll only be able to use the [hass.io addons](https://www.home-assistant.io/addons/). Manually setting up a Docker stack gives us a far greater degree of control and tweakability. 
 
 
 I aim to give you a comprehensive guide for getting the *pictured* environment up and running from scratch, this environment includes the following:
@@ -283,7 +283,7 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4MDE2NjM5NCwtMTI3OTQ5OTM1MSwtMT
+eyJoaXN0b3J5IjpbLTUyNjQyOTE0MywtMTI3OTQ5OTM1MSwtMT
 M2ODg1Njg2NCw0NTkwOTgwNDEsLTE4NjEzMDI3NjIsLTE4MDU0
 Njg5NTcsNTM1MzM0NzQ0LC0zNzA4MzQyNDUsLTEwNDgxNzkyNz
 YsMTg1MDI2MDY3MywtNDkzMTU2MzkwLDY1ODEwMjQ3MCwtMTI0
