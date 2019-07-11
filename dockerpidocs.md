@@ -185,9 +185,9 @@ services:
       - /srv/docker:/srv/docker
       - /home/pi:/home/pi
     command: > 
-      -u "s" 
-      -s "docker;/srv/docker;yes;no;no;dylan" 
-      -s "docker-home;/home/pi/;yes;no;no;dylan"
+      -u "smbuser;badpassword" 
+      -s "docker;/srv/docker;yes;no;no;smbuser" 
+      -s "docker-home;/home/pi/;yes;no;no;smbuser"
     environment:
       - 'USERID=1000'
       - 'GROUPID=996'
@@ -330,7 +330,7 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzY0MDk5NywtOTA0MjA5MDY5LDU1Mz
+eyJoaXN0b3J5IjpbMjEwNTg0NjM5MCwtOTA0MjA5MDY5LDU1Mz
 c5NDk3NywyMDY1NDY1NDA2LDIwNjAwNzEwNjcsMTUzMzcxMjM2
 MywtNzQxNjM3NTQ5LC00MjY2NDMxMjAsLTU1NjE3NjU4MywtMz
 k5OTQzODY2LDQ3NTU0MjIyNiwxMzQ3MzMxNzMzLDY5MzA2MDk5
