@@ -108,16 +108,19 @@ Images are at the core of docker, we're going to use a set of them to create our
 
 The first time we launch our stack, the images will be downloaded and cached on our system. Subsequent runs will utilize these downloaded images.
 
-One important note is that not all images available on Docker Hub will be compatible with the Raspberry Pi. An image needs to be created with a compatible CPU architecture. Here are the images we will be using that are compatible with my Raspberry Pi * [homeassistant/raspberrypi3-homeassistant](https://hub.docker.com/r/homeassistant/raspberrypi3-homeassistant)
+One important note is that not all images available on Docker Hub will be compatible with the Raspberry Pi. An image needs to be created with a compatible CPU architecture. Here are the images we will be using that are compatible with my Raspberry Pi 3b:
+
+* [homeassistant/raspberrypi3-homeassistant](https://hub.docker.com/r/homeassistant/raspberrypi3-homeassistant)
 * [jsurf/rpi-mariadb](https://hub.docker.com/r/jsurf/rpi-mariadb)
 * [nodered/node-red-docker](https://hub.docker.com/r/nodered/node-red-docker)
 * [influxdb](https://hub.docker.com//influxdb)
 * [fg2it/grafana-armhf](https://hub.docker.com/r/fg2it/grafana-armhf)
 * [portainer/portainer](https://hub.docker.com/r/portainer/portainer)
 * [nginx](https://hub.docker.com//nginx)
-### Tags
-To get the desired version of a container, you may need to append a tag to it. The standard syntax is *`<ImageName>:<Tag>`*. Here is the list of both images and*
 
+### Tags
+To get the desired version of a container, you may need to append a tag to it. The standard syntax is *`<ImageName>:<Tag>`.* 
+Here is the list of both images ** 
 
 # Volumes
 Docker containers are ephemeral. In short, we can start up a container and do work with it, but when it's shut down any data contained within will be lost. We can gain persistence between sessions by mounting volumes which will link directories outside the docker containers to directories within.
@@ -266,10 +269,10 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTU2NTc1NjUxLDQ1OTA5ODA0MSwtMTg2MT
-MwMjc2MiwtMTgwNTQ2ODk1Nyw1MzUzMzQ3NDQsLTM3MDgzNDI0
-NSwtMTA0ODE3OTI3NiwxODUwMjYwNjczLC00OTMxNTYzOTAsNj
-U4MTAyNDcwLC0xMjQ4MjM0Njc0LDE0NTY3MTgwNzEsLTE2Mzc5
-MjI2NTIsMTU3Njk0NTE0MiwtMTMzNDQ2MzA4NSwzMTY0NzcwMC
-wtMTU0OTcxNjc3NF19
+eyJoaXN0b3J5IjpbNzExMDgxMDUsNDU5MDk4MDQxLC0xODYxMz
+AyNzYyLC0xODA1NDY4OTU3LDUzNTMzNDc0NCwtMzcwODM0MjQ1
+LC0xMDQ4MTc5Mjc2LDE4NTAyNjA2NzMsLTQ5MzE1NjM5MCw2NT
+gxMDI0NzAsLTEyNDgyMzQ2NzQsMTQ1NjcxODA3MSwtMTYzNzky
+MjY1MiwxNTc2OTQ1MTQyLC0xMzM0NDYzMDg1LDMxNjQ3NzAwLC
+0xNTQ5NzE2Nzc0XX0=
 -->
