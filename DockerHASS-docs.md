@@ -128,7 +128,11 @@ If you're like me and you keep your Homeassistant config on GitHub, now would be
 sudo apt install git
 git clone https://github.com/DSAutomations/HomeAssistantConfig.git /srv/docker/homeassistant
 ```
-Otherwise, copy your config into the homeassistant directory we just created. 
+Otherwise, copy your config into the homeassistant directory we just created. If you're brand new to homeassistant and don't yet have a config, create a file called `configuration.yaml` in `/srv/docker/homeassistant` and add the following:
+```
+homeassistant:
+	default_config:
+```
 
 
      - /srv/docker/HomeAssistantConfig:/config
@@ -223,7 +227,7 @@ services:
      - 443:443
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDgyMzQ2NzQsMTQ1NjcxODA3MSwtMT
-YzNzkyMjY1MiwxNTc2OTQ1MTQyLC0xMzM0NDYzMDg1LDMxNjQ3
-NzAwLC0xNTQ5NzE2Nzc0XX0=
+eyJoaXN0b3J5IjpbMTk2NjEyNTkyMywtMTI0ODIzNDY3NCwxND
+U2NzE4MDcxLC0xNjM3OTIyNjUyLDE1NzY5NDUxNDIsLTEzMzQ0
+NjMwODUsMzE2NDc3MDAsLTE1NDk3MTY3NzRdfQ==
 -->
