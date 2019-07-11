@@ -2,7 +2,9 @@
 
 
 # Overview
-Years ago as a new homeowner, I was starting my home automation journey. With an with an eye on the budget, I was drawn into the Home Assistant community. I found the do-it-yourself approach favorable to being locked into commercial cloud ecosystem. I opted to host HA on a Raspberry Pi 3b, on my Ubiquiti network consisting of an EdgeRouterX and Unifi access points. 
+Years ago as a new homeowner, I was starting my home automation journey. With an with an eye on the budget, I was drawn into the Home Assistant community. I found the do-it-yourself approach favorable to being locked into commercial cloud ecosystem. Before I knew it, I had
+
+I opted to host HA  a Raspberry Pi 3b, on my Ubiquiti network consisting of an EdgeRouterX and Unifi access points. 
 
 When I first deployed my setup, I avoided Hass.io because it was only in its infancy at that point, however the hassbian image seemed to be a reasonable option. Time went on, and I threw a few hours into development every week and I was always upgrading, adding on, and exploring new integrations. 
 
@@ -249,5 +251,5 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5MzE1NjM5MF19
+eyJoaXN0b3J5IjpbMTYwODU3ODddfQ==
 -->
