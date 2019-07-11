@@ -12,13 +12,13 @@ Like many others, I started seeing the message about python 3.5 depreciation rec
 
 I aim to give you a comprehensive guide for getting the *pictured* environment up and running from scratch, this environment includes the following:
 * **Homeassistant**
-* **Nginx** *front End ** *for serving http securely*
+* **Nginx** *front end for serving http securely*
 * **Mosquitto MQTT** *for more features than the built in broker*
 * **MariaDB** *to replace the built-in DB for better performance*
 * **InfluxDB** *to efficiently capture time-series data*
-* **Grafana** *for more robust graphing and dashboards*capture sensor data to feed ana
+* **Grafana** *for more robust graphing and dashboards*
 * **Node Red** *for flow-based automations*
-* **Portainer
+* **Portainer** **
 
 # Getting Started
 We're starting from the ground up. I'm using a Raspberry Pi 3b. Let's grab the latest [Raspbian Strech Lite](https://downloads.raspberrypi.org/raspbian_lite/images/raspbian_lite-2019-04-09/) and flash it to an SD card using an app like [etcher](https://www.balena.io/etcher/). 
@@ -250,6 +250,6 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTc5MjUwMzUsLTEyNzU5OTY3MjIsLT
-EzOTMyNTI0NDFdfQ==
+eyJoaXN0b3J5IjpbOTcxODkwNDM2LC0xMjc1OTk2NzIyLC0xMz
+kzMjUyNDQxXX0=
 -->
