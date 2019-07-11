@@ -193,7 +193,12 @@ services:
       - 'GROUPID=996'
       - 'TZ=America/New_York'
 ```
-save the file by pressing  `Ctrl-o` then exit with `Ctrl-x`
+Save the file by pressing  `Ctrl-o` then exit with `Ctrl-x`.
+Make sure that you're in the `samba-server` directory and bring up the container
+
+
+
+
 
 now you should be able to connect to 
 
@@ -335,11 +340,11 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5ODA2MDU5MywtMTUyNzQ1MTMxOSwxMT
-QyODM3MzkyLDIxMDU4NDYzOTAsNTUzNzk0OTc3LDIwNjAwNzEw
-NjcsLTc0MTYzNzU0OSwtNDI2NjQzMTIwLC0zOTk5NDM4NjYsLT
-EyNzk0OTkzNTEsLTEzNjg4NTY4NjQsNDU5MDk4MDQxLC0xODYx
-MzAyNzYyLC0xODA1NDY4OTU3LDUzNTMzNDc0NCwtMzcwODM0Mj
-Q1LC0xMDQ4MTc5Mjc2LDE4NTAyNjA2NzMsLTQ5MzE1NjM5MCw2
-NTgxMDI0NzBdfQ==
+eyJoaXN0b3J5IjpbMzE3ODc4MzMsLTE1Mjc0NTEzMTksMTE0Mj
+gzNzM5MiwyMTA1ODQ2MzkwLDU1Mzc5NDk3NywyMDYwMDcxMDY3
+LC03NDE2Mzc1NDksLTQyNjY0MzEyMCwtMzk5OTQzODY2LC0xMj
+c5NDk5MzUxLC0xMzY4ODU2ODY0LDQ1OTA5ODA0MSwtMTg2MTMw
+Mjc2MiwtMTgwNTQ2ODk1Nyw1MzUzMzQ3NDQsLTM3MDgzNDI0NS
+wtMTA0ODE3OTI3NiwxODUwMjYwNjczLC00OTMxNTYzOTAsNjU4
+MTAyNDcwXX0=
 -->
