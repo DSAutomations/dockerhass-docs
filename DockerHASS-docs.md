@@ -2,19 +2,17 @@
 
 
 # Overview
-Years ago as a new homeowner, I was starting my home automation journey. With an with an eye on the budget, I was drawn into the Home Assistant community. I found the do-it-yourself approach favorable to being locked into commercial cloud ecosystem. Before I knew it, I had
+Years ago as a new homeowner, I was starting my home automation journey. With an with an eye on the budget, I was drawn into the Home Assistant community. I found the do-it-yourself approach favorable to being locked into commercial cloud ecosystem. Before I knew it, I had a Raspberry Pi 3b, on my Ubiquiti network consisting of an EdgeRouterX and Unifi access points. 
 
-I opted to host HA o a Raspberry Pi 3b, on my Ubiquiti network consisting of an EdgeRouterX and Unifi access points. 
+When I first deployed my setup, I avoided Hass.io because it was only in its infancy at that point, however the hassbian image seemed to be a reasonable option. Time went on, I threw a few hours into development every week and I was always upgrading, adding on, and exploring new integrations. 
 
-When I first deployed my setup, I avoided Hass.io because it was only in its infancy at that point, however the hassbian image seemed to be a reasonable option. Time went on, and I threw a few hours into development every week and I was always upgrading, adding on, and exploring new integrations. 
-
-Ultimately, I've built some awesome features and automatons that my family enjoys, but the Raspberry pi has become a veritable house of cards. Along with homeassistant, I've installed all sorts of goodies for development, and integration. Nginx, pihole, mosquitto, apcupsd, certbot, awscli, samba, git, and the list goes on.
+Ultimately, I've built some awesome features and automatons that my family and myseld enjoy, but the Raspberry Pi has become a veritable house of cards. Along with homeassistant, I've installed all sorts of goodies for development, and integration. Nginx, pihole, mosquitto, apcupsd, certbot, awscli, samba, git, and the list goes on.
 
 Like many others, I started seeing the message about python 3.5 depreciation recently, and through sweat and tears, managed to rebuild a new venv and get Homeassistant running in it without the warning. However, this came at the cost of a dramatic performance hit in the recorder component. I'm a big fan of graphs on my front end, and now they're all taking twice as long to load. Not sure where I went wrong, but one thing that I am sure about is that there is a better way, let's go...
 
 I aim to give you a comprehensive guide for getting the *pictured* environment up and running from scratch, this environment includes the following:
 * Homeassistant
-* Nginx Front End 
+* Nginx Front End *fr
 * Mosquitto MQTT
 * MariaDB & InfluxDB Back End
 * Grafana
@@ -251,7 +249,7 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5MDczNTgyNiwtNDkzMTU2MzkwLDY1OD
+eyJoaXN0b3J5IjpbMTA1MzkwOTQ2NSwtNDkzMTU2MzkwLDY1OD
 EwMjQ3MCwtMTI0ODIzNDY3NCwxNDU2NzE4MDcxLC0xNjM3OTIy
 NjUyLDE1NzY5NDUxNDIsLTEzMzQ0NjMwODUsMzE2NDc3MDAsLT
 E1NDk3MTY3NzRdfQ==
