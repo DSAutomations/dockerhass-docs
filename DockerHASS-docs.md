@@ -227,8 +227,11 @@ services:
      - 8080:80
      - 443:443
 ```
+
+# Setup Samba
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjk2OTczNCwtMTI0ODIzNDY3NCwxND
+eyJoaXN0b3J5IjpbMTcyNDUzOTUwMiwtMTI0ODIzNDY3NCwxND
 U2NzE4MDcxLC0xNjM3OTIyNjUyLDE1NzY5NDUxNDIsLTEzMzQ0
 NjMwODUsMzE2NDc3MDAsLTE1NDk3MTY3NzRdfQ==
 -->
