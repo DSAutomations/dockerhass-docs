@@ -203,7 +203,8 @@ docker-compose up -d
 
 
 
-now you should be able to connect to your instance using the standard SMB convention: `\\<hostname/IP>\docker-config` or `smb://<hostname/IP>/`
+now you should be able to connect to your instance using the standard SMB convention: 
+`\\hostname\docker-config` or `smb://hostname/docker-config`
 
 
 ```-u "smbuser;badpass" ``` 
@@ -344,7 +345,7 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxNjE2NTI1NSwtMTgxODM1Njk0NywyMT
+eyJoaXN0b3J5IjpbMjA1OTI1NzgyMiwtMTgxODM1Njk0NywyMT
 QzMDM4NzMzLDQ5MjYwNzk2MywtMzA2NzE3MzQ2LDI4MTg2Mzky
 MCw1MTU0Mjg3NTksMTIxODc4NzkzMSwtMTUyNzQ1MTMxOSwxMT
 QyODM3MzkyLDIxMDU4NDYzOTAsLTkwNDIwOTA2OSw1NTM3OTQ5
