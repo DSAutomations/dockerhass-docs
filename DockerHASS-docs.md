@@ -108,7 +108,7 @@ Images are at the core of docker, we're going to use a set of them to create our
 
 The first time we launch our stack, the images will be downloaded and cached on our system. Subsequent runs will utilize these downloaded images.
 
-One important note is that not all images available on Docker Hub will be compatible with the Raspberry Pi. An image needs to be created with a compatible CPU architecture. Here are the images we will be using. I've found these to be reasonably popula compatible with my Raspberry Pi 3b:
+One important note is that not all images available on Docker Hub will be compatible with the Raspberry Pi. An image needs to be created with a compatible CPU architecture. Here are the images we will be using. I've found these to be reasonably popular images which are compatible with my Raspberry Pi 3b:
 
 * [homeassistant/raspberrypi3-homeassistant](https://hub.docker.com/r/homeassistant/raspberrypi3-homeassistant)
 * [jsurf/rpi-mariadb](https://hub.docker.com/r/jsurf/rpi-mariadb)
@@ -275,10 +275,10 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0MDI2MjU5MSw0NTkwOTgwNDEsLTE4Nj
-EzMDI3NjIsLTE4MDU0Njg5NTcsNTM1MzM0NzQ0LC0zNzA4MzQy
-NDUsLTEwNDgxNzkyNzYsMTg1MDI2MDY3MywtNDkzMTU2MzkwLD
-Y1ODEwMjQ3MCwtMTI0ODIzNDY3NCwxNDU2NzE4MDcxLC0xNjM3
-OTIyNjUyLDE1NzY5NDUxNDIsLTEzMzQ0NjMwODUsMzE2NDc3MD
-AsLTE1NDk3MTY3NzRdfQ==
+eyJoaXN0b3J5IjpbMzAyNzE1NTI4LDQ1OTA5ODA0MSwtMTg2MT
+MwMjc2MiwtMTgwNTQ2ODk1Nyw1MzUzMzQ3NDQsLTM3MDgzNDI0
+NSwtMTA0ODE3OTI3NiwxODUwMjYwNjczLC00OTMxNTYzOTAsNj
+U4MTAyNDcwLC0xMjQ4MjM0Njc0LDE0NTY3MTgwNzEsLTE2Mzc5
+MjI2NTIsMTU3Njk0NTE0MiwtMTMzNDQ2MzA4NSwzMTY0NzcwMC
+wtMTU0OTcxNjc3NF19
 -->
