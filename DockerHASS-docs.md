@@ -70,7 +70,7 @@ Use the raspbian config script to set the hostname and password on your device:
 ```
 sudo raspi-config
 ```
-All of the following packagesare required to get Docker and docker-compose installed:
+All of the following packages are required to get Docker and docker-compose installed:
 ```
 sudo apt-get install apt-transport-https \
                       ca-certificates \
@@ -82,7 +82,7 @@ sudo apt-get install apt-transport-https \
                       python-dev \
                       python-pip -y
 ```
-Next let's add a repository for us to pull the latest docker packages from, and we'll make it so that packages signed by the docker project are permitted to run.
+Next let's add a repository for us to pull the latest docker packages from, and alos, we'll make it so that packages signed by the docker project are permitted to run.
 ```
 echo "deb https://download.docker.com/linux/raspbian/ stretch stable" | sudo tee -a /etc/apt/sources.list
 curl -fsSL https://yum.dockerproject.org/gpg | sudo apt-key add -
@@ -249,7 +249,8 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU4MTAyNDcwLC0xMjQ4MjM0Njc0LDE0NT
-Y3MTgwNzEsLTE2Mzc5MjI2NTIsMTU3Njk0NTE0MiwtMTMzNDQ2
-MzA4NSwzMTY0NzcwMCwtMTU0OTcxNjc3NF19
+eyJoaXN0b3J5IjpbLTE4ODMzNDUzNTcsNjU4MTAyNDcwLC0xMj
+Q4MjM0Njc0LDE0NTY3MTgwNzEsLTE2Mzc5MjI2NTIsMTU3Njk0
+NTE0MiwtMTMzNDQ2MzA4NSwzMTY0NzcwMCwtMTU0OTcxNjc3NF
+19
 -->
