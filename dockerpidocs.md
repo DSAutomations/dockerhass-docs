@@ -116,7 +116,9 @@ One important note is that not all images available on Docker Hub will be compat
 * [fg2it/grafana-armhf](https://hub.docker.com/r/fg2it/grafana-armhf)
 * [portainer/portainer](https://hub.docker.com/r/portainer/portainer)
 * [nginx](https://hub.docker.com/_/nginx)
-### tags
+### Tags
+To get the desired version of a container, you may need to append a tag to it. The standars syntax
+
 
 # Volumes
 Docker containers are ephemeral. In short, we can start up a container and do work with it, but when it's shut down any data contained within will be lost. We can gain persistence between sessions by mounting volumes which will link directories outside the docker containers to directories within.
@@ -265,7 +267,7 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyODIyODg1NCw0NTkwOTgwNDEsLTE4Nj
+eyJoaXN0b3J5IjpbMTA5MzcwOTY5MSw0NTkwOTgwNDEsLTE4Nj
 EzMDI3NjIsLTE4MDU0Njg5NTcsNTM1MzM0NzQ0LC0zNzA4MzQy
 NDUsLTEwNjU3NjY3OTQsLTEwNDgxNzkyNzYsOTAzMDUyNjE4LD
 E4NTAyNjA2NzMsLTEyNzU5OTY3MjIsLTEzOTMyNTI0NDFdfQ==
