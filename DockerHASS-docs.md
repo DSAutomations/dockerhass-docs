@@ -108,7 +108,7 @@ sudo pip install docker-compose
 
 The first time we launch our stack, the images will be downloaded and cached on our system. Subsequent runs will utilize these downloaded images unless the image gets updated, in which case the newest will be downloaded.
 
-,
+One important note is that not all images available will be compatible with the Raspberry Pi.
 
 # Volumes
 Docker containers are ephemeral. In short, we can start up a container and do work with it, but when it's shut down any data contained within will be lost. We can gain persistence between sessions by mounting volumes which will link directories outside the docker containers to directories within.
@@ -257,9 +257,9 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTM1MzM0NzQ0LC0zNzA4MzQyNDUsLTEwND
-gxNzkyNzYsMTg1MDI2MDY3MywtNDkzMTU2MzkwLDY1ODEwMjQ3
-MCwtMTI0ODIzNDY3NCwxNDU2NzE4MDcxLC0xNjM3OTIyNjUyLD
-E1NzY5NDUxNDIsLTEzMzQ0NjMwODUsMzE2NDc3MDAsLTE1NDk3
-MTY3NzRdfQ==
+eyJoaXN0b3J5IjpbLTYyMzE2NjE3MSw1MzUzMzQ3NDQsLTM3MD
+gzNDI0NSwtMTA0ODE3OTI3NiwxODUwMjYwNjczLC00OTMxNTYz
+OTAsNjU4MTAyNDcwLC0xMjQ4MjM0Njc0LDE0NTY3MTgwNzEsLT
+E2Mzc5MjI2NTIsMTU3Njk0NTE0MiwtMTMzNDQ2MzA4NSwzMTY0
+NzcwMCwtMTU0OTcxNjc3NF19
 -->
