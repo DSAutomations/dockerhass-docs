@@ -199,11 +199,8 @@ cd ~/samba-server
 docker-compose up -d
 ```
 
-
-
-
-
 You should now you should be able to connect to your instance using the standard SMB convention: 
+
 `\\hostname\docker-config` or `smb://hostname/docker-config`
 
 
@@ -212,7 +209,7 @@ to set your username and password Things that you may want to tweak include this
 ```-u "smbuser;badpass" ```
 
 
-
+#
 
 
 
@@ -345,11 +342,11 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyMzQxMDU4MCwtMTgxODM1Njk0Nyw0OT
-I2MDc5NjMsLTMwNjcxNzM0NiwyODE4NjM5MjAsLTE1Mjc0NTEz
-MTksMTE0MjgzNzM5MiwyMTA1ODQ2MzkwLDU1Mzc5NDk3NywyMD
-YwMDcxMDY3LC03NDE2Mzc1NDksLTQyNjY0MzEyMCwtMzk5OTQz
-ODY2LC0xMjc5NDk5MzUxLC0xMzY4ODU2ODY0LDQ1OTA5ODA0MS
-wtMTg2MTMwMjc2MiwtMTgwNTQ2ODk1Nyw1MzUzMzQ3NDQsLTM3
-MDgzNDI0NV19
+eyJoaXN0b3J5IjpbLTE4NTA3NDc3OTMsLTE4MTgzNTY5NDcsND
+kyNjA3OTYzLC0zMDY3MTczNDYsMjgxODYzOTIwLC0xNTI3NDUx
+MzE5LDExNDI4MzczOTIsMjEwNTg0NjM5MCw1NTM3OTQ5NzcsMj
+A2MDA3MTA2NywtNzQxNjM3NTQ5LC00MjY2NDMxMjAsLTM5OTk0
+Mzg2NiwtMTI3OTQ5OTM1MSwtMTM2ODg1Njg2NCw0NTkwOTgwND
+EsLTE4NjEzMDI3NjIsLTE4MDU0Njg5NTcsNTM1MzM0NzQ0LC0z
+NzA4MzQyNDVdfQ==
 -->
