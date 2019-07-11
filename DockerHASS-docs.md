@@ -15,8 +15,8 @@ I aim to give you a comprehensive guide for getting the *pictured* environment u
 * **Nginx** *front end for serving http securely*
 * **Mosquitto MQTT** *for more features than the built in broker*
 * **MariaDB** *to replace the built-in DB for better performance*
-* **InfluxDB** *to capture sensor data to feed to Grafana*
-* **Grafana** 
+* **InfluxDB** *to efficiently capture time-series data*
+* **Grafana** *for more robust graphing and dashboards*
 * Node Red
 * Portainer
 
@@ -250,8 +250,8 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODYwOTUzNDUxLC00OTMxNTYzOTAsNjU4MT
-AyNDcwLC0xMjQ4MjM0Njc0LDE0NTY3MTgwNzEsLTE2Mzc5MjI2
-NTIsMTU3Njk0NTE0MiwtMTMzNDQ2MzA4NSwzMTY0NzcwMCwtMT
-U0OTcxNjc3NF19
+eyJoaXN0b3J5IjpbMjE0MDg0NzI0MSwtNDkzMTU2MzkwLDY1OD
+EwMjQ3MCwtMTI0ODIzNDY3NCwxNDU2NzE4MDcxLC0xNjM3OTIy
+NjUyLDE1NzY5NDUxNDIsLTEzMzQ0NjMwODUsMzE2NDc3MDAsLT
+E1NDk3MTY3NzRdfQ==
 -->
