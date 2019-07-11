@@ -18,7 +18,7 @@ I aim to give you a comprehensive guide for getting the *pictured* environment u
 * **InfluxDB** *to efficiently capture time-series data*
 * **Grafana** *for more robust graphing and dashboards*
 * **Node Red** *for flow-based automations*
-* **Portainer** **
+* **Portainer** *for web based container management*
 
 # Getting Started
 We're starting from the ground up. I'm using a Raspberry Pi 3b. Let's grab the latest [Raspbian Strech Lite](https://downloads.raspberrypi.org/raspbian_lite/images/raspbian_lite-2019-04-09/) and flash it to an SD card using an app like [etcher](https://www.balena.io/etcher/). 
@@ -103,6 +103,9 @@ Almost done, let's install docker-compose:
 ```
 sudo pip install docker-compose
 ```
+# Images
+
+
 # Volumes
 Docker containers are ephemeral. In short, we can start up a container and do work with it, but when it's shut down any data contained within will be lost. We can gain persistence between sessions by mounting volumes which will link directories outside the docker containers to directories within.
 
@@ -250,8 +253,8 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTcxODkwNDM2LC00OTMxNTYzOTAsNjU4MT
-AyNDcwLC0xMjQ4MjM0Njc0LDE0NTY3MTgwNzEsLTE2Mzc5MjI2
-NTIsMTU3Njk0NTE0MiwtMTMzNDQ2MzA4NSwzMTY0NzcwMCwtMT
-U0OTcxNjc3NF19
+eyJoaXN0b3J5IjpbMTg1MDI2MDY3MywtNDkzMTU2MzkwLDY1OD
+EwMjQ3MCwtMTI0ODIzNDY3NCwxNDU2NzE4MDcxLC0xNjM3OTIy
+NjUyLDE1NzY5NDUxNDIsLTEzMzQ0NjMwODUsMzE2NDc3MDAsLT
+E1NDk3MTY3NzRdfQ==
 -->
