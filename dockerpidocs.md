@@ -104,7 +104,7 @@ Almost done, let's install docker-compose:
 sudo pip install docker-compose
 ```
 # Images
-We're going to use a set of images to create this environment. Images are at the core of docker. You can create your own, but that is beyond the scope of this g The first time we launch our en
+We're going to use a set of images to create this environment. Images are at the core of docker. You can create your own, but that is beyond the scope of this guide. For today, we're going to use public images from [Docker Hub](https://hub.docker.com). The first time we launch our stack, the images will be downloaded and cached on our syste,
 
 # Volumes
 Docker containers are ephemeral. In short, we can start up a container and do work with it, but when it's shut down any data contained within will be lost. We can gain persistence between sessions by mounting volumes which will link directories outside the docker containers to directories within.
@@ -253,6 +253,6 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4MjAyNDcyMCw5MDMwNTI2MTgsMTg1MD
+eyJoaXN0b3J5IjpbMTE2MzQ0Mjg2Myw5MDMwNTI2MTgsMTg1MD
 I2MDY3MywtMTI3NTk5NjcyMiwtMTM5MzI1MjQ0MV19
 -->
