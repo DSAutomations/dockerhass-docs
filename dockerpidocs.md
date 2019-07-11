@@ -10,11 +10,9 @@ Ultimately, I've built some awesome features and automatons that my family and m
 
 Like many others, I saw the popup in HA about python 3.5 depreciation recently, and through sweat and tears, managed to rebuild a new venv and get Homeassistant running in it without the warning. However, this came at the cost of a dramatic performance hit in the recorder component. I'm a big fan of graphs on my front end, and now they're all taking twice as long to load. Not sure where I went wrong, but one thing that I am sure about is that there is a better way, install hass.io... 
 
-No, just kidding, but seriously, Hass.io is essentially this what we're doing here, but with a lot of the hard work already done for you. If you have trouble following this guide, get yourself up and running with hass.io and get comfortable with HA and the was hass.io works.
+No, just kidding, but seriously, Hass.io is essentially this what we're doing here, but with a lot of the hard work already done for you. 
 
-However, if you take or understan
-
-over with that shortcut, you're locking yourself in a box where you'll only be able to use the [hass.io addons](https://www.home-assistant.io/addons/). Manually setting up a Docker stack gives us a far greater degree of control and tweakability. For example, if you wish to setup your homeassistant front end alongside other https services
+However, if you take that shortcut, you're locking yourself in a box where you'll only be able to use the [hass.io addons](https://www.home-assistant.io/addons/). Manually setting up a Docker stack gives us a far greater degree of control and tweakability. For example, if you wish to setup your homeassistant front end alongside other https services
 
 
 I aim to give you a comprehensive guide for getting the *pictured* environment up and running from scratch, this environment includes the following:
@@ -283,11 +281,11 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzMjY5MTY0NSw0NzU1NDIyMjYsMTM0Nz
-MzMTczMyw2OTMwNjA5OTksLTEyNzk0OTkzNTEsLTEzNjg4NTY4
-NjQsNTAzODE1MTgwLDE2OTM4MTkyOTQsNDU5MDk4MDQxLC0xOD
-YxMzAyNzYyLC0xODA1NDY4OTU3LDUzNTMzNDc0NCwtMzcwODM0
-MjQ1LC0xMDY1NzY2Nzk0LC0xMDQ4MTc5Mjc2LDkwMzA1MjYxOC
-wxODUwMjYwNjczLC0xMjc1OTk2NzIyLC0xMzkzMjUyNDQxXX0=
+eyJoaXN0b3J5IjpbMjU1NzI0ODE3LDQ3NTU0MjIyNiwxMzQ3Mz
+MxNzMzLDY5MzA2MDk5OSwtMTI3OTQ5OTM1MSwtMTM2ODg1Njg2
+NCw1MDM4MTUxODAsMTY5MzgxOTI5NCw0NTkwOTgwNDEsLTE4Nj
+EzMDI3NjIsLTE4MDU0Njg5NTcsNTM1MzM0NzQ0LC0zNzA4MzQy
+NDUsLTEwNjU3NjY3OTQsLTEwNDgxNzkyNzYsOTAzMDUyNjE4LD
+E4NTAyNjA2NzMsLTEyNzU5OTY3MjIsLTEzOTMyNTI0NDFdfQ==
 
 -->
