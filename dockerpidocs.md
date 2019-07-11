@@ -166,7 +166,7 @@ Create a new folder in your home directory and create a file inside called `dock
 mkdir ~/samba-server
 nano ~/samba-server/docker-compose.yml
 ```
-Pte the following config:
+Paste the following config:
 ```
 version: '3.4'
 
@@ -185,7 +185,7 @@ services:
       - /srv/docker:/srv/docker
       - /home/pi:/home/pi
     command: > 
-      -u "dylan;dylan" 
+      -u "s" 
       -s "docker;/srv/docker;yes;no;no;dylan" 
       -s "docker-home;/home/pi/;yes;no;no;dylan"
     environment:
@@ -330,11 +330,11 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwNDIwOTA2OSw1NTM3OTQ5NzcsMjA2NT
-Q2NTQwNiwyMDYwMDcxMDY3LDE1MzM3MTIzNjMsLTc0MTYzNzU0
-OSwtNDI2NjQzMTIwLC01NTYxNzY1ODMsLTM5OTk0Mzg2Niw0Nz
-U1NDIyMjYsMTM0NzMzMTczMyw2OTMwNjA5OTksLTEyNzk0OTkz
-NTEsLTEzNjg4NTY4NjQsNTAzODE1MTgwLDE2OTM4MTkyOTQsND
-U5MDk4MDQxLC0xODYxMzAyNzYyLC0xODA1NDY4OTU3LDUzNTMz
-NDc0NF19
+eyJoaXN0b3J5IjpbLTEwMzY0MDk5NywtOTA0MjA5MDY5LDU1Mz
+c5NDk3NywyMDY1NDY1NDA2LDIwNjAwNzEwNjcsMTUzMzcxMjM2
+MywtNzQxNjM3NTQ5LC00MjY2NDMxMjAsLTU1NjE3NjU4MywtMz
+k5OTQzODY2LDQ3NTU0MjIyNiwxMzQ3MzMxNzMzLDY5MzA2MDk5
+OSwtMTI3OTQ5OTM1MSwtMTM2ODg1Njg2NCw1MDM4MTUxODAsMT
+Y5MzgxOTI5NCw0NTkwOTgwNDEsLTE4NjEzMDI3NjIsLTE4MDU0
+Njg5NTddfQ==
 -->
