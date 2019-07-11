@@ -243,10 +243,13 @@ paste the following into this file:
 ```
 Then press `Ctrl-X` then `y` then `enter` to save the file.
 
-Make sure that you
+Make sure that your working directory is still `~/samba` and run the following to start the container:
+```
+docker-compose up -d
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTM3OTg0OTE5LC0xMjQ4MjM0Njc0LDE0NT
+eyJoaXN0b3J5IjpbNjU4MTAyNDcwLC0xMjQ4MjM0Njc0LDE0NT
 Y3MTgwNzEsLTE2Mzc5MjI2NTIsMTU3Njk0NTE0MiwtMTMzNDQ2
 MzA4NSwzMTY0NzcwMCwtMTU0OTcxNjc3NF19
 -->
