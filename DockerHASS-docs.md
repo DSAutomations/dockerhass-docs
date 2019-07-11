@@ -155,6 +155,10 @@ mkdir /srv/docker/portainer
 mkdir /srv/docker/nginx/config
 mkdir /srv/docker/nginx/ssl
 ```
+
+
+
+
 If you're like me and you keep your Homeassistant config on GitHub, now would be the time to clone your repository:
 ```
 sudo apt install git
@@ -281,11 +285,11 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyNjY0MzEyMCwtMzk5OTQzODY2LC0xMj
-c5NDk5MzUxLC0xMzY4ODU2ODY0LDQ1OTA5ODA0MSwtMTg2MTMw
-Mjc2MiwtMTgwNTQ2ODk1Nyw1MzUzMzQ3NDQsLTM3MDgzNDI0NS
-wtMTA0ODE3OTI3NiwxODUwMjYwNjczLC00OTMxNTYzOTAsNjU4
-MTAyNDcwLC0xMjQ4MjM0Njc0LDE0NTY3MTgwNzEsLTE2Mzc5Mj
-I2NTIsMTU3Njk0NTE0MiwtMTMzNDQ2MzA4NSwzMTY0NzcwMCwt
-MTU0OTcxNjc3NF19
+eyJoaXN0b3J5IjpbMTk0MTkzMTI3MiwtNDI2NjQzMTIwLC0zOT
+k5NDM4NjYsLTEyNzk0OTkzNTEsLTEzNjg4NTY4NjQsNDU5MDk4
+MDQxLC0xODYxMzAyNzYyLC0xODA1NDY4OTU3LDUzNTMzNDc0NC
+wtMzcwODM0MjQ1LC0xMDQ4MTc5Mjc2LDE4NTAyNjA2NzMsLTQ5
+MzE1NjM5MCw2NTgxMDI0NzAsLTEyNDgyMzQ2NzQsMTQ1NjcxOD
+A3MSwtMTYzNzkyMjY1MiwxNTc2OTQ1MTQyLC0xMzM0NDYzMDg1
+LDMxNjQ3NzAwXX0=
 -->
