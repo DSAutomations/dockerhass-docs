@@ -8,7 +8,9 @@ When I first deployed my setup, Hass.io was only in its infancy, however the has
 
 Ultimately, I've built some awesome features and automatons that my family and myseld enjoys, but the Raspberry Ppi has become a veritable house of cards. Along with homeassistant, I've installed all sorts of goodies for development, and integration. Nginx, pihole, mosquitto, apcupsd, certbot, awscli, samba, git, and the list goes on.
 
-Like many others, I saw the popup in HA about python 3.5 depreciation recently, and through sweat and tears, managed to rebuild a new venv and get Homeassistant running in it without the warning. However, this came at the cost of a dramatic performance hit in the recorder component. I'm a big fan of graphs on my front end, and now they're all taking twice as long to load. Not sure where I went wrong, but one thing that I am sure about is that there is a better way, let's go...
+Like many others, I saw the popup in HA about python 3.5 depreciation recently, and through sweat and tears, managed to rebuild a new venv and get Homeassistant running in it without the warning. However, this came at the cost of a dramatic performance hit in the recorder component. I'm a big fan of graphs on my front end, and now they're all taking twice as long to load. Not sure where I went wrong, but one thing that I am sure about is that there is a better way, install hass.io. 
+
+No, just kidding, but on a serious note
 
 I aim to give you a comprehensive guide for getting the *pictured* environment up and running from scratch, this environment includes the following:
 * **Homeassistant**
@@ -276,9 +278,10 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzk0OTkzNTEsLTEzNjg4NTY4NjQsNT
-AzODE1MTgwLDE2OTM4MTkyOTQsNDU5MDk4MDQxLC0xODYxMzAy
-NzYyLC0xODA1NDY4OTU3LDUzNTMzNDc0NCwtMzcwODM0MjQ1LC
-0xMDY1NzY2Nzk0LC0xMDQ4MTc5Mjc2LDkwMzA1MjYxOCwxODUw
-MjYwNjczLC0xMjc1OTk2NzIyLC0xMzkzMjUyNDQxXX0=
+eyJoaXN0b3J5IjpbMTgxODQwODk0OCwtMTI3OTQ5OTM1MSwtMT
+M2ODg1Njg2NCw1MDM4MTUxODAsMTY5MzgxOTI5NCw0NTkwOTgw
+NDEsLTE4NjEzMDI3NjIsLTE4MDU0Njg5NTcsNTM1MzM0NzQ0LC
+0zNzA4MzQyNDUsLTEwNjU3NjY3OTQsLTEwNDgxNzkyNzYsOTAz
+MDUyNjE4LDE4NTAyNjA2NzMsLTEyNzU5OTY3MjIsLTEzOTMyNT
+I0NDFdfQ==
 -->
