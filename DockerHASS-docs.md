@@ -10,11 +10,9 @@ Ultimately, I've built some awesome features and automatons that my family and m
 
 Like many others, I saw the popup in HA about python 3.5 depreciation recently, and through sweat and tears, managed to rebuild a new venv and get Homeassistant running in it without the warning. However, this came at the cost of a dramatic performance hit in the recorder component. I'm a big fan of graphs on my front end, and now they're all taking twice as long to load. Not sure where I went wrong, but one thing that I am sure about is that there is a better way, install hass.io... 
 
-No, just kidding, but seriously, Hass.io is essentially this what we're doing here, but with a lot of the hard work already done for you. If you have trouble following this guide, get yourself up and running with hass.io and get comfortable with HA and the was hass.io works.
+No, just kidding, but seriously, Hass.io is essentially this what we're doing here, but with a lot of the hard work already done for you. 
 
-However, if you take or understan
-
-over with that shortcut, you're locking yourself in a box where you'll only be able to use the [hass.io addons](https://www.home-assistant.io/addons/). Manually setting up a Docker stack gives us a far greater degree of control and tweakability. 
+However, if you take that shortcut, you're locking yourself in a box where you'll only be able to use the [hass.io addons](https://www.home-assistant.io/addons/). Manually setting up a Docker stack gives us a far greater degree of control and tweakability. For example, if you wish to setup your homeassistant front end alongside other https services
 
 
 I aim to give you a comprehensive guide for getting the *pictured* environment up and running from scratch, this environment includes the following:
@@ -283,7 +281,7 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzcxNzYyNjc0LC0xMjc5NDk5MzUxLC0xMz
+eyJoaXN0b3J5IjpbMjU1NzI0ODE3LC0xMjc5NDk5MzUxLC0xMz
 Y4ODU2ODY0LDQ1OTA5ODA0MSwtMTg2MTMwMjc2MiwtMTgwNTQ2
 ODk1Nyw1MzUzMzQ3NDQsLTM3MDgzNDI0NSwtMTA0ODE3OTI3Ni
 wxODUwMjYwNjczLC00OTMxNTYzOTAsNjU4MTAyNDcwLC0xMjQ4
