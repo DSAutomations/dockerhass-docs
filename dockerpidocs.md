@@ -156,7 +156,7 @@ mkdir /srv/docker/nginx/config
 mkdir /srv/docker/nginx/ssl
 ```
 ## Optional: Setup Samba
-
+Of cours
 
 
 If you're like me and you keep your Homeassistant config on GitHub, now would be the time to clone your repository:
@@ -285,11 +285,11 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0MTYzNzU0OSwtNDI2NjQzMTIwLC01NT
-YxNzY1ODMsLTM5OTk0Mzg2Niw0NzU1NDIyMjYsMTM0NzMzMTcz
-Myw2OTMwNjA5OTksLTEyNzk0OTkzNTEsLTEzNjg4NTY4NjQsNT
-AzODE1MTgwLDE2OTM4MTkyOTQsNDU5MDk4MDQxLC0xODYxMzAy
-NzYyLC0xODA1NDY4OTU3LDUzNTMzNDc0NCwtMzcwODM0MjQ1LC
-0xMDY1NzY2Nzk0LC0xMDQ4MTc5Mjc2LDkwMzA1MjYxOCwxODUw
-MjYwNjczXX0=
+eyJoaXN0b3J5IjpbOTcxMzMzOTQsLTc0MTYzNzU0OSwtNDI2Nj
+QzMTIwLC01NTYxNzY1ODMsLTM5OTk0Mzg2Niw0NzU1NDIyMjYs
+MTM0NzMzMTczMyw2OTMwNjA5OTksLTEyNzk0OTkzNTEsLTEzNj
+g4NTY4NjQsNTAzODE1MTgwLDE2OTM4MTkyOTQsNDU5MDk4MDQx
+LC0xODYxMzAyNzYyLC0xODA1NDY4OTU3LDUzNTMzNDc0NCwtMz
+cwODM0MjQ1LC0xMDY1NzY2Nzk0LC0xMDQ4MTc5Mjc2LDkwMzA1
+MjYxOF19
 -->
