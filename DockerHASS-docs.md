@@ -126,7 +126,9 @@ mkdir /srv/docker/nginx/ssl
 If you're like me and you keep your Homeassistant config on GitHub, now would be the time to clone your repository:
 ```
 sudo apt install git
+git clone https://github.com/DSAutomations/HomeAssistantConfig.git /srv/docker/homeassistant
 ```
+Otherwise, copy your config into the homeassistant 
 
 
      - /srv/docker/HomeAssistantConfig:/config
@@ -221,7 +223,7 @@ services:
      - 443:443
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4NzA2MTA4MiwxNDU2NzE4MDcxLC0xNj
-M3OTIyNjUyLDE1NzY5NDUxNDIsLTEzMzQ0NjMwODUsMzE2NDc3
-MDAsLTE1NDk3MTY3NzRdfQ==
+eyJoaXN0b3J5IjpbLTEyMTI0NTY4MTUsMTQ1NjcxODA3MSwtMT
+YzNzkyMjY1MiwxNTc2OTQ1MTQyLC0xMzM0NDYzMDg1LDMxNjQ3
+NzAwLC0xNTQ5NzE2Nzc0XX0=
 -->
