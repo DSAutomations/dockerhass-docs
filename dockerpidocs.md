@@ -158,7 +158,7 @@ mkdir /srv/docker/nginx/ssl
 
 
 ## Optional: Setup Samba
-Of course, you can do all of your config file creation and editing at the command line, however this can be a bit cumbersome
+Of course, you can do all of your config file creation and editing at the command line, however this can be a bit cumbersome. To make things a bit easier, let's get Samba up and running 
 
 
 If you're like me and you keep your Homeassistant config on GitHub, now would be the time to clone your repository:
@@ -287,11 +287,11 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0ODg0MjA4NCwtNzQxNjM3NTQ5LC00Mj
-Y2NDMxMjAsLTU1NjE3NjU4MywtMzk5OTQzODY2LDQ3NTU0MjIy
-NiwxMzQ3MzMxNzMzLDY5MzA2MDk5OSwtMTI3OTQ5OTM1MSwtMT
-M2ODg1Njg2NCw1MDM4MTUxODAsMTY5MzgxOTI5NCw0NTkwOTgw
-NDEsLTE4NjEzMDI3NjIsLTE4MDU0Njg5NTcsNTM1MzM0NzQ0LC
-0zNzA4MzQyNDUsLTEwNjU3NjY3OTQsLTEwNDgxNzkyNzYsOTAz
-MDUyNjE4XX0=
+eyJoaXN0b3J5IjpbLTE4NDQ0MjI5ODksLTc0MTYzNzU0OSwtND
+I2NjQzMTIwLC01NTYxNzY1ODMsLTM5OTk0Mzg2Niw0NzU1NDIy
+MjYsMTM0NzMzMTczMyw2OTMwNjA5OTksLTEyNzk0OTkzNTEsLT
+EzNjg4NTY4NjQsNTAzODE1MTgwLDE2OTM4MTkyOTQsNDU5MDk4
+MDQxLC0xODYxMzAyNzYyLC0xODA1NDY4OTU3LDUzNTMzNDc0NC
+wtMzcwODM0MjQ1LC0xMDY1NzY2Nzk0LC0xMDQ4MTc5Mjc2LDkw
+MzA1MjYxOF19
 -->
