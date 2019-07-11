@@ -166,7 +166,7 @@ Create a new folder in your home directory and create a file inside called `dock
 mkdir ~/samba-server
 nano ~/samba-server/docker-compose.yml
 ```
-Paste the following config:
+Pte the following config:
 ```
 version: '3.4'
 
@@ -330,11 +330,11 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTUzNzk0OTc3LDIwNjU0NjU0MDYsMjA2MD
-A3MTA2NywxNTMzNzEyMzYzLC03NDE2Mzc1NDksLTQyNjY0MzEy
-MCwtNTU2MTc2NTgzLC0zOTk5NDM4NjYsNDc1NTQyMjI2LDEzND
-czMzE3MzMsNjkzMDYwOTk5LC0xMjc5NDk5MzUxLC0xMzY4ODU2
-ODY0LDUwMzgxNTE4MCwxNjkzODE5Mjk0LDQ1OTA5ODA0MSwtMT
-g2MTMwMjc2MiwtMTgwNTQ2ODk1Nyw1MzUzMzQ3NDQsLTM3MDgz
-NDI0NV19
+eyJoaXN0b3J5IjpbLTkwNDIwOTA2OSw1NTM3OTQ5NzcsMjA2NT
+Q2NTQwNiwyMDYwMDcxMDY3LDE1MzM3MTIzNjMsLTc0MTYzNzU0
+OSwtNDI2NjQzMTIwLC01NTYxNzY1ODMsLTM5OTk0Mzg2Niw0Nz
+U1NDIyMjYsMTM0NzMzMTczMyw2OTMwNjA5OTksLTEyNzk0OTkz
+NTEsLTEzNjg4NTY4NjQsNTAzODE1MTgwLDE2OTM4MTkyOTQsND
+U5MDk4MDQxLC0xODYxMzAyNzYyLC0xODA1NDY4OTU3LDUzNTMz
+NDc0NF19
 -->
