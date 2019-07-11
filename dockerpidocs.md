@@ -186,13 +186,12 @@ services:
       - /home/pi:/home/pi
     command: > 
       -u "smbuser;badpassword" 
-      -s "docker;/srv/docker;yes;no;no;smbuser" 
-      -s "docker-home;/home/pi/;yes;no;no;smbuser"
+      -s "docker-config;/srv/docker;yes;no;no;smbuser" 
+      -s "pi-home;/home/pi/;yes;no;no;smbuser"
     environment:
       - 'USERID=1000'
       - 'GROUPID=996'
       - 'TZ=EST5EDT'
-
 ```
 
 
@@ -330,11 +329,11 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwNTg0NjM5MCwtOTA0MjA5MDY5LDU1Mz
-c5NDk3NywyMDY1NDY1NDA2LDIwNjAwNzEwNjcsMTUzMzcxMjM2
-MywtNzQxNjM3NTQ5LC00MjY2NDMxMjAsLTU1NjE3NjU4MywtMz
-k5OTQzODY2LDQ3NTU0MjIyNiwxMzQ3MzMxNzMzLDY5MzA2MDk5
-OSwtMTI3OTQ5OTM1MSwtMTM2ODg1Njg2NCw1MDM4MTUxODAsMT
-Y5MzgxOTI5NCw0NTkwOTgwNDEsLTE4NjEzMDI3NjIsLTE4MDU0
-Njg5NTddfQ==
+eyJoaXN0b3J5IjpbMTE0MjgzNzM5MiwyMTA1ODQ2MzkwLC05MD
+QyMDkwNjksNTUzNzk0OTc3LDIwNjU0NjU0MDYsMjA2MDA3MTA2
+NywxNTMzNzEyMzYzLC03NDE2Mzc1NDksLTQyNjY0MzEyMCwtNT
+U2MTc2NTgzLC0zOTk5NDM4NjYsNDc1NTQyMjI2LDEzNDczMzE3
+MzMsNjkzMDYwOTk5LC0xMjc5NDk5MzUxLC0xMzY4ODU2ODY0LD
+UwMzgxNTE4MCwxNjkzODE5Mjk0LDQ1OTA5ODA0MSwtMTg2MTMw
+Mjc2Ml19
 -->
