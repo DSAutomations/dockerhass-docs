@@ -238,10 +238,15 @@ Change to the directory and create a `docker-compose.yml` file within:
 cd ~/samba
 nano docker-compose.yml
 ```
+paste the following into this file:
+```
+```
+Then press `Ctrl-X` then `y` then `enter` to save the file.
 
+Make sure that you
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTgyNDcwOTcsLTEyNDgyMzQ2NzQsMT
-Q1NjcxODA3MSwtMTYzNzkyMjY1MiwxNTc2OTQ1MTQyLC0xMzM0
-NDYzMDg1LDMxNjQ3NzAwLC0xNTQ5NzE2Nzc0XX0=
+eyJoaXN0b3J5IjpbOTM3OTg0OTE5LC0xMjQ4MjM0Njc0LDE0NT
+Y3MTgwNzEsLTE2Mzc5MjI2NTIsMTU3Njk0NTE0MiwtMTMzNDQ2
+MzA4NSwzMTY0NzcwMCwtMTU0OTcxNjc3NF19
 -->
