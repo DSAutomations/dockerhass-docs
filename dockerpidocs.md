@@ -8,9 +8,9 @@ When I first deployed my setup, Hass.io was only in its infancy, however the has
 
 Ultimately, I've built some awesome features and automatons that my family and myseld enjoys, but the Raspberry Ppi has become a veritable house of cards. Along with homeassistant, I've installed all sorts of goodies for development, and integration. Nginx, pihole, mosquitto, apcupsd, certbot, awscli, samba, git, and the list goes on.
 
-Like many others, I saw the popup in HA about python 3.5 depreciation recently, and through sweat and tears, managed to rebuild a new venv and get Homeassistant running in it without the warning. However, this came at the cost of a dramatic performance hit in the recorder component. I'm a big fan of graphs on my front end, and now they're all taking twice as long to load. Not sure where I went wrong, but one thing that I am sure about is that there is a better way, install hass.io. 
+Like many others, I saw the popup in HA about python 3.5 depreciation recently, and through sweat and tears, managed to rebuild a new venv and get Homeassistant running in it without the warning. However, this came at the cost of a dramatic performance hit in the recorder component. I'm a big fan of graphs on my front end, and now they're all taking twice as long to load. Not sure where I went wrong, but one thing that I am sure about is that there is a better way, install hass.io...
 
-No, just kidding, but seriously, Hass.io is essentially this what we're doing here, but with a lot of the hard work already done for you. However, with 
+No, just kidding, but seriously, Hass.io is essentially this what we're doing here, but with a lot of the hard work already done for you. However, with that shortcut, you're locking yourself in a box and may lose the ability to 
 
 I aim to give you a comprehensive guide for getting the *pictured* environment up and running from scratch, this environment includes the following:
 * **Homeassistant**
@@ -278,10 +278,10 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjk1NjIxNzUsLTEyNzk0OTkzNTEsLT
-EzNjg4NTY4NjQsNTAzODE1MTgwLDE2OTM4MTkyOTQsNDU5MDk4
-MDQxLC0xODYxMzAyNzYyLC0xODA1NDY4OTU3LDUzNTMzNDc0NC
-wtMzcwODM0MjQ1LC0xMDY1NzY2Nzk0LC0xMDQ4MTc5Mjc2LDkw
-MzA1MjYxOCwxODUwMjYwNjczLC0xMjc1OTk2NzIyLC0xMzkzMj
-UyNDQxXX0=
+eyJoaXN0b3J5IjpbMTY5NzQ5NTkxLC0xMjc5NDk5MzUxLC0xMz
+Y4ODU2ODY0LDUwMzgxNTE4MCwxNjkzODE5Mjk0LDQ1OTA5ODA0
+MSwtMTg2MTMwMjc2MiwtMTgwNTQ2ODk1Nyw1MzUzMzQ3NDQsLT
+M3MDgzNDI0NSwtMTA2NTc2Njc5NCwtMTA0ODE3OTI3Niw5MDMw
+NTI2MTgsMTg1MDI2MDY3MywtMTI3NTk5NjcyMiwtMTM5MzI1Mj
+Q0MV19
 -->
