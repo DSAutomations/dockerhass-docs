@@ -6,13 +6,15 @@ Years ago as a new homeowner, I was starting my home automation journey. With an
 
 When I first deployed my setup, Hass.io was only in its infancy, however the hassbian image seemed to be a reasonable option. Time went on, and I threw a few hours into development every week and I was always upgrading, adding on, and exploring new integrations. 
 
-Ultimately, I've built some awesome features and automatons that my family and myself enjoys, but the Raspberry Pi has become a veritable house of cards. Along with homeassistant, I've installed all sorts of goodies for development, and integration. Nginx, pihole, mosquitto, apcupsd, certbot, awscli, samba, git, and the list goes on.
+Ultimately, I've built some awesome features and automatons that my family and mysel enjoys, but the Raspberry Pi has become a veritable house of cards. Along with homeassistant, I've installed all sorts of goodies for development, and integration. Nginx, pihole, mosquitto, apcupsd, certbot, awscli, samba, git, and the list goes on.
 
 Like many others, I saw the popup in HA about python 3.5 depreciation recently, and through sweat and tears, managed to rebuild a new venv and get Homeassistant running in it without the warning. However, this came at the cost of a dramatic performance hit in the recorder component. I'm a big fan of graphs on my front end, and now they're all taking twice as long to load. Not sure where I went wrong, but one thing that I am sure about is that there is a better way, install hass.io... 
 
 No, just kidding, but seriously, Hass.io is essentially this what we're doing here, but with a lot of the hard work already done for you. If you have trouble following this guide, then hass.io is probably the way to go.
 
-However, if you take that shortcut, you're locking yourself in a box where you'll only be able to use the [hass.io addons](https://www.home-assistant.io/addons/). Manually setting up a Docker stack gives us a far greater degree of control and tweakability. For example, if you wish to setup homeassistant a
+However, if you take or understan
+
+over with that shortcut, you're locking yourself in a box where you'll only be able to use the [hass.io addons](https://www.home-assistant.io/addons/). Manually setting up a Docker stack gives us a far greater degree of control and tweakability. For example, if you wish to setup your homeassistant front end alongside other https services
 
 
 I aim to give you a comprehensive guide for getting the *pictured* environment up and running from scratch, this environment includes the following:
@@ -281,7 +283,7 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4NTIwMjQ3OCwtMTI3OTQ5OTM1MSwtMT
+eyJoaXN0b3J5IjpbMTA4MDE2NjM5NCwtMTI3OTQ5OTM1MSwtMT
 M2ODg1Njg2NCw0NTkwOTgwNDEsLTE4NjEzMDI3NjIsLTE4MDU0
 Njg5NTcsNTM1MzM0NzQ0LC0zNzA4MzQyNDUsLTEwNDgxNzkyNz
 YsMTg1MDI2MDY3MywtNDkzMTU2MzkwLDY1ODEwMjQ3MCwtMTI0
