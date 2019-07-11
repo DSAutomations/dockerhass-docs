@@ -11,9 +11,9 @@ Ultimately, I've built some awesome features and automatons that my family and m
 Like many others, I started seeing the message about python 3.5 depreciation recently, and through sweat and tears, managed to rebuild a new venv and get Homeassistant running in it without the warning. However, this came at the cost of a dramatic performance hit in the recorder component. I'm a big fan of graphs on my front end, and now they're all taking twice as long to load. Not sure where I went wrong, but one thing that I am sure about is that there is a better way, let's go...
 
 I aim to give you a comprehensive guide for getting the *pictured* environment up and running from scratch, this environment includes the following:
-* Homeassistant
-* Nginx Front End *fr
-* Mosquitto MQTT
+* **Homeassistant**
+* **Nginx Front End** *for serving http securely*
+* **Mosquitto MQTT** *for more features than the built in broker*
 * MariaDB & InfluxDB Back End
 * Grafana
 * Node Red
@@ -249,8 +249,8 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1MzkwOTQ2NSwtNDkzMTU2MzkwLDY1OD
-EwMjQ3MCwtMTI0ODIzNDY3NCwxNDU2NzE4MDcxLC0xNjM3OTIy
-NjUyLDE1NzY5NDUxNDIsLTEzMzQ0NjMwODUsMzE2NDc3MDAsLT
-E1NDk3MTY3NzRdfQ==
+eyJoaXN0b3J5IjpbLTEzNzk4NzA1MTMsLTQ5MzE1NjM5MCw2NT
+gxMDI0NzAsLTEyNDgyMzQ2NzQsMTQ1NjcxODA3MSwtMTYzNzky
+MjY1MiwxNTc2OTQ1MTQyLC0xMzM0NDYzMDg1LDMxNjQ3NzAwLC
+0xNTQ5NzE2Nzc0XX0=
 -->
