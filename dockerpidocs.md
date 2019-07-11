@@ -192,6 +192,8 @@ services:
       - 'GROUPID=996'
       - 'TZ=America/New_York'
 ```
+Change `badpass
+
 Save the file by pressing  `Ctrl-o` then exit with `Ctrl-x`.
 Make sure that you're in the `samba-server` directory and bring up the container:
 ```
@@ -202,6 +204,7 @@ docker-compose up -d
 You should now you should be able to connect to your instance using the standard SMB convention: 
 
 `\\<hostname/IP>\docker-config` or `smb://<hostname/docker-configIP>/`
+
 
 
 ```-u "smbuser;badpass" ``` 
@@ -342,11 +345,11 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzMTE2NjQ1LDE3MDcwODEzMTAsLTE4MT
-gzNTY5NDcsMjE0MzAzODczMyw0OTI2MDc5NjMsLTMwNjcxNzM0
-NiwyODE4NjM5MjAsNTE1NDI4NzU5LDEyMTg3ODc5MzEsLTE1Mj
-c0NTEzMTksMTE0MjgzNzM5MiwyMTA1ODQ2MzkwLC05MDQyMDkw
-NjksNTUzNzk0OTc3LDIwNjU0NjU0MDYsMjA2MDA3MTA2NywxNT
-MzNzEyMzYzLC03NDE2Mzc1NDksLTQyNjY0MzEyMCwtNTU2MTc2
-NTgzXX0=
+eyJoaXN0b3J5IjpbLTMyODE4NDI3OSwxNzA3MDgxMzEwLC0xOD
+E4MzU2OTQ3LDIxNDMwMzg3MzMsNDkyNjA3OTYzLC0zMDY3MTcz
+NDYsMjgxODYzOTIwLDUxNTQyODc1OSwxMjE4Nzg3OTMxLC0xNT
+I3NDUxMzE5LDExNDI4MzczOTIsMjEwNTg0NjM5MCwtOTA0MjA5
+MDY5LDU1Mzc5NDk3NywyMDY1NDY1NDA2LDIwNjAwNzEwNjcsMT
+UzMzcxMjM2MywtNzQxNjM3NTQ5LC00MjY2NDMxMjAsLTU1NjE3
+NjU4M119
 -->
