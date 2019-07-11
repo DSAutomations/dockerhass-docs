@@ -111,6 +111,8 @@ Let's get this setup. We can keep our volumes anywhere, but the convention is to
 sudo mkdir /srv/docker
 sudo chown pi:docker /srv/docker
 ```
+Now, let's create the rest of the needed directories:
+
 
 
      - /srv/docker/HomeAssistantConfig:/config
@@ -205,7 +207,7 @@ services:
      - 443:443
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODc4NTE3MTUzLC0xNjM3OTIyNjUyLDE1Nz
-Y5NDUxNDIsLTEzMzQ0NjMwODUsMzE2NDc3MDAsLTE1NDk3MTY3
-NzRdfQ==
+eyJoaXN0b3J5IjpbMTQ1NjcxODA3MSwtMTYzNzkyMjY1MiwxNT
+c2OTQ1MTQyLC0xMzM0NDYzMDg1LDMxNjQ3NzAwLC0xNTQ5NzE2
+Nzc0XX0=
 -->
