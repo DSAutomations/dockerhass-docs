@@ -2,13 +2,13 @@
 
 
 ## Overview
-Years ago as a new homeowner, I was starting my home automation journey. With an with an eye on the budget, I was drawn into the Home Assistant community. I found the do-it-yourself approach favorable to being locked into commercial cloud ecosystem. Before I knew it, I hadI opted to host HA on a Raspberry Pi 3b, on my Ubiquiti network consisting of an EdgeRouterX and Unifi access points. 
+Years ago as a new homeowner, I was starting my home automation journey. With an with an eye on the budget, I was drawn into the Home Assistant community. I found the do-it-yourself approach favorable to being locked into commercial cloud ecosystem. Before I knew it, I had opted to host HA on a Raspberry Pi 3b, on my Ubiquiti network consisting of an EdgeRouterX and Unifi access points. 
 
-When I first deployed my setup, I avoided Hass.io because it was only in its infancy at that point, however the hassbian image seemed to be a reasonable option. Time went on, and I threw a few hours into development every week and I was always upgrading, adding on, and exploring new integrations. 
+When I first deployed my setup, Hass.io was only in its infancy, however the hassbian image seemed to be a reasonable option. Time went on, and I threw a few hours into development every week and I was always upgrading, adding on, and exploring new integrations. 
 
 Ultimately, I've built some awesome features and automatons that my family and myseld enjoys, but the Raspberry Ppi has become a veritable house of cards. Along with homeassistant, I've installed all sorts of goodies for development, and integration. Nginx, pihole, mosquitto, apcupsd, certbot, awscli, samba, git, and the list goes on.
 
-Like many others, I started seeing the message about python 3.5 depreciation recently, and through sweat and tears, managed to rebuild a new venv and get Homeassistant running in it without the warning. However, this came at the cost of a dramatic performance hit in the recorder component. I'm a big fan of graphs on my front end, and now they're all taking twice as long to load. Not sure where I went wrong, but one thing that I am sure about is that there is a better way, let's go...
+Like many others, I saw the popup in HA about python 3.5 depreciation recently, and through sweat and tears, managed to rebuild a new venv and get Homeassistant running in it without the warning. However, this came at the cost of a dramatic performance hit in the recorder component. I'm a big fan of graphs on my front end, and now they're all taking twice as long to load. Not sure where I went wrong, but one thing that I am sure about is that there is a better way, let's go...
 
 I aim to give you a comprehensive guide for getting the *pictured* environment up and running from scratch, this environment includes the following:
 * **Homeassistant**
@@ -276,9 +276,9 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjg4NTY4NjQsNTAzODE1MTgwLDE2OT
-M4MTkyOTQsNDU5MDk4MDQxLC0xODYxMzAyNzYyLC0xODA1NDY4
-OTU3LDUzNTMzNDc0NCwtMzcwODM0MjQ1LC0xMDY1NzY2Nzk0LC
-0xMDQ4MTc5Mjc2LDkwMzA1MjYxOCwxODUwMjYwNjczLC0xMjc1
-OTk2NzIyLC0xMzkzMjUyNDQxXX0=
+eyJoaXN0b3J5IjpbLTEyNzk0OTkzNTEsLTEzNjg4NTY4NjQsNT
+AzODE1MTgwLDE2OTM4MTkyOTQsNDU5MDk4MDQxLC0xODYxMzAy
+NzYyLC0xODA1NDY4OTU3LDUzNTMzNDc0NCwtMzcwODM0MjQ1LC
+0xMDY1NzY2Nzk0LC0xMDQ4MTc5Mjc2LDkwMzA1MjYxOCwxODUw
+MjYwNjczLC0xMjc1OTk2NzIyLC0xMzkzMjUyNDQxXX0=
 -->
