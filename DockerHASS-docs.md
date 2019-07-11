@@ -12,12 +12,12 @@ Like many others, I started seeing the message about python 3.5 depreciation rec
 
 I aim to give you a comprehensive guide for getting the *pictured* environment up and running from scratch, this environment includes the following:
 * **Homeassistant**
-* **Nginx** *front nd or serving http securely*
+* **Nginx** *front end or serving http securely*
 * **Mosquitto MQTT** *for more features than the built in broker*
 * **MariaDB** *to replace the built-in DB for better performance*
 * **InfluxDB** *to efficiently capture time-series data*
 * **Grafana** *for more robust graphing and dashboards*
-* **Node Red** *for flow-based automations*
+* **Node Red** *for flow-based automatons*
 * **Portainer** *for web based container management*
 
 # Getting Started
@@ -276,7 +276,7 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0MTE1NTg2Niw0NTkwOTgwNDEsLTE4Nj
+eyJoaXN0b3J5IjpbMTE1MDI3MDQ1Niw0NTkwOTgwNDEsLTE4Nj
 EzMDI3NjIsLTE4MDU0Njg5NTcsNTM1MzM0NzQ0LC0zNzA4MzQy
 NDUsLTEwNDgxNzkyNzYsMTg1MDI2MDY3MywtNDkzMTU2MzkwLD
 Y1ODEwMjQ3MCwtMTI0ODIzNDY3NCwxNDU2NzE4MDcxLC0xNjM3
