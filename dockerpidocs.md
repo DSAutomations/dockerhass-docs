@@ -167,7 +167,7 @@ You can do all of your config file creation and editing at the command line if y
 mkdir ~/samba-server
 nano ~/samba-server/docker-compose.yml
 ```
-Put the following into the 
+Put the following into 
 
 
 
@@ -304,11 +304,11 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2NTQ2NTQwNiwyMDYwMDcxMDY3LDE1Mz
-M3MTIzNjMsLTc0MTYzNzU0OSwtNDI2NjQzMTIwLC01NTYxNzY1
-ODMsLTM5OTk0Mzg2Niw0NzU1NDIyMjYsMTM0NzMzMTczMyw2OT
-MwNjA5OTksLTEyNzk0OTkzNTEsLTEzNjg4NTY4NjQsNTAzODE1
-MTgwLDE2OTM4MTkyOTQsNDU5MDk4MDQxLC0xODYxMzAyNzYyLC
-0xODA1NDY4OTU3LDUzNTMzNDc0NCwtMzcwODM0MjQ1LC0xMDY1
-NzY2Nzk0XX0=
+eyJoaXN0b3J5IjpbLTIwNjI0MTU0NDMsMjA2NTQ2NTQwNiwyMD
+YwMDcxMDY3LDE1MzM3MTIzNjMsLTc0MTYzNzU0OSwtNDI2NjQz
+MTIwLC01NTYxNzY1ODMsLTM5OTk0Mzg2Niw0NzU1NDIyMjYsMT
+M0NzMzMTczMyw2OTMwNjA5OTksLTEyNzk0OTkzNTEsLTEzNjg4
+NTY4NjQsNTAzODE1MTgwLDE2OTM4MTkyOTQsNDU5MDk4MDQxLC
+0xODYxMzAyNzYyLC0xODA1NDY4OTU3LDUzNTMzNDc0NCwtMzcw
+ODM0MjQ1XX0=
 -->
