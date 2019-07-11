@@ -12,8 +12,7 @@ Like many others, I saw the popup in HA about python 3.5 depreciation recently, 
 
 No, just kidding, but seriously, Hass.io is essentially this what we're doing here, but with a lot of the hard work already done for you. 
 
-However, if you take take that shortcut, you're locking yourself in a box where you'll only be able to use the [hass.io addons](https://www.home-assistant.io/addons/). Manually setting up a Docker stack gives us a far greater degree of control and tweakability. For example, if you wish to setup your homeassistant front end alongside other https services on subdomains, we'll be able to accomplish that with ease today.
-
+However, if you take take that shortcut, you're locking yourself in a box where you'll only be able to use the [hass.io addons](https://www.home-assistant.io/addons/). Manually setting up a Docker stack gives us a far greater degree of control and tweakability. 
 
 I aim to give you a comprehensive guide for getting the *pictured* environment up and running from scratch, this environment includes the following:
 * **Homeassistant**
@@ -282,7 +281,7 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5Njg3NDU4NSwtNTU2MTc2NTgzLC0zOT
+eyJoaXN0b3J5IjpbLTQyNjY0MzEyMCwtNTU2MTc2NTgzLC0zOT
 k5NDM4NjYsNDc1NTQyMjI2LDEzNDczMzE3MzMsNjkzMDYwOTk5
 LC0xMjc5NDk5MzUxLC0xMzY4ODU2ODY0LDUwMzgxNTE4MCwxNj
 kzODE5Mjk0LDQ1OTA5ODA0MSwtMTg2MTMwMjc2MiwtMTgwNTQ2
