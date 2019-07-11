@@ -106,7 +106,7 @@ sudo pip install docker-compose
 # Images
 We're going to use a set of images to create this environment. Images are at the core of docker. You can create your own, but that is beyond the scope of this guide. For today, we're going to use public images from [Docker Hub](https://hub.docker.com). The first time we launch our stack, the images will be downloaded and cached on our system and subsequent runs will utilize these downloaded images.
 
-
+,
 
 # Volumes
 Docker containers are ephemeral. In short, we can start up a container and do work with it, but when it's shut down any data contained within will be lost. We can gain persistence between sessions by mounting volumes which will link directories outside the docker containers to directories within.
@@ -255,8 +255,9 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDgxNzkyNzYsMTg1MDI2MDY3MywtND
-kzMTU2MzkwLDY1ODEwMjQ3MCwtMTI0ODIzNDY3NCwxNDU2NzE4
-MDcxLC0xNjM3OTIyNjUyLDE1NzY5NDUxNDIsLTEzMzQ0NjMwOD
-UsMzE2NDc3MDAsLTE1NDk3MTY3NzRdfQ==
+eyJoaXN0b3J5IjpbLTEwNjU3NjY3OTQsLTEwNDgxNzkyNzYsMT
+g1MDI2MDY3MywtNDkzMTU2MzkwLDY1ODEwMjQ3MCwtMTI0ODIz
+NDY3NCwxNDU2NzE4MDcxLC0xNjM3OTIyNjUyLDE1NzY5NDUxND
+IsLTEzMzQ0NjMwODUsMzE2NDc3MDAsLTE1NDk3MTY3NzRdfQ==
+
 -->
