@@ -193,7 +193,11 @@ services:
       - 'GROUPID=996'
       - 'TZ=America/New_York'
 ```
- ```-u "smbuser;badpass" ``` 
+
+
+now you should be able to connect to 
+
+```-u "smbuser;badpass" ``` 
 to set your username and password
 
 
@@ -330,11 +334,11 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzI3NTMyMDUsLTE1Mjc0NTEzMTksMT
-E0MjgzNzM5MiwyMTA1ODQ2MzkwLDU1Mzc5NDk3NywyMDYwMDcx
-MDY3LC03NDE2Mzc1NDksLTQyNjY0MzEyMCwtMzk5OTQzODY2LC
-0xMjc5NDk5MzUxLC0xMzY4ODU2ODY0LDQ1OTA5ODA0MSwtMTg2
-MTMwMjc2MiwtMTgwNTQ2ODk1Nyw1MzUzMzQ3NDQsLTM3MDgzND
-I0NSwtMTA0ODE3OTI3NiwxODUwMjYwNjczLC00OTMxNTYzOTAs
-NjU4MTAyNDcwXX0=
+eyJoaXN0b3J5IjpbMTI2NjE3NTIzMiwtMTUyNzQ1MTMxOSwxMT
+QyODM3MzkyLDIxMDU4NDYzOTAsNTUzNzk0OTc3LDIwNjAwNzEw
+NjcsLTc0MTYzNzU0OSwtNDI2NjQzMTIwLC0zOTk5NDM4NjYsLT
+EyNzk0OTkzNTEsLTEzNjg4NTY4NjQsNDU5MDk4MDQxLC0xODYx
+MzAyNzYyLC0xODA1NDY4OTU3LDUzNTMzNDc0NCwtMzcwODM0Mj
+Q1LC0xMDQ4MTc5Mjc2LDE4NTAyNjA2NzMsLTQ5MzE1NjM5MCw2
+NTgxMDI0NzBdfQ==
 -->
