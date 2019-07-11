@@ -19,7 +19,7 @@ over with that shortcut, you're locking yourself in a box where you'll only be a
 
 I aim to give you a comprehensive guide for getting the *pictured* environment up and running from scratch, this environment includes the following:
 * **Homeassistant**
-* **Nginx** *front end or serving http securely*
+* **Nginx** *reverse proxy for serving http securely*
 * **Mosquitto MQTT** *for more features than the built in broker*
 * **MariaDB** *to replace the built-in DB for better performance*
 * **InfluxDB** *to efficiently capture time-series data*
@@ -283,10 +283,10 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyNjQyOTE0MywxMzQ3MzMxNzMzLDY5Mz
-A2MDk5OSwtMTI3OTQ5OTM1MSwtMTM2ODg1Njg2NCw1MDM4MTUx
-ODAsMTY5MzgxOTI5NCw0NTkwOTgwNDEsLTE4NjEzMDI3NjIsLT
-E4MDU0Njg5NTcsNTM1MzM0NzQ0LC0zNzA4MzQyNDUsLTEwNjU3
-NjY3OTQsLTEwNDgxNzkyNzYsOTAzMDUyNjE4LDE4NTAyNjA2Nz
-MsLTEyNzU5OTY3MjIsLTEzOTMyNTI0NDFdfQ==
+eyJoaXN0b3J5IjpbNDQ4NjcwNzIzLDEzNDczMzE3MzMsNjkzMD
+YwOTk5LC0xMjc5NDk5MzUxLC0xMzY4ODU2ODY0LDUwMzgxNTE4
+MCwxNjkzODE5Mjk0LDQ1OTA5ODA0MSwtMTg2MTMwMjc2MiwtMT
+gwNTQ2ODk1Nyw1MzUzMzQ3NDQsLTM3MDgzNDI0NSwtMTA2NTc2
+Njc5NCwtMTA0ODE3OTI3Niw5MDMwNTI2MTgsMTg1MDI2MDY3My
+wtMTI3NTk5NjcyMiwtMTM5MzI1MjQ0MV19
 -->
