@@ -158,13 +158,15 @@ mkdir /srv/docker/nginx/ssl
 
 
 ## Optional: Setup Samba
-You can do all of your config file creation and editing at the command line if you want, however this can be a bit cumbersome. It would help to be able to directly access your config files from your local PC, let's get Samba up and running to provide this service to us.
-
-Create a new folder in your home directory and create a file inside called `docker-compose.yml` 
+YOf course, you can do all of your config file creation and editing at the command line if you want, however this can be a bit cumbersome. It would help to be able to directly access your config files from your local PC, let's get Samba up and running to provide this service to us.
 
 
+To make things a bit easier, let's get Samba up and running Create a new folder in your home directory and create a file inside called `docker-compose.yml` 
 
-
+```
+mkdir ~/samba-server
+nano ~/samba-server/docker-compose.yml
+```
 
 If you're like me and you keep your Homeassistant config on GitHub, now would be the time to clone your repository:
 ```
@@ -292,11 +294,11 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzU1MzU4NTAsLTc0MTYzNzU0OSwtNDI2Nj
-QzMTIwLC0zOTk5NDM4NjYsLTEyNzk0OTkzNTEsLTEzNjg4NTY4
-NjQsNDU5MDk4MDQxLC0xODYxMzAyNzYyLC0xODA1NDY4OTU3LD
-UzNTMzNDc0NCwtMzcwODM0MjQ1LC0xMDQ4MTc5Mjc2LDE4NTAy
-NjA2NzMsLTQ5MzE1NjM5MCw2NTgxMDI0NzAsLTEyNDgyMzQ2Nz
-QsMTQ1NjcxODA3MSwtMTYzNzkyMjY1MiwxNTc2OTQ1MTQyLC0x
-MzM0NDYzMDg1XX0=
+eyJoaXN0b3J5IjpbLTE4ODMxMTU4MDksLTc0MTYzNzU0OSwtND
+I2NjQzMTIwLC0zOTk5NDM4NjYsLTEyNzk0OTkzNTEsLTEzNjg4
+NTY4NjQsNDU5MDk4MDQxLC0xODYxMzAyNzYyLC0xODA1NDY4OT
+U3LDUzNTMzNDc0NCwtMzcwODM0MjQ1LC0xMDQ4MTc5Mjc2LDE4
+NTAyNjA2NzMsLTQ5MzE1NjM5MCw2NTgxMDI0NzAsLTEyNDgyMz
+Q2NzQsMTQ1NjcxODA3MSwtMTYzNzkyMjY1MiwxNTc2OTQ1MTQy
+LC0xMzM0NDYzMDg1XX0=
 -->
