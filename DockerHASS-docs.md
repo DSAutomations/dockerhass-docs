@@ -229,13 +229,19 @@ services:
 ```
 
 # Setup Samba
-To make things a bit easier during initial configuration, you may want to setup a samba share to access your docker volumes. to do this, create a new directory in your home folder called samba:
+To make things a bit easier during initial configuration, you may want to setup a samba share to access your docker volumes. To do this, create a new directory in your home folder called samba:
 ```
 mkdir ~/samba
 ```
-Change to the directory and create a `docker-compose.`
+Change to the directory and create a `docker-compose.yml` file within:
+```
+cd ~/samba
+nano docker-compose.yml
+```
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwNjYyNDc0MywtMTI0ODIzNDY3NCwxND
-U2NzE4MDcxLC0xNjM3OTIyNjUyLDE1NzY5NDUxNDIsLTEzMzQ0
-NjMwODUsMzE2NDc3MDAsLTE1NDk3MTY3NzRdfQ==
+eyJoaXN0b3J5IjpbLTIwOTgyNDcwOTcsLTEyNDgyMzQ2NzQsMT
+Q1NjcxODA3MSwtMTYzNzkyMjY1MiwxNTc2OTQ1MTQyLC0xMzM0
+NDYzMDg1LDMxNjQ3NzAwLC0xNTQ5NzE2Nzc0XX0=
 -->
