@@ -104,7 +104,7 @@ Almost done, let's install docker-compose:
 sudo pip install docker-compose
 ```
 # Images
- Images are at the core of docker, we're going to use a set of them to create our environment. You can create your own, but that is beyond the scope of this guide. For today, we're going to use public images from [Docker Hub](https://hub.docker.com). 
+Images are at the core of docker, we're going to use a set of them to create our environment. You can create your own, but that is beyond the scope of this guide. For today, we're going to use public images from [Docker Hub](https://hub.docker.com). 
 
 The first time we launch our stack, the images will be downloaded and cached on our system. Subsequent runs will utilize these downloaded images.
 
@@ -267,7 +267,7 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2Mjk4NjI0MzIsLTE4MDU0Njg5NTcsNT
+eyJoaXN0b3J5IjpbLTE4NjEzMDI3NjIsLTE4MDU0Njg5NTcsNT
 M1MzM0NzQ0LC0zNzA4MzQyNDUsLTEwNjU3NjY3OTQsLTEwNDgx
 NzkyNzYsOTAzMDUyNjE4LDE4NTAyNjA2NzMsLTEyNzU5OTY3Mj
 IsLTEzOTMyNTI0NDFdfQ==
