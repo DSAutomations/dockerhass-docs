@@ -119,8 +119,7 @@ One important note is that not all images available on Docker Hub will be compat
 * [nginx](https://hub.docker.com//nginx)
 
 ### Tags
-To get the desired version of a container, you may need to append a tag to it. The standard syntax is *`<ImageName>:<Tag>`.* 
-*. Here is the list of both images *and* tags that we will deploy: 
+To get the desired version of a container, you may need to append a tag to it. The standard syntax is *`<ImageName>:<Tag>`.*  Here is the list of both images *and* tags that we will deploy: 
 * homeassistant/raspberrypi3-homeassistant
 * jsurf/rpi-mariadb:latest
 * nodered/node-red-docker:rpi-v8
@@ -277,7 +276,7 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3MzY4OTU4NCw1MDM4MTUxODAsMTY5Mz
+eyJoaXN0b3J5IjpbMTM0MTE1NTg2Niw1MDM4MTUxODAsMTY5Mz
 gxOTI5NCw0NTkwOTgwNDEsLTE4NjEzMDI3NjIsLTE4MDU0Njg5
 NTcsNTM1MzM0NzQ0LC0zNzA4MzQyNDUsLTEwNjU3NjY3OTQsLT
 EwNDgxNzkyNzYsOTAzMDUyNjE4LDE4NTAyNjA2NzMsLTEyNzU5
