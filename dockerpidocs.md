@@ -10,7 +10,7 @@ Ultimately, I've built some awesome features and automatons that my family and m
 
 Like many others, I saw the popup in HA about python 3.5 depreciation recently, and through sweat and tears, managed to rebuild a new venv and get Homeassistant running in it without the warning. However, this came at the cost of a dramatic performance hit in the recorder component. I'm a big fan of graphs on my front end, and now they're all taking twice as long to load. Not sure where I went wrong, but one thing that I am sure about is that there is a better way, install hass.io...
 
-No, just kidding, but seriously, Hass.io is essentially this what we're doing here, but with a lot of the hard work already done for you. However, with that shortcut, you're locking yourself in a box and may lose the ability to 
+No, just kidding, but seriously, Hass.io is essentially this what we're doing here, but with a lot of the hard work already done for you. However, with that shortcut, you're locking yourself in a box where you'll olny be able to use the [hass.io addons](https://www.home-assistant.io/addons/)
 
 I aim to give you a comprehensive guide for getting the *pictured* environment up and running from scratch, this environment includes the following:
 * **Homeassistant**
@@ -278,10 +278,10 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5NzQ5NTkxLC0xMjc5NDk5MzUxLC0xMz
-Y4ODU2ODY0LDUwMzgxNTE4MCwxNjkzODE5Mjk0LDQ1OTA5ODA0
-MSwtMTg2MTMwMjc2MiwtMTgwNTQ2ODk1Nyw1MzUzMzQ3NDQsLT
-M3MDgzNDI0NSwtMTA2NTc2Njc5NCwtMTA0ODE3OTI3Niw5MDMw
-NTI2MTgsMTg1MDI2MDY3MywtMTI3NTk5NjcyMiwtMTM5MzI1Mj
-Q0MV19
+eyJoaXN0b3J5IjpbMTc4MDgzMjE1OSwtMTI3OTQ5OTM1MSwtMT
+M2ODg1Njg2NCw1MDM4MTUxODAsMTY5MzgxOTI5NCw0NTkwOTgw
+NDEsLTE4NjEzMDI3NjIsLTE4MDU0Njg5NTcsNTM1MzM0NzQ0LC
+0zNzA4MzQyNDUsLTEwNjU3NjY3OTQsLTEwNDgxNzkyNzYsOTAz
+MDUyNjE4LDE4NTAyNjA2NzMsLTEyNzU5OTY3MjIsLTEzOTMyNT
+I0NDFdfQ==
 -->
