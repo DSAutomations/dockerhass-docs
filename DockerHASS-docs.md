@@ -18,7 +18,7 @@ I aim to give you a comprehensive guide for getting the *pictured* environment u
 * **InfluxDB** *to efficiently capture time-series data*
 * **Grafana** *for more robust graphing and dashboards*
 * **Node Red** *for flow-based automations*
-* Portainer
+* **Portainer** **
 
 # Getting Started
 We're starting from the ground up. I'm using a Raspberry Pi 3b. Let's grab the latest [Raspbian Strech Lite](https://downloads.raspberrypi.org/raspbian_lite/images/raspbian_lite-2019-04-09/) and flash it to an SD card using an app like [etcher](https://www.balena.io/etcher/). 
@@ -250,8 +250,8 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODE4NDY4NTQsLTQ5MzE1NjM5MCw2NT
-gxMDI0NzAsLTEyNDgyMzQ2NzQsMTQ1NjcxODA3MSwtMTYzNzky
-MjY1MiwxNTc2OTQ1MTQyLC0xMzM0NDYzMDg1LDMxNjQ3NzAwLC
-0xNTQ5NzE2Nzc0XX0=
+eyJoaXN0b3J5IjpbOTcxODkwNDM2LC00OTMxNTYzOTAsNjU4MT
+AyNDcwLC0xMjQ4MjM0Njc0LDE0NTY3MTgwNzEsLTE2Mzc5MjI2
+NTIsMTU3Njk0NTE0MiwtMTMzNDQ2MzA4NSwzMTY0NzcwMCwtMT
+U0OTcxNjc3NF19
 -->
