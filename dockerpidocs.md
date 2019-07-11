@@ -163,9 +163,10 @@ YOf course, you can do all of your config file creation and editing at the comma
 
 To make things a bit easier, let's get Samba up and running Create a new folder in your home directory and create a file inside called `docker-compose.yml` 
 
-
-
-
+```
+mkdir ~/samba-server
+nano ~/samba-server/docker-compose.yml
+```
 
 If you're like me and you keep your Homeassistant config on GitHub, now would be the time to clone your repository:
 ```
@@ -293,11 +294,11 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0OTkxMDkxNCwxNTMzNzEyMzYzLC03ND
-E2Mzc1NDksLTQyNjY0MzEyMCwtNTU2MTc2NTgzLC0zOTk5NDM4
-NjYsNDc1NTQyMjI2LDEzNDczMzE3MzMsNjkzMDYwOTk5LC0xMj
-c5NDk5MzUxLC0xMzY4ODU2ODY0LDUwMzgxNTE4MCwxNjkzODE5
-Mjk0LDQ1OTA5ODA0MSwtMTg2MTMwMjc2MiwtMTgwNTQ2ODk1Ny
-w1MzUzMzQ3NDQsLTM3MDgzNDI0NSwtMTA2NTc2Njc5NCwtMTA0
-ODE3OTI3Nl19
+eyJoaXN0b3J5IjpbLTE4ODMxMTU4MDksMTUzMzcxMjM2MywtNz
+QxNjM3NTQ5LC00MjY2NDMxMjAsLTU1NjE3NjU4MywtMzk5OTQz
+ODY2LDQ3NTU0MjIyNiwxMzQ3MzMxNzMzLDY5MzA2MDk5OSwtMT
+I3OTQ5OTM1MSwtMTM2ODg1Njg2NCw1MDM4MTUxODAsMTY5Mzgx
+OTI5NCw0NTkwOTgwNDEsLTE4NjEzMDI3NjIsLTE4MDU0Njg5NT
+csNTM1MzM0NzQ0LC0zNzA4MzQyNDUsLTEwNjU3NjY3OTQsLTEw
+NDgxNzkyNzZdfQ==
 -->
