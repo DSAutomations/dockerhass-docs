@@ -108,17 +108,16 @@ Images are at the core of docker, we're going to use a set of them to create our
 
 The first time we launch our stack, the images will be downloaded and cached on our system. Subsequent runs will utilize these downloaded images.
 
-One important note is that not all images available on Docker Hub will be compatible with the Raspberry Pi. An image needs to be created with a compatible CPU architecture. Here are the images we will be using that are compatible with my Raspberry Pi 3b:
-* [homeassistant/raspberrypi3-homeassistant](https://hub.docker.com/r/homeassistant/raspberrypi3-homeassistant)
+One important note is that not all images available on Docker Hub will be compatible with the Raspberry Pi. An image needs to be created with a compatible CPU architecture. Here are the images we will be using that are compatible with my Raspberry Pi * [homeassistant/raspberrypi3-homeassistant](https://hub.docker.com/r/homeassistant/raspberrypi3-homeassistant)
 * [jsurf/rpi-mariadb](https://hub.docker.com/r/jsurf/rpi-mariadb)
 * [nodered/node-red-docker](https://hub.docker.com/r/nodered/node-red-docker)
-* [influxdb](https://hub.docker.com/_/influxdb)
+* [influxdb](https://hub.docker.com//influxdb)
 * [fg2it/grafana-armhf](https://hub.docker.com/r/fg2it/grafana-armhf)
 * [portainer/portainer](https://hub.docker.com/r/portainer/portainer)
-* [nginx](https://hub.docker.com/_/nginx)
+* [nginx](https://hub.docker.com//nginx)
 ### Tags
 To get the desired version of a container, you may need to append a tag to it. The standard syntax is *`imagename:tag`*
-
+tags
 
 # Volumes
 Docker containers are ephemeral. In short, we can start up a container and do work with it, but when it's shut down any data contained within will be lost. We can gain persistence between sessions by mounting volumes which will link directories outside the docker containers to directories within.
@@ -267,9 +266,9 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyMjI2NDUwOCw0NTkwOTgwNDEsLTE4Nj
-EzMDI3NjIsLTE4MDU0Njg5NTcsNTM1MzM0NzQ0LC0zNzA4MzQy
-NDUsLTEwNjU3NjY3OTQsLTEwNDgxNzkyNzYsOTAzMDUyNjE4LD
-E4NTAyNjA2NzMsLTEyNzU5OTY3MjIsLTEzOTMyNTI0NDFdfQ==
-
+eyJoaXN0b3J5IjpbMTY5MzgxOTI5NCwxOTIyMjY0NTA4LDQ1OT
+A5ODA0MSwtMTg2MTMwMjc2MiwtMTgwNTQ2ODk1Nyw1MzUzMzQ3
+NDQsLTM3MDgzNDI0NSwtMTA2NTc2Njc5NCwtMTA0ODE3OTI3Ni
+w5MDMwNTI2MTgsMTg1MDI2MDY3MywtMTI3NTk5NjcyMiwtMTM5
+MzI1MjQ0MV19
 -->
