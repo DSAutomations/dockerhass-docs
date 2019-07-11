@@ -17,7 +17,7 @@ I aim to give you a comprehensive guide for getting the *pictured* environment u
 * **MariaDB** *to replace the built-in DB for better performance*
 * **InfluxDB** *to efficiently capture time-series data*
 * **Grafana** *for more robust graphing and dashboards*
-* Node Red
+* **Node Red** *for flow-based automations*
 * Portainer
 
 # Getting Started
@@ -250,8 +250,8 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0MDg0NzI0MSwtNDkzMTU2MzkwLDY1OD
-EwMjQ3MCwtMTI0ODIzNDY3NCwxNDU2NzE4MDcxLC0xNjM3OTIy
-NjUyLDE1NzY5NDUxNDIsLTEzMzQ0NjMwODUsMzE2NDc3MDAsLT
-E1NDk3MTY3NzRdfQ==
+eyJoaXN0b3J5IjpbLTE4ODE4NDY4NTQsLTQ5MzE1NjM5MCw2NT
+gxMDI0NzAsLTEyNDgyMzQ2NzQsMTQ1NjcxODA3MSwtMTYzNzky
+MjY1MiwxNTc2OTQ1MTQyLC0xMzM0NDYzMDg1LDMxNjQ3NzAwLC
+0xNTQ5NzE2Nzc0XX0=
 -->
