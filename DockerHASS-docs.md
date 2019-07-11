@@ -155,6 +155,8 @@ mkdir /srv/docker/portainer
 mkdir /srv/docker/nginx/config
 mkdir /srv/docker/nginx/ssl
 ```
+
+
 ## Optional: Setup Samba
 Of course, you can do all of your config file creation and editing at the command line, however this can be a bit cumbersome
 
@@ -285,11 +287,11 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU0MDc0ODE2LC03NDE2Mzc1NDksLTQyNj
-Y0MzEyMCwtMzk5OTQzODY2LC0xMjc5NDk5MzUxLC0xMzY4ODU2
-ODY0LDQ1OTA5ODA0MSwtMTg2MTMwMjc2MiwtMTgwNTQ2ODk1Ny
-w1MzUzMzQ3NDQsLTM3MDgzNDI0NSwtMTA0ODE3OTI3NiwxODUw
-MjYwNjczLC00OTMxNTYzOTAsNjU4MTAyNDcwLC0xMjQ4MjM0Nj
-c0LDE0NTY3MTgwNzEsLTE2Mzc5MjI2NTIsMTU3Njk0NTE0Miwt
-MTMzNDQ2MzA4NV19
+eyJoaXN0b3J5IjpbLTU0ODg0MjA4NCwtNzQxNjM3NTQ5LC00Mj
+Y2NDMxMjAsLTM5OTk0Mzg2NiwtMTI3OTQ5OTM1MSwtMTM2ODg1
+Njg2NCw0NTkwOTgwNDEsLTE4NjEzMDI3NjIsLTE4MDU0Njg5NT
+csNTM1MzM0NzQ0LC0zNzA4MzQyNDUsLTEwNDgxNzkyNzYsMTg1
+MDI2MDY3MywtNDkzMTU2MzkwLDY1ODEwMjQ3MCwtMTI0ODIzND
+Y3NCwxNDU2NzE4MDcxLC0xNjM3OTIyNjUyLDE1NzY5NDUxNDIs
+LTEzMzQ0NjMwODVdfQ==
 -->
