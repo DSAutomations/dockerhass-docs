@@ -193,7 +193,7 @@ services:
       - 'GROUPID=996'
       - 'TZ=America/New_York'
 ```
-save the file by pressing  `Ctrl-X` then `y` then `enter`
+save the file by pressing  `Ctrl-o` then exit with `Ctrl-x`
 
 now you should be able to connect to 
 
@@ -335,11 +335,11 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzM4MTgxNDIsMTIxODc4NzkzMSwtMT
-UyNzQ1MTMxOSwxMTQyODM3MzkyLDIxMDU4NDYzOTAsLTkwNDIw
-OTA2OSw1NTM3OTQ5NzcsMjA2NTQ2NTQwNiwyMDYwMDcxMDY3LD
-E1MzM3MTIzNjMsLTc0MTYzNzU0OSwtNDI2NjQzMTIwLC01NTYx
-NzY1ODMsLTM5OTk0Mzg2Niw0NzU1NDIyMjYsMTM0NzMzMTczMy
-w2OTMwNjA5OTksLTEyNzk0OTkzNTEsLTEzNjg4NTY4NjQsNTAz
-ODE1MTgwXX0=
+eyJoaXN0b3J5IjpbLTM5ODA2MDU5MywxMjE4Nzg3OTMxLC0xNT
+I3NDUxMzE5LDExNDI4MzczOTIsMjEwNTg0NjM5MCwtOTA0MjA5
+MDY5LDU1Mzc5NDk3NywyMDY1NDY1NDA2LDIwNjAwNzEwNjcsMT
+UzMzcxMjM2MywtNzQxNjM3NTQ5LC00MjY2NDMxMjAsLTU1NjE3
+NjU4MywtMzk5OTQzODY2LDQ3NTU0MjIyNiwxMzQ3MzMxNzMzLD
+Y5MzA2MDk5OSwtMTI3OTQ5OTM1MSwtMTM2ODg1Njg2NCw1MDM4
+MTUxODBdfQ==
 -->
