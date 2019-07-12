@@ -182,17 +182,17 @@ services:
     restart: unless-stopped
     volumes:
       - /srv/docker:/srv/docker
-      - /home/pi:/home/pi
     command: > 
       -u "smbuser;badpass" 
       -s "docker-config;/srv/docker;yes;no;no;smbuser" 
-      -s "pi-home;/home/pi/;yes;no;no;smbuser"
     environment:
       - 'USERID=1000'
       - 'GROUPID=996'
       - 'TZ=America/New_York'
 ```
 Change `badpass` to something else
+
+*Note: the environmental variables above should work on a raspberry pi, *
 
 Save the file by pressing  `Ctrl-o` then exit with `Ctrl-x`.
 Make sure that you're in the `samba-server` directory and bring up the container:
@@ -345,11 +345,11 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4Mzg2MzUxMCwtNDkwNjEzNjE1LC0xOD
-E4MzU2OTQ3LDQ5MjYwNzk2MywtMzA2NzE3MzQ2LDI4MTg2Mzky
-MCwtMTUyNzQ1MTMxOSwxMTQyODM3MzkyLDIxMDU4NDYzOTAsNT
-UzNzk0OTc3LDIwNjAwNzEwNjcsLTc0MTYzNzU0OSwtNDI2NjQz
-MTIwLC0zOTk5NDM4NjYsLTEyNzk0OTkzNTEsLTEzNjg4NTY4Nj
-QsNDU5MDk4MDQxLC0xODYxMzAyNzYyLC0xODA1NDY4OTU3LDUz
-NTMzNDc0NF19
+eyJoaXN0b3J5IjpbLTE0MzE5Mjk2ODQsLTQ5MDYxMzYxNSwtMT
+gxODM1Njk0Nyw0OTI2MDc5NjMsLTMwNjcxNzM0NiwyODE4NjM5
+MjAsLTE1Mjc0NTEzMTksMTE0MjgzNzM5MiwyMTA1ODQ2MzkwLD
+U1Mzc5NDk3NywyMDYwMDcxMDY3LC03NDE2Mzc1NDksLTQyNjY0
+MzEyMCwtMzk5OTQzODY2LC0xMjc5NDk5MzUxLC0xMzY4ODU2OD
+Y0LDQ1OTA5ODA0MSwtMTg2MTMwMjc2MiwtMTgwNTQ2ODk1Nyw1
+MzUzMzQ3NDRdfQ==
 -->
