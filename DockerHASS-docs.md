@@ -184,7 +184,8 @@ services:
       - /srv/docker:/srv/docker
     command: > 
       -u "smbuser;badpass" 
-nfig;/srv/docker    environment:
+      -s "docker-config;/srv/docker;yes;no;no;smbuser"
+    environment:      
       - 'USERID=1000'
       - 'GROUPID=996'
       - 'TZ=America/New_York'
@@ -344,11 +345,11 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTAyNTc3NywxMjU3MDY1NzQsLTQ5MD
-YxMzYxNSwtMTgxODM1Njk0Nyw0OTI2MDc5NjMsLTMwNjcxNzM0
-NiwyODE4NjM5MjAsLTE1Mjc0NTEzMTksMTE0MjgzNzM5MiwyMT
-A1ODQ2MzkwLDU1Mzc5NDk3NywyMDYwMDcxMDY3LC03NDE2Mzc1
-NDksLTQyNjY0MzEyMCwtMzk5OTQzODY2LC0xMjc5NDk5MzUxLC
-0xMzY4ODU2ODY0LDQ1OTA5ODA0MSwtMTg2MTMwMjc2MiwtMTgw
-NTQ2ODk1N119
+eyJoaXN0b3J5IjpbLTE3MjIyNjc2NzYsMTI1NzA2NTc0LC00OT
+A2MTM2MTUsLTE4MTgzNTY5NDcsNDkyNjA3OTYzLC0zMDY3MTcz
+NDYsMjgxODYzOTIwLC0xNTI3NDUxMzE5LDExNDI4MzczOTIsMj
+EwNTg0NjM5MCw1NTM3OTQ5NzcsMjA2MDA3MTA2NywtNzQxNjM3
+NTQ5LC00MjY2NDMxMjAsLTM5OTk0Mzg2NiwtMTI3OTQ5OTM1MS
+wtMTM2ODg1Njg2NCw0NTkwOTgwNDEsLTE4NjEzMDI3NjIsLTE4
+MDU0Njg5NTddfQ==
 -->
