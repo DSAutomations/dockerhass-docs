@@ -88,7 +88,7 @@ sudo apt-get install apt-transport-https \
                       python-dev \
                       python-pip -y
 ```
-Next let's add a repository for us to pull the latest docker packages from, and alos, we'll make it so that packages signed by the docker project are permitted to run.
+Next let's add a repository for us to pull the latest docker packages from, and also, we'll make it so that packages signed by the docker project are permitted to run.
 ```
 echo "deb https://download.docker.com/linux/raspbian/ stretch stable" | sudo tee -a /etc/apt/sources.list
 curl -fsSL https://yum.dockerproject.org/gpg | sudo apt-key add -
@@ -345,11 +345,11 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1NzA2NTc0LC00OTA2MTM2MTUsLTE4MT
-gzNTY5NDcsNDkyNjA3OTYzLC0zMDY3MTczNDYsMjgxODYzOTIw
-LC0xNTI3NDUxMzE5LDExNDI4MzczOTIsMjEwNTg0NjM5MCw1NT
-M3OTQ5NzcsMjA2MDA3MTA2NywtNzQxNjM3NTQ5LC00MjY2NDMx
-MjAsLTM5OTk0Mzg2NiwtMTI3OTQ5OTM1MSwtMTM2ODg1Njg2NC
-w0NTkwOTgwNDEsLTE4NjEzMDI3NjIsLTE4MDU0Njg5NTcsNTM1
-MzM0NzQ0XX0=
+eyJoaXN0b3J5IjpbNjk0MjQ1ODIsMTI1NzA2NTc0LC00OTA2MT
+M2MTUsLTE4MTgzNTY5NDcsNDkyNjA3OTYzLC0zMDY3MTczNDYs
+MjgxODYzOTIwLC0xNTI3NDUxMzE5LDExNDI4MzczOTIsMjEwNT
+g0NjM5MCw1NTM3OTQ5NzcsMjA2MDA3MTA2NywtNzQxNjM3NTQ5
+LC00MjY2NDMxMjAsLTM5OTk0Mzg2NiwtMTI3OTQ5OTM1MSwtMT
+M2ODg1Njg2NCw0NTkwOTgwNDEsLTE4NjEzMDI3NjIsLTE4MDU0
+Njg5NTddfQ==
 -->
