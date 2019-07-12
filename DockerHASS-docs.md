@@ -184,8 +184,7 @@ services:
       - /srv/docker:/srv/docker
     command: > 
       -u "smbuser;badpass" 
-      -s "docker-config;/srv/docker;yes;no;no;smbuser" 
-    environment:
+nfig;/srv/docker    environment:
       - 'USERID=1000'
       - 'GROUPID=996'
       - 'TZ=America/New_York'
@@ -203,7 +202,7 @@ docker-compose up -d
 
 You should now you should be able to connect to your instance using the standard SMB convention: 
 
-`\\hostname\docker-config` or `smb://hostname/docker-config/`
+`\\hostname\docker-config` or `smb://hostname>/docker-config/`
 
 
 
@@ -345,11 +344,11 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjk0MjQ1ODIsMTI1NzA2NTc0LC00OTA2MT
-M2MTUsLTE4MTgzNTY5NDcsNDkyNjA3OTYzLC0zMDY3MTczNDYs
-MjgxODYzOTIwLC0xNTI3NDUxMzE5LDExNDI4MzczOTIsMjEwNT
-g0NjM5MCw1NTM3OTQ5NzcsMjA2MDA3MTA2NywtNzQxNjM3NTQ5
-LC00MjY2NDMxMjAsLTM5OTk0Mzg2NiwtMTI3OTQ5OTM1MSwtMT
-M2ODg1Njg2NCw0NTkwOTgwNDEsLTE4NjEzMDI3NjIsLTE4MDU0
-Njg5NTddfQ==
+eyJoaXN0b3J5IjpbLTEwNTAyNTc3NywxMjU3MDY1NzQsLTQ5MD
+YxMzYxNSwtMTgxODM1Njk0Nyw0OTI2MDc5NjMsLTMwNjcxNzM0
+NiwyODE4NjM5MjAsLTE1Mjc0NTEzMTksMTE0MjgzNzM5MiwyMT
+A1ODQ2MzkwLDU1Mzc5NDk3NywyMDYwMDcxMDY3LC03NDE2Mzc1
+NDksLTQyNjY0MzEyMCwtMzk5OTQzODY2LC0xMjc5NDk5MzUxLC
+0xMzY4ODU2ODY0LDQ1OTA5ODA0MSwtMTg2MTMwMjc2MiwtMTgw
+NTQ2ODk1N119
 -->
