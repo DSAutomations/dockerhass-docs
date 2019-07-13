@@ -166,7 +166,7 @@ You'll notice in the config below, we're declaring an image we want to use with 
 
 Additionally, there's a list of ports needed by the SMB protocol that we're going to pass though in the same *`outside:inside`* format, as well as a bunch of other attributes needed by docker to setup the container.
 
-To get Create a new folder in your home directory and create a file inside called `docker-compose.yml` 
+To get Samba up and running, create a new folder in your home directory and create a file inside called `docker-compose.yml` 
 
 ```
 mkdir ~/samba-server
@@ -199,7 +199,9 @@ services:
 Change `badpass` to something else
 Save the file by pressing  `Ctrl-o` then exit with `Ctrl-x`.
 
-*Note: the environmental variables above should work on a raspberry pi, but you may need to adjust USERID or GROUPID if you're on a different system or have added additional users. You can find these values by evoking `id` on the command line. Assign the UID of your user which has permissions into your shared directory and the GID of dockerSae the file by eing `` then eit with tr
+*Note: the environmental variables above should work on a raspberry pi, but you may need to adjust USERID or GROUPID if you're on a different system or have added additional users. You can find these values by evoking `id` on the command line. Assign the UID of your user and the GID of docker.*
+
+
 Make sure that you're in the `samba-server` directory and bring up the container:
 ```
 cd ~/samba-server
@@ -208,14 +210,9 @@ docker-compose up -d
 
 You should now you should be able to connect to your instance using the standard SMB convention: 
 
-`\\hostname\docker-config` or `smb://hostname>/docker-config/`
+`\\hostname\docker-config` or `smb://hostname/docker-config/`
 
-
-
-```-u "smbuser;badpass" ``` 
-to set your username and password Things that you may want to tweak include this line:
-```-u "smbuser;badpass" ```
-
+You should see now the list of directories that we created in the last section. Now would be a good time to copy any existing c
 
 #
 
@@ -350,7 +347,7 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDg5NDAzODcsMTc2OTYzOTgzNiwxMj
+eyJoaXN0b3J5IjpbLTE3NTg2ODEzODMsMTc2OTYzOTgzNiwxMj
 U3MDY1NzQsLTQ5MDYxMzYxNSwtMTgxODM1Njk0Nyw0OTI2MDc5
 NjMsLTMwNjcxNzM0NiwyODE4NjM5MjAsLTE1Mjc0NTEzMTksMT
 E0MjgzNzM5MiwyMTA1ODQ2MzkwLDU1Mzc5NDk3NywyMDYwMDcx
