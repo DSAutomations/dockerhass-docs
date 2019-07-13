@@ -205,17 +205,15 @@ Save the file by pressing  `Ctrl-o` then exit with `Ctrl-x`.
 Make sure that you're in the `samba-server` directory and bring up the container:
 ```
 cd ~/samba-server
-docker-compose up -d
+docker-compose up
 ```
-
-You should now you should be able to connect to your instance using the username `smbuser` and whatever you changed `badpass` to moments ago. We named the share `docker-config`, so connect to that using the standard SMB convention: 
+Watch the logs that appear to see if everything is going smoothly. If things looks positive, you should now you should be able to connect to your instance using the username `smbuser` and whatever you changed `badpass` to moments ago. We named the share `docker-config`, so connect to that using the standard SMB convention: 
 
 `\\hostname\docker-config` or `smb://hostname/docker-config/`
 
+You should see the list of directories that we created in the last section. Now would be a good time to copy your Home Assistant config into the `homeassistant` directory.
 
-
-You should see now the list of directories that we created in the last section. Now would be a good time to copy your Home Assistant config into the `homeassistant` directory.
-
+When you're finished, switch back to the terminal and press `Ctrl-c` to kill the server. Next time you want to run the server add the `-d` 
 
 
 #
@@ -351,11 +349,11 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0MDM1MjA2MCwtNjcxNTczNDU2LC0xMz
-g3OTUwNjgzLDE3Njk2Mzk4MzYsLTEwNTAyNTc3NywtMTE1OTIy
-NDE2OSwxMjU3MDY1NzQsLTQ5MDYxMzYxNSwxNzA3MDgxMzEwLC
-0xODE4MzU2OTQ3LDIxNDMwMzg3MzMsNDkyNjA3OTYzLC0zMDY3
-MTczNDYsMjgxODYzOTIwLDUxNTQyODc1OSwxMjE4Nzg3OTMxLC
-0xNTI3NDUxMzE5LDExNDI4MzczOTIsMjEwNTg0NjM5MCwtOTA0
-MjA5MDY5XX0=
+eyJoaXN0b3J5IjpbNTk5Nzc2OTUwLC02NzE1NzM0NTYsLTEzOD
+c5NTA2ODMsMTc2OTYzOTgzNiwtMTA1MDI1Nzc3LC0xMTU5MjI0
+MTY5LDEyNTcwNjU3NCwtNDkwNjEzNjE1LDE3MDcwODEzMTAsLT
+E4MTgzNTY5NDcsMjE0MzAzODczMyw0OTI2MDc5NjMsLTMwNjcx
+NzM0NiwyODE4NjM5MjAsNTE1NDI4NzU5LDEyMTg3ODc5MzEsLT
+E1Mjc0NTEzMTksMTE0MjgzNzM5MiwyMTA1ODQ2MzkwLC05MDQy
+MDkwNjldfQ==
 -->
