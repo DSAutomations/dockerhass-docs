@@ -158,10 +158,12 @@ mkdir /srv/docker/nginx/ssl
 
 
 ## Optional: Setup Samba
-You can do all of your config file creation and editing at the command line if you want, however this can be a bit cumbersome. It would be helpful to directly access your config files from your local PC, let's get Samba up and running to provide SMB service to us. 
+You can do all of your config file creation and editing at the command line if you want, however this can be a bit cumbersome. It would be helpful to directly browse to your config files on your local PC, let's get Samba up and running to provide this service to us. We'll set this up using `docker-compose` the same tool we'll use later for our main stack. This will be a good opportunity for a bit of practice.
 
-You'll notice in the config below, we're declaring an image we want to use with a tag that's specific to the raspberry pi, and also passing in a list of volumes we want to create with a format like: 
+You'll notice in the config below, we're declaring an image we want to use with a tag that's specific to the raspberry pi. We're also passing in a list of volumes we want to link in a format like this: 
+
 *`/path/outside/container:/path/inside/container`*
+Additionally, a list of ports that we're going to pass though in the same *`outside:inside`* format, as well as a bunch of other attributes 
 
 Create a new folder in your home directory and create a file inside called `docker-compose.yml` 
 
@@ -347,7 +349,7 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjkwMDM4MzYsLTEzODc5NTA2ODMsMT
+eyJoaXN0b3J5IjpbLTE0ODY1MzUxMDIsLTEzODc5NTA2ODMsMT
 c2OTYzOTgzNiwtMTA1MDI1Nzc3LC0xMTU5MjI0MTY5LDEyNTcw
 NjU3NCwtNDkwNjEzNjE1LDE3MDcwODEzMTAsLTE4MTgzNTY5ND
 csMjE0MzAzODczMyw0OTI2MDc5NjMsLTMwNjcxNzM0NiwyODE4
