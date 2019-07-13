@@ -158,7 +158,7 @@ mkdir /srv/docker/nginx/ssl
 
 
 ## Optional: Setup Samba
-You can do all of your config file creation and editing at the command line if you want, however this can be a bit cumbersome. It would be helpful to directly access your config files from your local PC, let's get Samba up and running to provide this service to us. Just like our main stack later on
+You can do all of your config file creation and editing at the command line if you want, however this can be a bit cumbersome. It would be helpful to directly access your config files from your local PC, let's get Samba up and running to provide SMB service to us. 
 
 Create a new folder in your home directory and create a file inside called `docker-compose.yml` 
 
@@ -345,11 +345,11 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTA0Mzg0NDYxLC0xMDUwMjU3NzcsLTExNT
-kyMjQxNjksMTI1NzA2NTc0LC00OTA2MTM2MTUsMTcwNzA4MTMx
-MCwtMTgxODM1Njk0NywyMTQzMDM4NzMzLDQ5MjYwNzk2MywtMz
-A2NzE3MzQ2LDI4MTg2MzkyMCw1MTU0Mjg3NTksMTIxODc4Nzkz
-MSwtMTUyNzQ1MTMxOSwxMTQyODM3MzkyLDIxMDU4NDYzOTAsLT
-kwNDIwOTA2OSw1NTM3OTQ5NzcsMjA2NTQ2NTQwNiwyMDYwMDcx
-MDY3XX0=
+eyJoaXN0b3J5IjpbMTc2OTYzOTgzNiwtMTA1MDI1Nzc3LC0xMT
+U5MjI0MTY5LDEyNTcwNjU3NCwtNDkwNjEzNjE1LDE3MDcwODEz
+MTAsLTE4MTgzNTY5NDcsMjE0MzAzODczMyw0OTI2MDc5NjMsLT
+MwNjcxNzM0NiwyODE4NjM5MjAsNTE1NDI4NzU5LDEyMTg3ODc5
+MzEsLTE1Mjc0NTEzMTksMTE0MjgzNzM5MiwyMTA1ODQ2MzkwLC
+05MDQyMDkwNjksNTUzNzk0OTc3LDIwNjU0NjU0MDYsMjA2MDA3
+MTA2N119
 -->
