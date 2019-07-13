@@ -213,7 +213,9 @@ Watch the logs that appear to see if everything is going smoothly. If things loo
 
 You should see the list of directories that we created in the last section. Now would be a good time to copy your Home Assistant config into the `homeassistant` directory.
 
-When you're finished, switch back to the terminal and press `Ctrl-c` to kill the server. Next time you want to run the server add the `-d` 
+When you're finished, switch back to the terminal and press `Ctrl-c` to kill the server. Keep this shutdown when you're not using it.  
+
+`-d` argument to your docker-compose command to run the container in the background.
 
 
 #
@@ -349,11 +351,11 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk5Nzc2OTUwLDE3Njk2Mzk4MzYsMTI1Nz
-A2NTc0LC00OTA2MTM2MTUsLTE4MTgzNTY5NDcsNDkyNjA3OTYz
-LC0zMDY3MTczNDYsMjgxODYzOTIwLC0xNTI3NDUxMzE5LDExND
-I4MzczOTIsMjEwNTg0NjM5MCw1NTM3OTQ5NzcsMjA2MDA3MTA2
-NywtNzQxNjM3NTQ5LC00MjY2NDMxMjAsLTM5OTk0Mzg2NiwtMT
-I3OTQ5OTM1MSwtMTM2ODg1Njg2NCw0NTkwOTgwNDEsLTE4NjEz
-MDI3NjJdfQ==
+eyJoaXN0b3J5IjpbLTE0NTM1MjE2MjQsMTc2OTYzOTgzNiwxMj
+U3MDY1NzQsLTQ5MDYxMzYxNSwtMTgxODM1Njk0Nyw0OTI2MDc5
+NjMsLTMwNjcxNzM0NiwyODE4NjM5MjAsLTE1Mjc0NTEzMTksMT
+E0MjgzNzM5MiwyMTA1ODQ2MzkwLDU1Mzc5NDk3NywyMDYwMDcx
+MDY3LC03NDE2Mzc1NDksLTQyNjY0MzEyMCwtMzk5OTQzODY2LC
+0xMjc5NDk5MzUxLC0xMzY4ODU2ODY0LDQ1OTA5ODA0MSwtMTg2
+MTMwMjc2Ml19
 -->
