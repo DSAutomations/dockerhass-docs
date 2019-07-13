@@ -124,7 +124,7 @@ One important note is that not all images available on Docker Hub will be compat
 * [nginx](https://hub.docker.com//nginx)
 
 ### Tags
-Some images may be directly compatible with the Raspberry Pi, but for others we may need to specify a version. To get a desired version of a container, append a tag to it. The standard syntax is *`imagename:tagname`.*  Here is the list of both images *and* tags that we will deploy in the main stack: 
+Some images may be directly compatible with the Raspberry Pi, but for others we may need to specify a version. To get a desired version of a container, append a tag to it. The standard syntax is *`i<Imageme:tagnae>.*  Here is the list of both images *and* tags that we will deploy in the main stack: 
 * homeassistant/raspberrypi3-homeassistant
 * jsurf/rpi-mariadb:latest
 * nodered/node-red-docker:rpi-v8
@@ -158,7 +158,7 @@ mkdir /srv/docker/nginx/ssl
 
 
 ## Optional: Setup Samba
-You can do all of your config file creation and editing at the command line if you want, however this can be a bit cumbersome. It would be helpful to directly browse to your config files on your local PC, let's get Samba up and running to provide this service to us. We'll set this up using `docker-compose` the same tool we'll use later for our main stack. This will be a good opportunity for a bit of practice.
+You can do all of your config file creation and editing at the command line if you want, however this can be a bit cumbersome. It would be helpful to directly e your config files o your local PC, let's get Samba up and running to provide  service to us. We'll set this up using `docker-compose` the same tool we'll use later for our main stack. This will be a good opportunity for a bit of practice.
 
 You'll notice in the config below, we're declaring an image we want to use with a tag that's specific to the raspberry pi. We're also passing in a list of volumes we want to link in a format like this: 
 
@@ -166,7 +166,9 @@ You'll notice in the config below, we're declaring an image we want to use with 
 
 Additionally, there's a list of ports needed by the SMB protocol that we're going to pass though in the same *`outside:inside`* format, as well as a bunch of other attributes needed by docker to setup the container.
 
-To get Samba up and running, create a new folder in your home directory and create a file inside called `docker-compose.yml` 
+To get Samba up and running, c
+
+reate a new folder in your home directory and create a file inside called `docker-compose.yml` 
 
 ```
 mkdir ~/samba-server
@@ -178,8 +180,6 @@ version: '3.4'
 services:
   samba:
     image: dperson/samba:armhf
-    volumes:
-      - /srv/docker:/srv/docker
     ports:
       - "137:137/udp"
       - "138:138/udp"
@@ -347,11 +347,11 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTg2ODEzODMsLTEzODc5NTA2ODMsMT
-c2OTYzOTgzNiwtMTA1MDI1Nzc3LC0xMTU5MjI0MTY5LDEyNTcw
-NjU3NCwtNDkwNjEzNjE1LDE3MDcwODEzMTAsLTE4MTgzNTY5ND
-csMjE0MzAzODczMyw0OTI2MDc5NjMsLTMwNjcxNzM0NiwyODE4
-NjM5MjAsNTE1NDI4NzU5LDEyMTg3ODc5MzEsLTE1Mjc0NTEzMT
-ksMTE0MjgzNzM5MiwyMTA1ODQ2MzkwLC05MDQyMDkwNjksNTUz
-Nzk0OTc3XX0=
+eyJoaXN0b3J5IjpbLTY3MTU3MzQ1NiwtMTc1ODY4MTM4MywtMT
+M4Nzk1MDY4MywxNzY5NjM5ODM2LC0xMDUwMjU3NzcsLTExNTky
+MjQxNjksMTI1NzA2NTc0LC00OTA2MTM2MTUsMTcwNzA4MTMxMC
+wtMTgxODM1Njk0NywyMTQzMDM4NzMzLDQ5MjYwNzk2MywtMzA2
+NzE3MzQ2LDI4MTg2MzkyMCw1MTU0Mjg3NTksMTIxODc4NzkzMS
+wtMTUyNzQ1MTMxOSwxMTQyODM3MzkyLDIxMDU4NDYzOTAsLTkw
+NDIwOTA2OV19
 -->
