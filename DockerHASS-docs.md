@@ -215,7 +215,7 @@ You should see the list of directories that we created in the last section. Now 
 
 When you're finished, switch back to the terminal and press `Ctrl-c` to kill the server. Keep this shutdown when you're not using it.  
 
-`-d` argument to your docker-compose command to run the container in the background.
+Once everything is working consistently start adding the`-d` argument to your docker-compose command to run the container in the background. After launching a container like this, use `docker-compose down` to stop it again.
 
 
 #
@@ -224,31 +224,6 @@ When you're finished, switch back to the terminal and press `Ctrl-c` to kill the
 
 
 
-
-If you're like me and you keep your Homeassistant config on GitHub, now would be the time to clone your repository:
-```
-sudo apt install git
-git clone https://github.com/DSAutomations/HomeAssistantConfig.git /srv/docker/homeassistant
-```
-Otherwise, copy your config into the homeassistant directory we just created. You can use SCP over command line or you can use samba. If you're brand new to homeassistant and don't yet have a config, create a file called `configuration.yaml` in `/srv/docker/homeassistant` and add the following to get you started:
-```
-homeassistant:
-	default_config:
-```
-
-
-
-     - /srv/docker/HomeAssistantConfig:/config
-     - /srv/docker/letsencrypt/live:/letsencrypt
-     - /srv/docker/mariadb/config:/etc/mysql/conf.d
-     - /srv/docker/mariadb/data:/var/lib/mysql
-     - /srv/docker/nodered:/data
-     - /srv/docker/influxdb/data:/var/lib/influxdb
-     - /srv/docker/grafana/data:/var/lib/grafana
-     - /srv/docker/portainer/data:/data
-     - /srv/docker/nginx/config/nginx.conf:/etc/nginx/nginx.conf
-     - /srv/docker/nginx/ssl:/etc/nginx/ssl
-     - /srv/docker/letsencrypt:/letsencrypt
 
 ```
 version: '3'
@@ -330,32 +305,14 @@ services:
      - 443:443
 ```
 
-# Setup Samba
-To make things a bit easier during initial configuration, you may want to setup a samba share to access your docker volumes. We'll only want to run this while we're actively working on the system.  To do this, create a new directory in your home folder called samba:
-```
-mkdir ~/samba
-```
-Change to the directory and create a `docker-compose.yml` file within:
-```
-cd ~/samba
-nano docker-compose.yml
-```
-paste the following into this file:
-```
-```
-Then press `Ctrl-X` then `y` then `enter` to save the file.
 
-Make sure that your working directory is still `~/samba` and run the following to start the container:
-```
-docker-compose up -d
-```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTM1MjE2MjQsMTc2OTYzOTgzNiwxMj
-U3MDY1NzQsLTQ5MDYxMzYxNSwtMTgxODM1Njk0Nyw0OTI2MDc5
-NjMsLTMwNjcxNzM0NiwyODE4NjM5MjAsLTE1Mjc0NTEzMTksMT
-E0MjgzNzM5MiwyMTA1ODQ2MzkwLDU1Mzc5NDk3NywyMDYwMDcx
-MDY3LC03NDE2Mzc1NDksLTQyNjY0MzEyMCwtMzk5OTQzODY2LC
-0xMjc5NDk5MzUxLC0xMzY4ODU2ODY0LDQ1OTA5ODA0MSwtMTg2
-MTMwMjc2Ml19
+eyJoaXN0b3J5IjpbMjExMzQzODg5NCwtMTQ1MzUyMTYyNCwxNz
+Y5NjM5ODM2LDEyNTcwNjU3NCwtNDkwNjEzNjE1LC0xODE4MzU2
+OTQ3LDQ5MjYwNzk2MywtMzA2NzE3MzQ2LDI4MTg2MzkyMCwtMT
+UyNzQ1MTMxOSwxMTQyODM3MzkyLDIxMDU4NDYzOTAsNTUzNzk0
+OTc3LDIwNjAwNzEwNjcsLTc0MTYzNzU0OSwtNDI2NjQzMTIwLC
+0zOTk5NDM4NjYsLTEyNzk0OTkzNTEsLTEzNjg4NTY4NjQsNDU5
+MDk4MDQxXX0=
 -->
