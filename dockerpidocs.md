@@ -196,7 +196,7 @@ services:
       - 'GROUPID=996'
       - 'TZ=America/New_York'
 ```
-Change `badpass` to something beer
+Change `badpass` to something better
 Save the file by pressing  `Ctrl-o` then exit with `Ctrl-x`.
 
 *Note: the environmental variables above should work on a raspberry pi, but you may need to adjust USERID or GROUPID if you're on a different system or have added additional users. You can find these values by evoking `id` on the command line. Assign the UID of your user and the GID of docker.*
@@ -308,7 +308,7 @@ services:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzMjU1MzIwNCwtMTkxNzk4MzczNCwtMT
+eyJoaXN0b3J5IjpbLTkwMjA2NjkzMiwtMTkxNzk4MzczNCwtMT
 Q1MzUyMTYyNCwtNjcxNTczNDU2LC0xMzg3OTUwNjgzLDE3Njk2
 Mzk4MzYsLTEwNTAyNTc3NywtMTE1OTIyNDE2OSwxMjU3MDY1Nz
 QsLTQ5MDYxMzYxNSwxNzA3MDgxMzEwLC0xODE4MzU2OTQ3LDIx
