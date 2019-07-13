@@ -215,7 +215,7 @@ You should see the list of directories that we created in the last section. Now 
 
 When you're finished, switch back to the terminal and press `Ctrl-c` to kill the server. Keep this shutdown when you're not using it.  
 
-Once everything is working consistently start adding the`-d` argument to your docker-compose command to run the container in the background. After launching a container like this, use `docker-compose down` to stop it again.
+argument to your docker-compose command to run the container in the background. After launching a container like this, use `docker-compose down` to stop it again.
 
 
 #
@@ -223,7 +223,7 @@ Once everything is working consistently start adding the`-d` argument to your do
 
 
 
-
+ add the`-d 
 
 ```
 version: '3'
@@ -308,7 +308,7 @@ services:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExMzQzODg5NCwtMTQ1MzUyMTYyNCwxNz
+eyJoaXN0b3J5IjpbLTkwMjA2NjkzMiwtMTQ1MzUyMTYyNCwxNz
 Y5NjM5ODM2LDEyNTcwNjU3NCwtNDkwNjEzNjE1LC0xODE4MzU2
 OTQ3LDQ5MjYwNzk2MywtMzA2NzE3MzQ2LDI4MTg2MzkyMCwtMT
 UyNzQ1MTMxOSwxMTQyODM3MzkyLDIxMDU4NDYzOTAsNTUzNzk0
