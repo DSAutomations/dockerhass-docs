@@ -124,7 +124,7 @@ One important note is that not all images available on Docker Hub will be compat
 * [nginx](https://hub.docker.com//nginx)
 
 ### Tags
-Some images may be directly compatible with the Raspberry Pi, but for others we may need to specify a version. To get a desired version of a container, append a tag to it. The standard syntax is *`imagename:tagname`.*  Here is the list of both images *and* tags that we will deploy in the main stack: 
+Some images may be directly compatible with the Raspberry Pi, but for others we may need to specify a version. To get a desired version of a container, append a tag to it. The standard syntax is *`i<Imageme:tagna.*  Here is the list of both images *and* tags that we will deploy in the main stack: 
 * homeassistant/raspberrypi3-homeassistant
 * jsurf/rpi-mariadb:latest
 * nodered/node-red-docker:rpi-v8
@@ -158,7 +158,7 @@ mkdir /srv/docker/nginx/ssl
 
 
 ## Optional: Setup Samba
-You can do all of your config file creation and editing at the command line if you want, however this can be a bit cumbersome. It would be helpful to directly browse to your config files on your local PC, let's get Samba up and running to provide this service to us. We'll set this up using `docker-compose` the same tool we'll use later for our main stack. This will be a good opportunity for a bit of practice.
+You can do all of your config file creation and editing at the command line if you want, however this can be a bit cumbersome. It would be helpful to directly e your config files o your local PC, let's get Samba up and running to provide  service to us. We'll set this up using `docker-compose` the same tool we'll use later for our main stack. This will be a good opportunity for a bit of practice.
 
 You'll notice in the config below, we're declaring an image we want to use with a tag that's specific to the raspberry pi. We're also passing in a list of volumes we want to link in a format like this: 
 
@@ -166,7 +166,9 @@ You'll notice in the config below, we're declaring an image we want to use with 
 
 Additionally, there's a list of ports needed by the SMB protocol that we're going to pass though in the same *`outside:inside`* format, as well as a bunch of other attributes needed by docker to setup the container.
 
-To get Samba up and running, create a new folder in your home directory and create a file inside called `docker-compose.yml` 
+To get Samba up and running, c
+
+reate a new folder in your home directory and create a file inside called `docker-compose.yml` 
 
 ```
 mkdir ~/samba-server
@@ -178,8 +180,6 @@ version: '3.4'
 services:
   samba:
     image: dperson/samba:armhf
-    volumes:
-      - /srv/docker:/srv/docker
     ports:
       - "137:137/udp"
       - "138:138/udp"
@@ -205,16 +205,16 @@ Save the file by pressing  `Ctrl-o` then exit with `Ctrl-x`.
 Make sure that you're in the `samba-server` directory and bring up the container:
 ```
 cd ~/samba-server
-docker-compose up -d
+docker-compose up
 ```
-
-You should now you should be able to connect to your instance using the username `smbuser` and whatever you changed `badpass` to moments ago. We named the share `docker-config`, so connect to that using the standard SMB convention: 
+Watch the logs that appear to see if everything is going smoothly. If things looks positive, you should now you should be able to connect to your instance using the username `smbuser` and whatever you changed `badpass` to moments ago. We named the share `docker-config`, so connect to that using the standard SMB convention: 
 
 `\\hostname\docker-config` or `smb://hostname/docker-config/`
 
+You should see the list of directories that we created in the last section. Now would be a good time to copy your Home Assistant config into the `homeassistant` directory.
 
+When you're finished, switch back to the terminal and press `Ctrl-c` to kill the server. Next time you want to run the server add the `-d` 
 
-You should see now the list of directories that we created in the last section. Now would be a good time to copy your Home Assistant config into the `homeassistant` directory
 
 #
 
@@ -349,7 +349,7 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjI1ODM0ODIyLDE3Njk2Mzk4MzYsMTI1Nz
+eyJoaXN0b3J5IjpbNTk5Nzc2OTUwLDE3Njk2Mzk4MzYsMTI1Nz
 A2NTc0LC00OTA2MTM2MTUsLTE4MTgzNTY5NDcsNDkyNjA3OTYz
 LC0zMDY3MTczNDYsMjgxODYzOTIwLC0xNTI3NDUxMzE5LDExND
 I4MzczOTIsMjEwNTg0NjM5MCw1NTM3OTQ5NzcsMjA2MDA3MTA2
