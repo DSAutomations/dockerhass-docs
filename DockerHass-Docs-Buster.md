@@ -26,7 +26,7 @@ I aim to give you a comprehensive guide for getting the *pictured* environment u
 * **Portainer** *for web based container management*
 
 ## Getting Started
-We're starting from the ground up. I'm using a Raspberry Pi 3b. Let's grab the latest [Raspbian Strech Lite](https://downloads.raspberrypi.org/raspbian_lite/images/raspbian_lite-2019-04-09/) and flash it to an SD card using an app like [etcher](https://www.balena.io/etcher/). 
+We're starting from the ground up. I'm using a Raspberry Pi 3b. Let's grab the latest [Raspbian Buster Lite](https://downloads.raspberrypi.org/raspbian_lite_latest) and flash it to an SD card using an app like [etcher](https://www.balena.io/etcher/). 
 
 *Quick note on SD cards: As mentioned in a recent [homeassistant blog](https://www.home-assistant.io/blog/2019/06/26/release-95/), not all SD cards are created equal. If you try to store and run databases on a cheap SD card, you can burn it out in a hurry. Pick up a class A1 or A2 card to save yourself some headaches in the future.*
 
@@ -309,5 +309,5 @@ services:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwMDE0NjI3NF19
+eyJoaXN0b3J5IjpbMzM3Mjg1MzA4LC04MDAxNDYyNzRdfQ==
 -->
