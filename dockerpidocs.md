@@ -124,7 +124,7 @@ One important note is that not all images available on Docker Hub will be compat
 * [nginx](https://hub.docker.com//nginx)
 
 ### Tags
-Some images may be directly compatible with the Raspberry Pi, but for others we may need to specify a version. To get a desired version of a container, append a tag to it. The standard syntax is *`i<Imageme:tagnae>.*  Here is the list of both images *and* tags that we will deploy in the main stack: 
+Some images may be directly compatible with the Raspberry Pi, but for others we may need to specify a version. To get a desired version of a container, append a tag to it. The standard syntax is *`i<Imageme:tagna.*  Here is the list of both images *and* tags that we will deploy in the main stack: 
 * homeassistant/raspberrypi3-homeassistant
 * jsurf/rpi-mariadb:latest
 * nodered/node-red-docker:rpi-v8
@@ -196,7 +196,7 @@ services:
       - 'GROUPID=996'
       - 'TZ=America/New_York'
 ```
-Change `badpass` to something else
+Change `badpass` to something better
 Save the file by pressing  `Ctrl-o` then exit with `Ctrl-x`.
 
 *Note: the environmental variables above should work on a raspberry pi, but you may need to adjust USERID or GROUPID if you're on a different system or have added additional users. You can find these values by evoking `id` on the command line. Assign the UID of your user and the GID of docker.*
@@ -208,11 +208,15 @@ cd ~/samba-server
 docker-compose up -d
 ```
 
-You should now you should be able to connect to your instance using the standard SMB convention: 
+You should now you should be able to connect to your instance using the username `smbuser` and whatever you changed `badpass` to moments ago. We named the share `docker-config`, so connect to that using the standard SMB convention: 
 
 `\\hostname\docker-config` or `smb://hostname/docker-config/`
 
-You should see now the list of directories that we created in the last section. Now would be a good time to copy any existing c
+
+
+You should see now the list of directories that we created in the last section. Now would be a good time to copy your Home Assistant config into the `homeassistant` directory.
+
+
 
 #
 
@@ -347,11 +351,11 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3MTU3MzQ1NiwtMTc1ODY4MTM4MywtMT
-M4Nzk1MDY4MywxNzY5NjM5ODM2LC0xMDUwMjU3NzcsLTExNTky
-MjQxNjksMTI1NzA2NTc0LC00OTA2MTM2MTUsMTcwNzA4MTMxMC
-wtMTgxODM1Njk0NywyMTQzMDM4NzMzLDQ5MjYwNzk2MywtMzA2
-NzE3MzQ2LDI4MTg2MzkyMCw1MTU0Mjg3NTksMTIxODc4NzkzMS
-wtMTUyNzQ1MTMxOSwxMTQyODM3MzkyLDIxMDU4NDYzOTAsLTkw
-NDIwOTA2OV19
+eyJoaXN0b3J5IjpbMTY0MDM1MjA2MCwtNjcxNTczNDU2LC0xMz
+g3OTUwNjgzLDE3Njk2Mzk4MzYsLTEwNTAyNTc3NywtMTE1OTIy
+NDE2OSwxMjU3MDY1NzQsLTQ5MDYxMzYxNSwxNzA3MDgxMzEwLC
+0xODE4MzU2OTQ3LDIxNDMwMzg3MzMsNDkyNjA3OTYzLC0zMDY3
+MTczNDYsMjgxODYzOTIwLDUxNTQyODc1OSwxMjE4Nzg3OTMxLC
+0xNTI3NDUxMzE5LDExNDI4MzczOTIsMjEwNTg0NjM5MCwtOTA0
+MjA5MDY5XX0=
 -->
