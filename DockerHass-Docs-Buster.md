@@ -92,16 +92,21 @@ sudo apt-get install apt-transport-https \
 Next let's add a repository for us to pull the latest docker packages from, and also, we'll make it so that packages signed by the docker project are permitted to run.
 ```
 echo "deb https://download.docker.com/linux/raspbian/ stretch stable" | sudo tee -a /etc/apt/sources.list
-curl -fsSL https://yum.dockerproject.org/gpg | sudo apt-key add -
+curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
 ```
 With all of this done, we should have everything we need to install docker. This might take a little while, let's go:
 ```
 curl -fsSL get.docker.com -o get-docker.sh
 sh get-docker.sh
 ```
-Now that Docker is installed we'll make things a bit easier by putting the pi user in the docker group:
+
+*Note: the above commands should normally work, but with Raspbian Buster fresh off the presses as of the time of this writing, the following kludge is necessary until the `get-docker.sh` is updated by the docker team:*
+
+`sudo curl -sL get.docker.com | sed 's/9)/10)/' | sh`
+
+Now that Docker is installed we'll make things a bit easier by putting our user in the docker group:
 ```
-sudo usermod -aG docker pi
+sudo usermod -aG docker $USER
 ```
 After doing this, you must **log out and back in** for the group permissions to be applied.
 
@@ -309,5 +314,6 @@ services:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM3Mjg1MzA4LC04MDAxNDYyNzRdfQ==
+eyJoaXN0b3J5IjpbOTA1MTcwMTcwLDMzNzI4NTMwOCwtODAwMT
+Q2Mjc0XX0=
 -->
