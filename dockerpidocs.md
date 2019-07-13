@@ -113,7 +113,7 @@ Images are at the core of docker, we're going to use a set of them to create our
 
 The first time we launch our stack, the images will be downloaded and cached on our system. Subsequent runs will utilize these downloaded images.
 
-One important note is that not all images available on Docker Hub will be compatible with the Raspberry Pi. An image needs to be created with a compatible CPU architecture. Here are the images we will be using. I've found these to be reasonably popular images which are compatible with my Raspberry Pi 3b:
+One important note is that not all images available on Docker Hub will be compatible with the Raspberry Pi. An image needs to be created with a compatible CPU architecture. Here are the images we will be using. I've found these to be reasonably popular images (important) which are compatible with my Raspberry Pi 3b:
 
 * [homeassistant/raspberrypi3-homeassistant](https://hub.docker.com/r/homeassistant/raspberrypi3-homeassistant)
 * [jsurf/rpi-mariadb](https://hub.docker.com/r/jsurf/rpi-mariadb)
@@ -124,7 +124,7 @@ One important note is that not all images available on Docker Hub will be compat
 * [nginx](https://hub.docker.com//nginx)
 
 ### Tags
-To get the desired version of a container, you may need to append a tag to it. The standard syntax is *`<ImageName>:<Tag>`.*  Here is the list of both images *and* tags that we will deploy: 
+Some images may be directly compatible with the Raspberry Pi, but for others we may need to specify a version. To get a desired version of a container, append a tag to it. The standard syntax is *`imagename:tagname`.*  Here is the list of both images *and* tags that we will deploy in the main stack: 
 * homeassistant/raspberrypi3-homeassistant
 * jsurf/rpi-mariadb:latest
 * nodered/node-red-docker:rpi-v8
@@ -163,9 +163,10 @@ You can do all of your config file creation and editing at the command line if y
 You'll notice in the config below, we're declaring an image we want to use with a tag that's specific to the raspberry pi. We're also passing in a list of volumes we want to link in a format like this: 
 
 *`/path/outside/container:/path/inside/container`*
-Additionally, a list of ports that we're going to pass though in the same *`outside:inside`* format, as well as a bunch of other attributes 
 
-Create a new folder in your home directory and create a file inside called `docker-compose.yml` 
+Additionally, there's a list of ports needed by the SMB protocol that we're going to pass though in the same *`outside:inside`* format, as well as a bunch of other attributes needed by docker to setup the container.
+
+To get Create a new folder in your home directory and create a file inside called `docker-compose.yml` 
 
 ```
 mkdir ~/samba-server
@@ -349,7 +350,7 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODY1MzUxMDIsLTEzODc5NTA2ODMsMT
+eyJoaXN0b3J5IjpbLTE4MDg5NDAzODcsLTEzODc5NTA2ODMsMT
 c2OTYzOTgzNiwtMTA1MDI1Nzc3LC0xMTU5MjI0MTY5LDEyNTcw
 NjU3NCwtNDkwNjEzNjE1LDE3MDcwODEzMTAsLTE4MTgzNTY5ND
 csMjE0MzAzODczMyw0OTI2MDc5NjMsLTMwNjcxNzM0NiwyODE4
