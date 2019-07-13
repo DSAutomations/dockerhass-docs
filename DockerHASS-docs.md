@@ -191,10 +191,10 @@ services:
       - 'TZ=America/New_York'
 ```
 Change `badpass` to something else
+Save the file by pressing  `Ctrl-o` then exit with `Ctrl-x`.
 
 *Note: the environmental variables above should work on a raspberry pi, but you may need to adjust USERID or GROUPID if you're on a different system or have added additional users. You can find these values by evoking `id` on the command line. Assign the UID of your user which has permissions into your shared directory and the GID of docker*
 
-Save the file by pressing  `Ctrl-o` then exit with `Ctrl-x`.
 Make sure that you're in the `samba-server` directory and bring up the container:
 ```
 cd ~/samba-server
@@ -345,11 +345,11 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDc5MTU3NSwxMjU3MDY1NzQsLTQ5MD
-YxMzYxNSwtMTgxODM1Njk0Nyw0OTI2MDc5NjMsLTMwNjcxNzM0
-NiwyODE4NjM5MjAsLTE1Mjc0NTEzMTksMTE0MjgzNzM5MiwyMT
-A1ODQ2MzkwLDU1Mzc5NDk3NywyMDYwMDcxMDY3LC03NDE2Mzc1
-NDksLTQyNjY0MzEyMCwtMzk5OTQzODY2LC0xMjc5NDk5MzUxLC
-0xMzY4ODU2ODY0LDQ1OTA5ODA0MSwtMTg2MTMwMjc2MiwtMTgw
-NTQ2ODk1N119
+eyJoaXN0b3J5IjpbNTA0Mzg0NDYxLDEyNTcwNjU3NCwtNDkwNj
+EzNjE1LC0xODE4MzU2OTQ3LDQ5MjYwNzk2MywtMzA2NzE3MzQ2
+LDI4MTg2MzkyMCwtMTUyNzQ1MTMxOSwxMTQyODM3MzkyLDIxMD
+U4NDYzOTAsNTUzNzk0OTc3LDIwNjAwNzEwNjcsLTc0MTYzNzU0
+OSwtNDI2NjQzMTIwLC0zOTk5NDM4NjYsLTEyNzk0OTkzNTEsLT
+EzNjg4NTY4NjQsNDU5MDk4MDQxLC0xODYxMzAyNzYyLC0xODA1
+NDY4OTU3XX0=
 -->
