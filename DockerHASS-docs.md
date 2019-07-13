@@ -158,10 +158,12 @@ mkdir /srv/docker/nginx/ssl
 
 
 ## Optional: Setup Samba
-You can do all of your config file creation and editing at the command line if you want, however this can be a bit cumbersome. It would be helpful to directly access your config files from your local PC, let's get Samba up and running to provide SMB service to us. 
+You can do all of your config file creation and editing at the command line if you want, however this can be a bit cumbersome. It would be helpful to directly browse to your config files on your local PC, let's get Samba up and running to provide this service to us. We'll set this up using `docker-compose` the same tool we'll use later for our main stack. This will be a good opportunity for a bit of practice.
 
-You'll notice in the config below, we're declaring an image we want to use with a tag that's specific to the raspberry pi, and also passing in a list of volumes we want to create with a format like: 
-*`/path/outside/container:path/inside/container`*
+You'll notice in the config below, we're declaring an image we want to use with a tag that's specific to the raspberry pi. We're also passing in a list of volumes we want to link in a format like this: 
+
+*`/path/outside/container:/path/inside/container`*
+Additionally, a list of ports that we're going to pass though in the same *`outside:inside`* format, as well as a bunch of other attributes 
 
 Create a new folder in your home directory and create a file inside called `docker-compose.yml` 
 
@@ -347,11 +349,11 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2Njg0NzIxMywxNzY5NjM5ODM2LDEyNT
-cwNjU3NCwtNDkwNjEzNjE1LC0xODE4MzU2OTQ3LDQ5MjYwNzk2
-MywtMzA2NzE3MzQ2LDI4MTg2MzkyMCwtMTUyNzQ1MTMxOSwxMT
-QyODM3MzkyLDIxMDU4NDYzOTAsNTUzNzk0OTc3LDIwNjAwNzEw
-NjcsLTc0MTYzNzU0OSwtNDI2NjQzMTIwLC0zOTk5NDM4NjYsLT
-EyNzk0OTkzNTEsLTEzNjg4NTY4NjQsNDU5MDk4MDQxLC0xODYx
-MzAyNzYyXX0=
+eyJoaXN0b3J5IjpbLTE0ODY1MzUxMDIsMTc2OTYzOTgzNiwxMj
+U3MDY1NzQsLTQ5MDYxMzYxNSwtMTgxODM1Njk0Nyw0OTI2MDc5
+NjMsLTMwNjcxNzM0NiwyODE4NjM5MjAsLTE1Mjc0NTEzMTksMT
+E0MjgzNzM5MiwyMTA1ODQ2MzkwLDU1Mzc5NDk3NywyMDYwMDcx
+MDY3LC03NDE2Mzc1NDksLTQyNjY0MzEyMCwtMzk5OTQzODY2LC
+0xMjc5NDk5MzUxLC0xMzY4ODU2ODY0LDQ1OTA5ODA0MSwtMTg2
+MTMwMjc2Ml19
 -->
