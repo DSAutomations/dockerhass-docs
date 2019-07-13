@@ -160,6 +160,9 @@ mkdir /srv/docker/nginx/ssl
 ## Optional: Setup Samba
 You can do all of your config file creation and editing at the command line if you want, however this can be a bit cumbersome. It would be helpful to directly access your config files from your local PC, let's get Samba up and running to provide SMB service to us. 
 
+You'll notice in the config below, we're declaring an image we want to use with a tag that's specific to the raspberry pi, and also passing in a list of volumes we want to create with a format like: 
+*`/path/outside/container:path/inside/container`*
+
 Create a new folder in your home directory and create a file inside called `docker-compose.yml` 
 
 ```
@@ -172,6 +175,8 @@ version: '3.4'
 services:
   samba:
     image: dperson/samba:armhf
+    volumes:
+      - /srv/docker:/srv/docker
     ports:
       - "137:137/udp"
       - "138:138/udp"
@@ -180,8 +185,6 @@ services:
     tmpfs:
       - /tmp
     restart: unless-stopped
-    volumes:
-      - /srv/docker:/srv/docker
     command: > 
       -u "smbuser;badpass" 
       -s "docker-config;/srv/docker;yes;no;no;smbuser"
@@ -344,11 +347,11 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODc5NTA2ODMsMTc2OTYzOTgzNiwxMj
-U3MDY1NzQsLTQ5MDYxMzYxNSwtMTgxODM1Njk0Nyw0OTI2MDc5
-NjMsLTMwNjcxNzM0NiwyODE4NjM5MjAsLTE1Mjc0NTEzMTksMT
-E0MjgzNzM5MiwyMTA1ODQ2MzkwLDU1Mzc5NDk3NywyMDYwMDcx
-MDY3LC03NDE2Mzc1NDksLTQyNjY0MzEyMCwtMzk5OTQzODY2LC
-0xMjc5NDk5MzUxLC0xMzY4ODU2ODY0LDQ1OTA5ODA0MSwtMTg2
-MTMwMjc2Ml19
+eyJoaXN0b3J5IjpbMjA2Njg0NzIxMywxNzY5NjM5ODM2LDEyNT
+cwNjU3NCwtNDkwNjEzNjE1LC0xODE4MzU2OTQ3LDQ5MjYwNzk2
+MywtMzA2NzE3MzQ2LDI4MTg2MzkyMCwtMTUyNzQ1MTMxOSwxMT
+QyODM3MzkyLDIxMDU4NDYzOTAsNTUzNzk0OTc3LDIwNjAwNzEw
+NjcsLTc0MTYzNzU0OSwtNDI2NjQzMTIwLC0zOTk5NDM4NjYsLT
+EyNzk0OTkzNTEsLTEzNjg4NTY4NjQsNDU5MDk4MDQxLC0xODYx
+MzAyNzYyXX0=
 -->
