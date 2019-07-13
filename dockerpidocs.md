@@ -196,7 +196,7 @@ services:
       - 'GROUPID=996'
       - 'TZ=America/New_York'
 ```
-Change `badpass` to something better
+Change `badpass` to something beer
 Save the file by pressing  `Ctrl-o` then exit with `Ctrl-x`.
 
 *Note: the environmental variables above should work on a raspberry pi, but you may need to adjust USERID or GROUPID if you're on a different system or have added additional users. You can find these values by evoking `id` on the command line. Assign the UID of your user and the GID of docker.*
@@ -215,7 +215,7 @@ You should see the list of directories that we created in the last section. Now 
 
 When you're finished, switch back to the terminal and press `Ctrl-c` to kill the server. Keep this shutdown when you're not using it.  
 
-`-d` argument to your docker-compose command to run the container in the background.
+`-d` argument to your docker-compose commNext time you wandt to run the container in the background.server add the `-d` 
 
 
 #
@@ -351,11 +351,11 @@ docker-compose up -d
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTM1MjE2MjQsLTY3MTU3MzQ1NiwtMT
-M4Nzk1MDY4MywxNzY5NjM5ODM2LC0xMDUwMjU3NzcsLTExNTky
-MjQxNjksMTI1NzA2NTc0LC00OTA2MTM2MTUsMTcwNzA4MTMxMC
-wtMTgxODM1Njk0NywyMTQzMDM4NzMzLDQ5MjYwNzk2MywtMzA2
-NzE3MzQ2LDI4MTg2MzkyMCw1MTU0Mjg3NTksMTIxODc4NzkzMS
-wtMTUyNzQ1MTMxOSwxMTQyODM3MzkyLDIxMDU4NDYzOTAsLTkw
-NDIwOTA2OV19
+eyJoaXN0b3J5IjpbLTE5MTc5ODM3MzQsLTE0NTM1MjE2MjQsLT
+Y3MTU3MzQ1NiwtMTM4Nzk1MDY4MywxNzY5NjM5ODM2LC0xMDUw
+MjU3NzcsLTExNTkyMjQxNjksMTI1NzA2NTc0LC00OTA2MTM2MT
+UsMTcwNzA4MTMxMCwtMTgxODM1Njk0NywyMTQzMDM4NzMzLDQ5
+MjYwNzk2MywtMzA2NzE3MzQ2LDI4MTg2MzkyMCw1MTU0Mjg3NT
+ksMTIxODc4NzkzMSwtMTUyNzQ1MTMxOSwxMTQyODM3MzkyLDIx
+MDU4NDYzOTBdfQ==
 -->
