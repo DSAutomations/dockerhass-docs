@@ -233,7 +233,7 @@ Once things are working consistently, use `docker-compose up -d` to start the co
 
 We've got the groundwork down to start building our main stack. We're going to configure our containers using a config file called`docker-compose.yml`.  We'll then use that file to launch all of our containers at once. 
 
-But we need to start small and build up, we'll start with the application we're building our stack around: Home Assistant. The HA developers make things easy for us and published a Raspberry Pi optimized version of the application on Docker Hub.
+We're going to start small and build up, we'll start with the application we're building our stack around: Home Assistant. The HA developers make things easy for us and published a Raspberry Pi optimized version of the application on Docker Hub.
 
 First thing we need is to create our config file. Let's also put it in its own directory:
  ```
@@ -255,7 +255,6 @@ services:
       - 8123:8123
     privileged: true
 ```
-*Make note of the `privileged: true` line above, this is potentially dangerous, and we'll come back to that in a moment.*
 
 Save the file with `Ctrl-o` and exit with `Ctrl-x`.
 
@@ -263,18 +262,17 @@ Now, let's launch the container:
 ```
 docker-compose up -d
 ```
-Give it some time to download and start, then check to see if you can connect to HA at `http://ip_address:8123`. If all went well, you should see the HA front end.
+Give it a minute or two download and start, then check to see if you can connect to HA at `http://ip_address:8123`. If all went well, you should see the HA front end.
 
-If you're not seeing HA, evoke `docker-compose logs` to try to determine the issue and troubleshoot accordingly.
+If you're not seeing HA, evoke `docker-compose logs`, try to determine the issue, and troubleshoot accordingly.
 
 So what just happened here?
-When we issued the `docker-compose` command, it read the configuration file we created and downloaded the image we specified. It then setup and launched a docker container with our image and other specified preferences. 
+When we issued the `docker-compose` command, it read the configuration file we created and downloaded the image we specified. It then setup and launched a docker container with our image and specified preferences. 
 
-This brings me back to the issue with `privileged: true` in our config above. This line allows the container to access to all devices on the host system. When it comes to HA, it's nice to have this because it will allow for easier configuration and discovery of devices directly connected to the host system. However, think about what we just did, we downloaded a big blind blob of code from somewhere on the internet and we're now executing it on our local system. With the privilege condition, we're also giving it access to everything in `/dev`. 
+So here is the issue with `privileged: true` in our config above. This line allows the container to access to all devices on the host system. When it comes to an application we trust like HA, it's nice to have this because it will allow for easier configuration and discovery of devices directly connected to the host system. However, if you think about what we just did, we downloaded a big blind blob of code from somewhere on the internet and we're now executing it on our local system. With the privilege condition, we're also giving it access to everything in `/dev`. 
 
-Now, I mostly trust HA and what it will be doing on my system, but now you've been warned, you definitely should not give this privilege to any old image you found laying around on Docker Hub.
+Now, I mostly trust HA and what it will be doing on my system, but you've been warned, you definitely should not give this privilege to any image you found laying around on Docker Hub.
 
-Because we had a volume specified, 
 
 #
 
@@ -363,7 +361,7 @@ services:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4NDE3OTQ0MCwtMTAxMjYzMTMzNCwtMT
-A0NDE0ODcwLDE0NDcxNjE0MDcsOTA1MTcwMTcwLDMzNzI4NTMw
-OCwtODAwMTQ2Mjc0XX0=
+eyJoaXN0b3J5IjpbMTg4Nzc5NzQ5MiwtNjg0MTc5NDQwLC0xMD
+EyNjMxMzM0LC0xMDQ0MTQ4NzAsMTQ0NzE2MTQwNyw5MDUxNzAx
+NzAsMzM3Mjg1MzA4LC04MDAxNDYyNzRdfQ==
 -->
