@@ -259,12 +259,13 @@ services:
 
 Save the file with `Ctrl-o` and exit with `Ctrl-x`.
 
-Now, let's launch the container in a way where we can easily watch the logs:
+Now, let's launch the container:
 ```
-docker-compose up
+docker-compose up -d
 ```
+Give it some time to download and start, then check to see if you can connect to HA at `http://ip_address:8123`. If all went well, you should see the HA front end.
 
-
+If you're not seeing HA, check `docker-compose logs` to try to determine the issue and troubleshoot accordingly.
 
 #
 
@@ -353,7 +354,7 @@ services:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3NTg1Mjg0LC0xMDEyNjMxMzM0LC0xMD
-Q0MTQ4NzAsMTQ0NzE2MTQwNyw5MDUxNzAxNzAsMzM3Mjg1MzA4
-LC04MDAxNDYyNzRdfQ==
+eyJoaXN0b3J5IjpbLTIwNjY3MTYxNjgsLTEwMTI2MzEzMzQsLT
+EwNDQxNDg3MCwxNDQ3MTYxNDA3LDkwNTE3MDE3MCwzMzcyODUz
+MDgsLTgwMDE0NjI3NF19
 -->
