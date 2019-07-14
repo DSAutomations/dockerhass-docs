@@ -272,7 +272,7 @@ When we issued the `docker-compose` command, it read the configuration file we c
 
 This brings me back to the issue with `privileged: true` in our config above. This line allows the container to access to all devices on the host system. When it comes to HA, it's nice to have this because it will allow for easier configuration and discovery of devices directly connected to the host system. However, think about what we just did, we downloaded a big blind blob of code from somewhere on the internet and we're now executing it on our local system. With the privilege condition, we're also giving it access to everything in `/dev`. 
 
-Now, I mostly trust HA and what it will be doing on my system, but now you've been warned, you definitely should not give this privilige to p
+Now, I mostly trust HA and what it will be doing on my system, but now you've been warned, you definitely should not give this privilege to any old image you found laying around on Docker Hub.
 
 Because we had a volume specified, 
 
@@ -363,7 +363,7 @@ services:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzMzA4OTM1OCwtMTAxMjYzMTMzNCwtMT
+eyJoaXN0b3J5IjpbLTY4NDE3OTQ0MCwtMTAxMjYzMTMzNCwtMT
 A0NDE0ODcwLDE0NDcxNjE0MDcsOTA1MTcwMTcwLDMzNzI4NTMw
 OCwtODAwMTQ2Mjc0XX0=
 -->
