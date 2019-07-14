@@ -270,7 +270,9 @@ If you're not seeing HA, evoke `docker-compose logs` to try to determine the iss
 So what just happened here?
 When we issued the `docker-compose` command, it read the configuration file we created and downloaded the image we specified. It then setup and launched a docker container with our image and other specified preferences. 
 
-This brings me back to the issue with `privileged: true` in our config above. What this line does is allow the container to access the `/dev` directory of the host system. When it comes to HA, this is a double-edged sword, it will allow for easier configuration and discovery of devices directly connected to the host system. 
+This brings me back to the issue with `privileged: true` in our config above. This line allows the container to access to all devices on the host system. When it comes to HA, it's nice to have this because it will allow for easier configuration and discovery of devices directly connected to the host system. However, think about what we just did, we downloaded a big blind blob of code from somewhere on the internet and we're now executing it on our local system. With the privilege condition, we're also giving it access to everything in `/dev`. 
+
+Now, I mostly trust HA and what it will be doing on my system, but now you've been warned, you definitely should not give this privilige to p
 
 Because we had a volume specified, 
 
@@ -361,7 +363,7 @@ services:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjUxNDczOCwtMTAxMjYzMTMzNCwtMTA0ND
-E0ODcwLDE0NDcxNjE0MDcsOTA1MTcwMTcwLDMzNzI4NTMwOCwt
-ODAwMTQ2Mjc0XX0=
+eyJoaXN0b3J5IjpbMTUzMzA4OTM1OCwtMTAxMjYzMTMzNCwtMT
+A0NDE0ODcwLDE0NDcxNjE0MDcsOTA1MTcwMTcwLDMzNzI4NTMw
+OCwtODAwMTQ2Mjc0XX0=
 -->
