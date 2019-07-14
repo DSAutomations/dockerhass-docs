@@ -240,8 +240,7 @@ First thing we need is to create our config file. Let's also put it in its own d
 mkdir ~/docker-ha && cd ~/docker-ha
 nano docker-compose.yml
 ```
-
-
+We'll use this as our initial config:
 ```
 version: '3'
 services:
@@ -255,9 +254,15 @@ services:
     ports:
       - 8123:8123
     privileged: true
-
 ```
+*Make note of the `privileged: true` line above, this is potentially dangerous, and we'll come back to that in a moment.*
 
+Save the file with `Ctrl-o` and exit with `Ctrl-x`.
+
+Now, let's launch the container in a way where we can easily watch the logs:
+```
+docker-compose up
+```
 
 
 
@@ -348,7 +353,7 @@ services:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTY1NTYyNzQsLTEwNDQxNDg3MCwxND
+eyJoaXN0b3J5IjpbLTEwMTI2MzEzMzQsLTEwNDQxNDg3MCwxND
 Q3MTYxNDA3LDkwNTE3MDE3MCwzMzcyODUzMDgsLTgwMDE0NjI3
 NF19
 -->
