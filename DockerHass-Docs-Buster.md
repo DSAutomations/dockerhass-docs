@@ -152,12 +152,14 @@ sudo chown pi:docker /srv/docker
 Now, let's create the rest of the needed directories:
 ```
 mkdir /srv/docker/homeassistant
+mkdir /srv/docker/letsencrypt
 mkdir /srv/docker/letsencrypt/live
 mkdir /srv/docker/mariadb
 mkdir /srv/docker/nodered
 mkdir /srv/docker/influxdb
 mkdir /srv/docker/grafana
 mkdir /srv/docker/portainer
+mkdir /srv/docker/nginx
 mkdir /srv/docker/nginx/config
 mkdir /srv/docker/nginx/ssl
 ```
@@ -314,6 +316,6 @@ services:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTA1MTcwMTcwLDMzNzI4NTMwOCwtODAwMT
-Q2Mjc0XX0=
+eyJoaXN0b3J5IjpbMTQ0NzE2MTQwNyw5MDUxNzAxNzAsMzM3Mj
+g1MzA4LC04MDAxNDYyNzRdfQ==
 -->
