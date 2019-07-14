@@ -229,18 +229,37 @@ When you're finished, switch back to the terminal and press `Ctrl-c` to kill the
 Once things are working consistently, use `docker-compose up -d` to start the container in the background. After launching a container like this, use `docker-compose down` to stop it again.
 
 
-#
+## Starting the big stack: Homeassistant
 
+We've got the groundwork down to start building our main stack. We're going to configure our containers using `docker-compose` and its associated config files `docker-compose.yml`
 
-
-
- add the`-d 
+We'll start with the application we're building our stack around: Home Assistant. The HA developers make things easy for us and publish a Raspberry Pi optimized version of the application on Docker Hub.
 
 ```
 version: '3'
 services:
   homeassistant:
-    container_name: home-assistant
+    container_name: homeassistant
+    restart: unless-stopped
+    image: homeassistant/raspberrypi3-homeassistant
+    volumes:
+      - /srv/docker/HomeAssistantConfig:/config
+      - /etc/localtime:/etc/localtime:ro
+    ports:
+      - 8123:8123
+    privileged: true
+
+```
+
+
+
+
+
+```
+version: '3'
+services:
+  homeassistant:
+    container_name: homeassistant
     restart: unless-stopped
     image: homeassistant/raspberrypi3-homeassistant
     volumes:
@@ -319,7 +338,7 @@ services:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzg5MDAzOTQ3LC0xMDQ0MTQ4NzAsMTQ0Nz
+eyJoaXN0b3J5IjpbMTU0ODE3Njc0LC0xMDQ0MTQ4NzAsMTQ0Nz
 E2MTQwNyw5MDUxNzAxNzAsMzM3Mjg1MzA4LC04MDAxNDYyNzRd
 fQ==
 -->
