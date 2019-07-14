@@ -213,7 +213,7 @@ Save the file by pressing  `Ctrl-o` then exit with `Ctrl-x`.
 *Note: the environmental variables above should work on Raspbian Buster but you may need to adjust USERID or GROUPID if you're on a different system or have added additional users. You can find these values by evoking `id` on the command line. Assign the UID of your user and the GID of docker.*
 
 
-Make sure that you're in the `samba-server` directory and bring up the container:
+To start the sharing service, make sure that you're in the `samba-server` directory and bring up the container:
 ```
 cd ~/samba-server
 docker-compose up
@@ -319,6 +319,7 @@ services:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDQxNDg3MCwxNDQ3MTYxNDA3LDkwNT
-E3MDE3MCwzMzcyODUzMDgsLTgwMDE0NjI3NF19
+eyJoaXN0b3J5IjpbNjcwNDc5ODYzLC0xMDQ0MTQ4NzAsMTQ0Nz
+E2MTQwNyw5MDUxNzAxNzAsMzM3Mjg1MzA4LC04MDAxNDYyNzRd
+fQ==
 -->
