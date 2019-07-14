@@ -265,7 +265,14 @@ docker-compose up -d
 ```
 Give it some time to download and start, then check to see if you can connect to HA at `http://ip_address:8123`. If all went well, you should see the HA front end.
 
-If you're not seeing HA, check `docker-compose logs` to try to determine the issue and troubleshoot accordingly.
+If you're not seeing HA, evoke `docker-compose logs` to try to determine the issue and troubleshoot accordingly.
+
+So what just happened here?
+When we issued the `docker-compose` command, it read the configuration file we created and downloaded the image we specified. It then setup and launched a docker container with our image and other specified preferences. 
+
+This brings me back to the issue with `privileged: true` in our config above. What this line does is allow the container to access the `/dev` directory of the host system. When it comes to HA, this is a double-edged sword, it will allow for easier configuration and discovery of devices directly connected to the host system. 
+
+Because we had a volume specified, 
 
 #
 
@@ -354,7 +361,7 @@ services:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjY3MTYxNjgsLTEwMTI2MzEzMzQsLT
-EwNDQxNDg3MCwxNDQ3MTYxNDA3LDkwNTE3MDE3MCwzMzcyODUz
-MDgsLTgwMDE0NjI3NF19
+eyJoaXN0b3J5IjpbMjUxNDczOCwtMTAxMjYzMTMzNCwtMTA0ND
+E0ODcwLDE0NDcxNjE0MDcsOTA1MTcwMTcwLDMzNzI4NTMwOCwt
+ODAwMTQ2Mjc0XX0=
 -->
