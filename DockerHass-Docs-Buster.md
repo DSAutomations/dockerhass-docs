@@ -249,7 +249,7 @@ services:
     restart: unless-stopped
     image: homeassistant/raspberrypi3-homeassistant
     volumes:
-      - /srv/docker/HomeAssistantConfig:/config
+      - /srv/docker/homeassistant:/config
       - /etc/localtime:/etc/localtime:ro
     ports:
       - 8123:8123
@@ -353,7 +353,7 @@ services:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTI2MzEzMzQsLTEwNDQxNDg3MCwxND
-Q3MTYxNDA3LDkwNTE3MDE3MCwzMzcyODUzMDgsLTgwMDE0NjI3
-NF19
+eyJoaXN0b3J5IjpbLTg3NTg1Mjg0LC0xMDEyNjMxMzM0LC0xMD
+Q0MTQ4NzAsMTQ0NzE2MTQwNyw5MDUxNzAxNzAsMzM3Mjg1MzA4
+LC04MDAxNDYyNzRdfQ==
 -->
