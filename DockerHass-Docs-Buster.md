@@ -193,6 +193,9 @@ services:
       - "138:138/udp"
       - "139:139/tcp"
       - "445:445/tcp"
+    volumes:
+      - /srv/docker:/srv/docker
+      - /etc/localtime:/etc/localtime:ro
     tmpfs:
       - /tmp
     restart: unless-stopped
@@ -201,13 +204,12 @@ services:
       -s "docker-config;/srv/docker;yes;no;no;smbuser"
     environment:      
       - 'USERID=1000'
-      - 'GROUPID=996'
-      - 'TZ=America/New_York'
+      - 'GROUPID=995'
 ```
 Change `badpass` to something better
 Save the file by pressing  `Ctrl-o` then exit with `Ctrl-x`.
 
-*Note: the environmental variables above should work on a raspberry pi, but you may need to adjust USERID or GROUPID if you're on a different system or have added additional users. You can find these values by evoking `id` on the command line. Assign the UID of your user and the GID of docker.*
+*Note: the environmental variables above should work on Raspbian Buster but you may need to adjust USERID or GROUPID if you're on a different system or have added additional users. You can find these values by evoking `id` on the command line. Assign the UID of your user and the GID of docker.*
 
 
 Make sure that you're in the `samba-server` directory and bring up the container:
@@ -316,6 +318,6 @@ services:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0NzE2MTQwNyw5MDUxNzAxNzAsMzM3Mj
-g1MzA4LC04MDAxNDYyNzRdfQ==
+eyJoaXN0b3J5IjpbOTUxNjMxOTc2LDE0NDcxNjE0MDcsOTA1MT
+cwMTcwLDMzNzI4NTMwOCwtODAwMTQ2Mjc0XX0=
 -->
