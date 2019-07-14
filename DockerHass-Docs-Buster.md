@@ -235,7 +235,11 @@ We've got the groundwork down to start building our main stack. We're going to c
 
 But we need to start small and build up, we'll start with the application we're building our stack around: Home Assistant. The HA developers make things easy for us and published a Raspberry Pi optimized version of the application on Docker Hub.
 
-
+First thing we need is to create our config file. Let's also put it in its own directory:
+ ```
+mkdir ~/docker-ha && cd ~/docker-ha
+nano docker-compose.yml
+```
 
 
 ```
@@ -341,7 +345,7 @@ services:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM5NDQ2Njg1LC0xMDQ0MTQ4NzAsMTQ0Nz
-E2MTQwNyw5MDUxNzAxNzAsMzM3Mjg1MzA4LC04MDAxNDYyNzRd
-fQ==
+eyJoaXN0b3J5IjpbMTU4OTI5MzA1MSwtMTA0NDE0ODcwLDE0ND
+cxNjE0MDcsOTA1MTcwMTcwLDMzNzI4NTMwOCwtODAwMTQ2Mjc0
+XX0=
 -->
