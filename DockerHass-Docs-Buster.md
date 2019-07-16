@@ -9,7 +9,7 @@ When I first deployed my setup, Hass.io was only in its infancy, however the has
 
 Ultimately, I've built some awesome features and automatons that my family and mysel enjoys, but the Raspberry Pi has become a veritable house of cards. Along with homeassistant, I've installed all sorts of goodies for development, and integration. Nginx, pihole, mosquitto, apcupsd, certbot, awscli, samba, git, and the list goes on.
 
-Like many others, I saw the popup in HA about python 3.5 depreciation recently, and through sweat and tears, managed to rebuild a new venv and get Homeassistant running in it without the warning. However, this came at the cost of a dramatic performance hit in the recorder component. I'm a big fan of graphs on my front end, and now they're all taking twice as long to load. Not sure where I went wrong, but one thing that I am sure about is that there is a better way, install hass.io... 
+Like many others, I saw the popup in HA recently about python 3.5 depreciation, and through sweat and tears, managed to rebuild a new venv and get Homeassistant running in it without the warning. However, this came at the cost of a dramatic performance hit in the recorder component. I'm a big fan of graphs on my front end, and now they're all taking twice as long to load. Not sure where I went wrong, but one thing that I am sure about is that there is a better way, install hass.io... 
 
 No, just kidding, but seriously, Hass.io is essentially this what we're doing here, but with a lot of the hard work already done for you. 
 
@@ -141,7 +141,7 @@ Some images may be directly compatible with the Raspberry Pi, but for others we 
 * nginx
 
 
-# Volumes
+## Volumes
 Docker containers are ephemeral. In short, we can start up a container and do work with it, but when it's shut down any data contained within will be lost. We can gain persistence between sessions by mounting volumes which will link directories outside the docker containers to directories within.
 
 Let's get this setup. We can keep our volumes anywhere, but the convention is to keep them in `/srv/`. Let's create a directory and set permissions:
@@ -271,9 +271,9 @@ So here is the issue with `privileged: true` in our config above. This line allo
 Now, I mostly trust HA and what it will be doing on my system, but you've been warned, you definitely should not give this privilege to any image you found laying around on Docker Hub.
 
 
-## Databases
+## Main Database
 
-When we brought up HA just now, it initialized a SQLite database in the config directory. We're going to replace this with an external database in another docker container. 
+When we brought up HA just now, it initialized a SQLite database in the config directory, this is hhandy and self-contained, but we're going to replace this with an external database in another docker container. 
 
 
 
@@ -306,7 +306,7 @@ services:
       - MYSQL_ROOT_PASSWORD=super_database_password
       - MYSQL_DATABASE=homeassistantdb
       - MYSQL_USER=homeassistant
-      - MYSQL_PASSWORD=a_database_password
+      - MYSQL_PASSWORD=user_database_password
     restart: always
   nodered:
     image: nodered/node-red-docker:rpi-v8
@@ -361,7 +361,7 @@ services:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDUyNTExODIsMTg4Nzc5NzQ5MiwtNj
+eyJoaXN0b3J5IjpbLTE3NDAxMjY5ODEsMTg4Nzc5NzQ5MiwtNj
 g0MTc5NDQwLC0xMDEyNjMxMzM0LC0xMDQ0MTQ4NzAsMTQ0NzE2
 MTQwNyw5MDUxNzAxNzAsMzM3Mjg1MzA4LC04MDAxNDYyNzRdfQ
 ==
