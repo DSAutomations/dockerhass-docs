@@ -271,9 +271,9 @@ So here is the issue with `privileged: true` in our config above. This line allo
 Now, I mostly trust HA and what it will be doing on my system, but you've been warned, you definitely should not give this privilege to any image you found laying around on Docker Hub.
 
 
-## Portainer
+## Databases
 
-All this CLI stuff is fun, but l
+When We're going to setup two databases. We'll use MariaDB to replace the main HA database, 
 
 
 ```
@@ -359,7 +359,7 @@ services:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4ODE5OTM5NywxODg3Nzk3NDkyLC02OD
+eyJoaXN0b3J5IjpbMTA0NTQ0MDYyOSwxODg3Nzk3NDkyLC02OD
 QxNzk0NDAsLTEwMTI2MzEzMzQsLTEwNDQxNDg3MCwxNDQ3MTYx
 NDA3LDkwNTE3MDE3MCwzMzcyODUzMDgsLTgwMDE0NjI3NF19
 -->
