@@ -210,7 +210,23 @@ Now, I mostly trust HA and what it will be doing on my system, but you've been w
 
 ## Main Database
 
-When we brought up HA just now, it initialized a SQLite database in the config directory, this is hhandy and self-contained, but we're going to replace this with an external database in another docker container. 
+When we brought up HA just now, it initialized a SQLite database in the config directory, this is handy and self-contained, but we're going to replace this with an external database in another docker container. 
+
+Adding onto the existing config, let's setup a new service for MariaDB:
+```
+version: '3'
+services:
+  homeassistant:
+    container_name: homeassistant
+    restart: unless-stopped
+    image: homeassistant/raspberrypi3-homeassistant
+    volumes:
+      - /srv/docker/homeassistant:/config
+      - /etc/localtime:/etc/localtime:ro
+    ports:
+      - 8123:8123
+    privileged: true
+```
 
 
 
@@ -357,7 +373,8 @@ Once things are working consistently, use `docker-compose up -d` to start the co
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4OTAzODA5NywxODg3Nzk3NDkyLC02OD
-QxNzk0NDAsLTEwMTI2MzEzMzQsLTEwNDQxNDg3MCwxNDQ3MTYx
-NDA3LDkwNTE3MDE3MCwzMzcyODUzMDgsLTgwMDE0NjI3NF19
+eyJoaXN0b3J5IjpbLTU3MTA0ODYzMywtODg5MDM4MDk3LDE4OD
+c3OTc0OTIsLTY4NDE3OTQ0MCwtMTAxMjYzMTMzNCwtMTA0NDE0
+ODcwLDE0NDcxNjE0MDcsOTA1MTcwMTcwLDMzNzI4NTMwOCwtOD
+AwMTQ2Mjc0XX0=
 -->
