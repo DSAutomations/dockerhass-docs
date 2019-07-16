@@ -273,7 +273,9 @@ Now, I mostly trust HA and what it will be doing on my system, but you've been w
 
 ## Databases
 
-When We're going to setup two databases. We'll use MariaDB to replace the main HA database, 
+When we brought up HA just now, it initialized a SQLite database in the config directory. We're going to replace this with an external database in another docker container. 
+
+
 
 
 ```
@@ -359,7 +361,8 @@ services:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0NTQ0MDYyOSwxODg3Nzk3NDkyLC02OD
-QxNzk0NDAsLTEwMTI2MzEzMzQsLTEwNDQxNDg3MCwxNDQ3MTYx
-NDA3LDkwNTE3MDE3MCwzMzcyODUzMDgsLTgwMDE0NjI3NF19
+eyJoaXN0b3J5IjpbLTE0NDUyNTExODIsMTg4Nzc5NzQ5MiwtNj
+g0MTc5NDQwLC0xMDEyNjMxMzM0LC0xMDQ0MTQ4NzAsMTQ0NzE2
+MTQwNyw5MDUxNzAxNzAsMzM3Mjg1MzA4LC04MDAxNDYyNzRdfQ
+==
 -->
