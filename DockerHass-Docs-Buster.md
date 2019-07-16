@@ -229,7 +229,7 @@ When you're finished, switch back to the terminal and press `Ctrl-c` to kill the
 Once things are working consistently, use `docker-compose up -d` to start the container in the background. After launching a container like this, use `docker-compose down` to stop it again.
 
 
-## The big stack: Home Assistant
+## Home Assistant: starting the big stack
 
 We've got the groundwork down to start building our main stack. We're going to configure our containers using a config file called`docker-compose.yml`.  We'll then use that file to launch all of our containers at once. 
 
@@ -255,14 +255,11 @@ services:
       - 8123:8123
     privileged: true
 ```
-
-Save the file with `Ctrl-o` and exit with `Ctrl-x`.
-
 Now, let's launch the container:
 ```
 docker-compose up -d
 ```
-Give it a minute or two download and start, then check to see if you can connect to HA at `http://ip_address:8123`. If all went well, you should see the HA front end.
+Give it a minute or two download and start, then check to see if you can connect to HA at `http://pi_ip_address:8123`. If all went well, you should see the HA front end.
 
 If you're not seeing HA, evoke `docker-compose logs`, try to determine the issue, and troubleshoot accordingly.
 
@@ -274,8 +271,9 @@ So here is the issue with `privileged: true` in our config above. This line allo
 Now, I mostly trust HA and what it will be doing on my system, but you've been warned, you definitely should not give this privilege to any image you found laying around on Docker Hub.
 
 
-#
+## Portainer
 
+All this CLI stuff is fun, but l
 
 
 ```
@@ -343,7 +341,7 @@ services:
     restart: always
     volumes:
      - /var/run/docker.sock:/var/run/docker.sock
-     - /srv/docker/portainer/data:/data
+     - /srv/docker/portainer:/data
     ports:
      - 9000:9000
   nginx:
@@ -361,7 +359,7 @@ services:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4Nzc5NzQ5MiwtNjg0MTc5NDQwLC0xMD
-EyNjMxMzM0LC0xMDQ0MTQ4NzAsMTQ0NzE2MTQwNyw5MDUxNzAx
-NzAsMzM3Mjg1MzA4LC04MDAxNDYyNzRdfQ==
+eyJoaXN0b3J5IjpbLTM4ODE5OTM5NywxODg3Nzk3NDkyLC02OD
+QxNzk0NDAsLTEwMTI2MzEzMzQsLTEwNDQxNDg3MCwxNDQ3MTYx
+NDA3LDkwNTE3MDE3MCwzMzcyODUzMDgsLTgwMDE0NjI3NF19
 -->
