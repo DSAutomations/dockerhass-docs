@@ -166,74 +166,11 @@ mkdir /srv/docker/nginx/ssl
 ```
 
 
-## Optional: Setup Samba
-You can do all of your config file creation and editing at the command line if you want, however this can be a bit cumbersome. It would be helpful to directly e your config files o your local PC, let's get Samba up and running to provide  service to us. We'll set this up using `docker-compose` the same tool we'll use later for our main stack. This will be a good opportunity for a bit of practice.
-
-You'll notice in the config below, we're declaring an image we want to use with a tag that's specific to the raspberry pi. We're also passing in a list of volumes we want to link in a format like this: 
-
-*`/path/outside/container:/path/inside/container`*
-
-Additionally, there's a list of ports needed by the SMB protocol that we're going to pass though in the same *`outside:inside`* format, as well as a bunch of other attributes needed by docker to setup the container.
-
-To get Samba up and running, c
-
-reate a new folder in your home directory and create a file inside called `docker-compose.yml` 
-
-```
-mkdir ~/samba-server
-nano ~/samba-server/docker-compose.yml
-```
-Paste the following config:
-```
-version: '3.4'
-services:
-  samba:
-    image: dperson/samba:armhf
-    ports:
-      - "137:137/udp"
-      - "138:138/udp"
-      - "139:139/tcp"
-      - "445:445/tcp"
-    volumes:
-      - /srv/docker:/srv/docker
-      - /etc/localtime:/etc/localtime:ro
-    tmpfs:
-      - /tmp
-    restart: unless-stopped
-    command: > 
-      -u "smbuser;badpass" 
-      -s "docker-config;/srv/docker;yes;no;no;smbuser"
-    environment:      
-      - 'USERID=1000'
-      - 'GROUPID=995'
-```
-Change `badpass` to something better
-Save the file by pressing  `Ctrl-o` then exit with `Ctrl-x`.
-
-*Note: the environmental variables above should work on Raspbian Buster but you may need to adjust USERID or GROUPID if you're on a different system or have added additional users. You can find these values by evoking `id` on the command line. Assign the UID of your user and the GID of docker.*
-
-
-To start the sharing service, make sure that you're in the `samba-server` directory and bring up the container:
-```
-cd ~/samba-server
-docker-compose up
-```
-Watch the logs that appear to see if everything is going smoothly. If things looks positive, you should now you should be able to connect to your instance using the username `smbuser` and whatever you changed `badpass` to moments ago. We named the share `docker-config`, so connect to that using the standard SMB convention: 
-
-`\\hostname\docker-config` or `smb://hostname/docker-config/`
-
-You should see the list of directories that we created in the last section. Now would be a good time to copy your Home Assistant config into the `homeassistant` directory.
-
-When you're finished, switch back to the terminal and press `Ctrl-c` to kill the server. Keep this shutdown when you're not using it.  
-
-Once things are working consistently, use `docker-compose up -d` to start the container in the background. After launching a container like this, use `docker-compose down` to stop it again.
-
-
 ## Home Assistant: starting the big stack
 
 We've got the groundwork down to start building our main stack. We're going to configure our containers using a config file called`docker-compose.yml`.  We'll then use that file to launch all of our containers at once. 
 
-We're going to start small and build up, we'll start with the application we're building our stack around: Home Assistant. The HA developers make things easy for us and published a Raspberry Pi optimized version of the application on Docker Hub.
+Let's start small and build up, we'll start with the application we're building our stack around: Home Assistant. The HA developers make things easy for us and published a Raspberry Pi optimized version of the application on Docker Hub.
 
 First thing we need is to create our config file. Let's also put it in its own directory:
  ```
@@ -357,12 +294,70 @@ services:
      - 8080:80
      - 443:443
 ```
+## Optional: Setup Samba
+You can do all of your config file creation and editing at the command line if you want, however this can be a bit cumbersome. It would be helpful to directly e your config files o your local PC, let's get Samba up and running to provide  service to us. We'll set this up using `docker-compose` the same tool we'll use later for our main stack. This will be a good opportunity for a bit of practice.
+
+You'll notice in the config below, we're declaring an image we want to use with a tag that's specific to the raspberry pi. We're also passing in a list of volumes we want to link in a format like this: 
+
+*`/path/outside/container:/path/inside/container`*
+
+Additionally, there's a list of ports needed by the SMB protocol that we're going to pass though in the same *`outside:inside`* format, as well as a bunch of other attributes needed by docker to setup the container.
+
+To get Samba up and running, create a new folder in your home directory and create a file inside called `docker-compose.yml` 
+
+```
+mkdir ~/samba-server
+nano ~/samba-server/docker-compose.yml
+```
+Paste the following config:
+```
+version: '3.4'
+services:
+  samba:
+    image: dperson/samba:armhf
+    ports:
+      - "137:137/udp"
+      - "138:138/udp"
+      - "139:139/tcp"
+      - "445:445/tcp"
+    volumes:
+      - /srv/docker:/srv/docker
+      - /etc/localtime:/etc/localtime:ro
+    tmpfs:
+      - /tmp
+    restart: unless-stopped
+    command: > 
+      -u "smbuser;badpass" 
+      -s "docker-config;/srv/docker;yes;no;no;smbuser"
+    environment:      
+      - 'USERID=1000'
+      - 'GROUPID=995'
+```
+Change `badpass` to something better
+Save the file by pressing  `Ctrl-o` then exit with `Ctrl-x`.
+
+*Note: the environmental variables above should work on Raspbian Buster but you may need to adjust USERID or GROUPID if you're on a different system or have added additional users. You can find these values by evoking `id` on the command line. Assign the UID of your user and the GID of docker.*
+
+
+To start the sharing service, make sure that you're in the `samba-server` directory and bring up the container:
+```
+cd ~/samba-server
+docker-compose up
+```
+Watch the logs that appear to see if everything is going smoothly. If things looks positive, you should now you should be able to connect to your instance using the username `smbuser` and whatever you changed `badpass` to moments ago. We named the share `docker-config`, so connect to that using the standard SMB convention: 
+
+`\\hostname\docker-config` or `smb://hostname/docker-config/`
+
+You should see the list of directories that we created in the last section. Now would be a good time to copy your Home Assistant config into the `homeassistant` directory.
+
+When you're finished, switch back to the terminal and press `Ctrl-c` to kill the server. Keep this shutdown when you're not using it.  
+
+Once things are working consistently, use `docker-compose up -d` to start the container in the background. After launching a container like this, use `docker-compose down` to stop it again.
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDAxMjY5ODEsMTg4Nzc5NzQ5MiwtNj
-g0MTc5NDQwLC0xMDEyNjMxMzM0LC0xMDQ0MTQ4NzAsMTQ0NzE2
-MTQwNyw5MDUxNzAxNzAsMzM3Mjg1MzA4LC04MDAxNDYyNzRdfQ
-==
+eyJoaXN0b3J5IjpbLTg4OTAzODA5NywxODg3Nzk3NDkyLC02OD
+QxNzk0NDAsLTEwMTI2MzEzMzQsLTEwNDQxNDg3MCwxNDQ3MTYx
+NDA3LDkwNTE3MDE3MCwzMzcyODUzMDgsLTgwMDE0NjI3NF19
 -->
