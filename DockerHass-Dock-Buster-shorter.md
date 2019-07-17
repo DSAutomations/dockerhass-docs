@@ -1,5 +1,5 @@
 # Overview
-Here's my do HomeAssistant Docker stack that includes
+Here's my documentation of my HomeAssistant Docker stack that includes:
 * **Homeassistant** *at the core*
 * **Nginx** *reverse proxy for serving http securely*
 * **Mosquitto MQTT** *for more features than the built in broker*
@@ -9,7 +9,22 @@ Here's my do HomeAssistant Docker stack that includes
 * **Node Red** *for flow-based automatons*
 * **Portainer** *for web based container management*
 
+This guide is based around the RaspberryPi3 running Raspbian Buster.
 
+Other features include:
+* 
+
+
+
+### Prerequisites
+* [Docker Concepts Introduction](https://www.youtube.com/watch?v=6aBsjT5HoGY)
+* [Supercharged Docker with Docker Compose](https://www.youtube.com/watch?v=2qKlZQX1Ums)
+
+# Preparations
+##Setup an SD card for headless 
+#
+#
+#
 
 
 ## Overview
@@ -387,5 +402,5 @@ Once things are working consistently, use `docker-compose up -d` to start the co
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5MTM2MzkwMSwtNTk5NDQwOF19
+eyJoaXN0b3J5IjpbMzIwNDM1NjkzLC01OTk0NDA4XX0=
 -->
