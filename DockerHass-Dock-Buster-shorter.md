@@ -1,9 +1,8 @@
 # Overview
 
-I was convinced by all the buzz about Docker lately to migrate my setup, and I wanted to share of sake of contributing to the community. 
+All of the buzz lately has convinced me to migrate my HA into a Docker stack. I wanted to share my work for the sake of contributing to the community. I hope that others can find some value in what I've accomplished here. 
 
-This is actually a complete re-write
-
+ My first draft of this post included perhaps too much detail, I got caught up in the weeds explaining everything and it quickly ballooned to a
 
 
 
@@ -386,5 +385,5 @@ Once things are working consistently, use `docker-compose up -d` to start the co
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzU0ODYxMTczXX0=
+eyJoaXN0b3J5IjpbLTc3MTUyODk4MF19
 -->
