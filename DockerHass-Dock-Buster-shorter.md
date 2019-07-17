@@ -1,10 +1,13 @@
 # Overview
-
-All of the buzz lately has convinced me to migrate my HA into a Docker stack. I wanted to share my work for the sake of contributing to the community. I hope that others can find some value in what I've accomplished here. 
-
- My first draft of this post included perhaps too much detail, I got caught up in the weeds explaining everything and somewhere around word 10,000 I realized I wasn't doing something right. Others have explained the basics better than I can in a post about Home Assistant. 
-
-
+Here's my do HomeAssistant Docker stack that includes
+* **Homeassistant** *at the core*
+* **Nginx** *reverse proxy for serving http securely*
+* **Mosquitto MQTT** *for more features than the built in broker*
+* **MariaDB** *to replace the built-in DB for better performance*
+* **InfluxDB** *to efficiently capture time-series data*
+* **Grafana** *for more robust graphing and dashboards*
+* **Node Red** *for flow-based automatons*
+* **Portainer** *for web based container management*
 
 
 
@@ -99,7 +102,7 @@ sudo apt-get install apt-transport-https \
 ```
 Next let's add a repository for us to pull the latest docker packages from, and also, we'll make it so that packages signed by the docker project are permitted to run.
 ```
-echo "deb https://download.docker.com/linux/raspbian/ stretch stable" | sudo tee -a /etc/apt/sources.list
+echo "deb https://download.docker.com/linux/raspbian/ buster stable" | sudo tee -a /etc/apt/sources.list
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
 ```
 With all of this done, we should have everything we need to install docker. This might take a little while, let's go:
@@ -384,5 +387,5 @@ Once things are working consistently, use `docker-compose up -d` to start the co
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5OTQ0MDhdfQ==
+eyJoaXN0b3J5IjpbLTU5MTM2MzkwMSwtNTk5NDQwOF19
 -->
