@@ -9,19 +9,65 @@ Here's my documentation of my HomeAssistant Docker stack that includes:
 * **Node Red** *for flow-based automatons*
 * **Portainer** *for web based container management*
 
-This guide is based around the RaspberryPi3 running Raspbian Buster.
+This guide is based around the RaspberryPi3 and we will be running Raspbian Buster.
 
 Other features include:
+* Subdomains
+* Wildcard certificate
 * 
 
 
 
 ### Prerequisites
+If you don't feel 100% on the Docker basics, check out these two videos for a quick and concise introduction:
 * [Docker Concepts Introduction](https://www.youtube.com/watch?v=6aBsjT5HoGY)
 * [Supercharged Docker with Docker Compose](https://www.youtube.com/watch?v=2qKlZQX1Ums)
 
 # Preparations
-##Setup an SD card for headless 
+### Setup an SD card for headless operation
+
+Grab the latest [Raspbian Buster Lite](https://downloads.raspberrypi.org/raspbian_lite_latest) and flash it to an SD card using an app like [etcher](https://www.balena.io/etcher/). 
+
+Two files need to be created on the /
+
+    ssh
+    wpa_supplicant
+`shh` is an empty file and flags the OS to enable SSH on first boot. 
+
+`wpa_supplicant` contains the wifi configuration for my network (WPA2/PSK), and looks like this:
+
+    country=US
+    ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+    update_config=1
+    network={
+    	ssid="MYSSID"
+    	psk="passphrase"
+    	scan_ssid=1
+    	key_mgmt=WPA-PSK
+    	}
+
+Change your [country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Current_codes) accordingly. 
+
+Once these two files have been moved to the boot partition, eject/dismount the drive and move the SD card to the Raspberry Pi. Power up the Raspberry Pi using a power supply rated for the task, and watch for the device to appear on your wifi. 
+
+Connect to the device via SSH with the default username `pi` and the default password `raspberry` and we're ready to get started. 
+##
+**Optionally:** You can either directly enter your wifi passphrase into the `wpa_supplicant` file, or for increased security you can give it give it the pre-encoded key. This key is generated with the `wpa_passphrase`tool:
+ ```
+   $ wpa_passphrase MYSSID passphrase
+   network={
+   	ssid="MYSSID"
+   	#psk="passphrase"
+         psk=59e0d07fa4c7741797a4e394f38a5c321e3bed51d54ad5fcbd3f84bc7415d73d
+   }
+   ```
+You would then need to take the generated output and replace the `psk` line in the `wpa_supplicant` file.
+
+
+
+
+
+
 #
 #
 #
@@ -402,5 +448,5 @@ Once things are working consistently, use `docker-compose up -d` to start the co
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzIwNDM1NjkzLC01OTk0NDA4XX0=
+eyJoaXN0b3J5IjpbMTQyODE1OTU2NSwtNTk5NDQwOF19
 -->
