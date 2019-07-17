@@ -2,8 +2,7 @@
 
 All of the buzz lately has convinced me to migrate my HA into a Docker stack. I wanted to share my work for the sake of contributing to the community. I hope that others can find some value in what I've accomplished here. 
 
- My first draft of this post included perhaps too much detail, I got caught up in the weeds explaining everything and it quickly ballooned to a
-
+ My first draft of this post included perhaps too much detail, I got caught up in the weeds explaining everything and somewhere around word 10,000 I realized I wasn't doing something right. Others have explained the basics better than I can in a post about Home Assistant. 
 
 
 
@@ -385,5 +384,5 @@ Once things are working consistently, use `docker-compose up -d` to start the co
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3MTUyODk4MF19
+eyJoaXN0b3J5IjpbLTU5OTQ0MDhdfQ==
 -->
