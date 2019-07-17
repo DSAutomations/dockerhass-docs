@@ -60,7 +60,33 @@ How to generate encrypted password for the config above:
    ```
 
 ### Configure Docker
-Perform initial boot and login via ssh. The following will prepare and install Docker 
+Perform initial boot and login via ssh. The following will prepare and install Docker & `docker-compose`on Raspbian Buster:
+
+```
+sudo apt update
+sudo apt upgrade
+
+sudo raspi-config     # Set hostname and password 
+
+sudo apt-get install apt-transport-https \
+                      ca-certificates \
+                      software-properties-common \
+                      build-essential \
+                      libssl-dev \
+                      libffi-dev \
+                      python \
+                      python-dev \
+                      python-pip 
+                      python-backports.ssl-match-hostname -y
+
+echo "deb https://download.docker.com/linux/raspbian/ buster stable" | sudo tee -a /etc/apt/sources.list
+curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -\
+
+# curl -fsSL get.docker.com -o get-docker.sh && sh get-docker.sh
+sudo curl -sL get.docker.com | sed 's/9)/10)/' | sh    # workaround until docker script gets updated
+sudo usermod -aG docker $USER
+sudo pip install docker-compose
+```
 
 
 
@@ -446,5 +472,5 @@ Once things are working consistently, use `docker-compose up -d` to start the co
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxMjE2MjQyNSwtNTk5NDQwOF19
+eyJoaXN0b3J5IjpbLTE0OTU3NTM5MjEsLTU5OTQ0MDhdfQ==
 -->
