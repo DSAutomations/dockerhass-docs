@@ -28,13 +28,13 @@ If you don't feel 100% on the Docker basics, check out these two videos for a qu
 
 Grab the latest [Raspbian Buster Lite](https://downloads.raspberrypi.org/raspbian_lite_latest) and flash it to an SD card using an app like [etcher](https://www.balena.io/etcher/). 
 
-Two files need to be created on the /
+Two files need to be created on the `/boot` partition:
 
     ssh
     wpa_supplicant
 `shh` is an empty file and flags the OS to enable SSH on first boot. 
 
-`wpa_supplicant` contains the wifi configuration for my network (WPA2/PSK), and looks like this:
+`wpa_supplicant` is optional, it contains the wifi configuration (WPA2/PSK), and looks like this:
 
     country=US
     ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
@@ -46,13 +46,10 @@ Two files need to be created on the /
     	key_mgmt=WPA-PSK
     	}
 
-Change your [country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Current_codes) accordingly. 
+[Country code reference](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Current_codes). 
 
-Once these two files have been moved to the boot partition, eject/dismount the drive and move the SD card to the Raspberry Pi. Power up the Raspberry Pi using a power supply rated for the task, and watch for the device to appear on your wifi. 
 
-Connect to the device via SSH with the default username `pi` and the default password `raspberry` and we're ready to get started. 
-##
-**Optionally:** You can either directly enter your wifi passphrase into the `wpa_supplicant` file, or for increased security you can give it give it the pre-encoded key. This key is generated with the `wpa_passphrase`tool:
+How to generate encrypted password for the config above:
  ```
    $ wpa_passphrase MYSSID passphrase
    network={
@@ -61,8 +58,9 @@ Connect to the device via SSH with the default username `pi` and the default pas
          psk=59e0d07fa4c7741797a4e394f38a5c321e3bed51d54ad5fcbd3f84bc7415d73d
    }
    ```
-You would then need to take the generated output and replace the `psk` line in the `wpa_supplicant` file.
 
+### Configure Docker
+Perform initial boot and login via ssh. The following will prepare and install Docker 
 
 
 
@@ -448,5 +446,5 @@ Once things are working consistently, use `docker-compose up -d` to start the co
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyODE1OTU2NSwtNTk5NDQwOF19
+eyJoaXN0b3J5IjpbMTQxMjE2MjQyNSwtNTk5NDQwOF19
 -->
