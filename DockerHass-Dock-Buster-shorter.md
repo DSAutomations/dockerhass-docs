@@ -182,7 +182,7 @@ sudo apt-get install apt-transport-https \
                       libffi-dev \
                       python \
                       python-dev \
-                      python-pip 
+                      python-pip \
                       python-backports.ssl-match-hostname -y
 ```
 Next let's add a repository for us to pull the latest docker packages from, and also, we'll make it so that packages signed by the docker project are permitted to run.
@@ -472,5 +472,6 @@ Once things are working consistently, use `docker-compose up -d` to start the co
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTU3NTM5MjEsLTU5OTQ0MDhdfQ==
+eyJoaXN0b3J5IjpbLTE1MTMwMTMxODUsLTE0OTU3NTM5MjEsLT
+U5OTQ0MDhdfQ==
 -->
